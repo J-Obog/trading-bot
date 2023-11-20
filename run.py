@@ -1,4 +1,4 @@
-from trading.data import StockRatingType
+from trading.data import HoldingType, Order, OrderType, StockRatingType
 from trading.investopedia import InvestopediaClient
 from trading.nasdaq import NasdaqClient
 import time
@@ -25,9 +25,18 @@ while True:
         holding = holdings_map.get(symbol, None)
 
         if holding is None:
-            pass
+            if signal == "buy":
+                trading_client.make_trade(Order(quantity=10, symbol=symbol, order_type=OrderType.BUY))
+            else:
+                trading_client.make_trade(Order(quantity=10, symbol=symbol, order_type=OrderType.SHORT))
         else:
-            pass
+            holding_type = holding.holding_type
+            if holding_type == HoldingType.LONG and signal == "sell":
+                trading_client.make_trade(Order(quantity=10, symbol=symbol, order_type=OrderType.SELL))
+            elif holding_type == HoldingType.SHORT and signal == "buy":
+                trading_client.make_trade(Order(quantity=10, symbol=symbol, order_type=OrderType.BUY_TO_COVER))
+            else: # TODO: this may need to be updated to support buying more shares or shorting more shares
+                continue
 
         time.sleep(60 * 1)
 

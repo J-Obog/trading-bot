@@ -46,7 +46,7 @@ class InvestopediaClient:
                 "holdingType": holding_type,
             },
             "query": "query StockHoldings($portfolioId: String!, $holdingType: HoldingType!) { readPortfolio(portfolioId: $portfolioId) { ... on PortfolioErrorResponse { errorMessages __typename } ... on Portfolio { holdings(type: $holdingType) { ... on HoldingsErrorResponse { errorMessages __typename } ... on CategorizedHoldingsErrorResponse { errorMessages __typename } ... on CategorizedStockHoldings { holdingsSummary { marketValue dayGainDollar dayGainPercent totalGainDollar totalGainPercent __typename } executedTrades { stock { ... on Stock { symbol description technical { lastPrice __typename } __typename } __typename } symbol quantity purchasePrice marketValue dayGainDollar dayGainPercent totalGainDollar totalGainPercent __typename } __typename } __typename } __typename } __typename } }"
-            }
+        }
         
         data = self.sess.post(API_URL, json=body).json()["data"]["readPortfolio"]["holdings"]["executedTrades"]
 

@@ -1,8 +1,9 @@
 from enum import StrEnum
+from dataclasses import dataclass
 
+@dataclass
 class TopCompany:
     symbol: str
-
 
 class OrderType(StrEnum):
     BUY = "buy"
@@ -10,7 +11,7 @@ class OrderType(StrEnum):
     SHORT = "short"
     BUY_TO_COVER = "buy_to_cover" 
 
-
+@dataclass
 class Order:
     quantity: int
     symbol: str
@@ -42,7 +43,7 @@ class HoldingType(StrEnum):
     LONG = "long"
     SHORT = "short" 
 
-
+@dataclass
 class Holding:
     symbol: str
     quantity: int
@@ -56,7 +57,7 @@ class StockRatingType(StrEnum):
     SELL = "sell" 
     STRONG_SELL = "strong_sell"
 
-
+@dataclass
 class StockRating:
     rating: StockRatingType
     rating_entities: set[str]
