@@ -10,6 +10,7 @@ class OrderType(StrEnum):
     SHORT = "short"
     BUY_TO_COVER = "buy_to_cover" 
 
+
 class Order:
     quantity: int
     symbol: str
