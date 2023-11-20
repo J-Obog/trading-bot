@@ -6,26 +6,29 @@ from trading.data import Holding, Order
 API_URL = "https://api.investopedia.com/simulator/graphql"
 
 class InvestopediaClient:
-    def __init__(self):
+    def __init__(self, auth_token: str, portfolio_id: str):
         self.sess = requests.Session()
-        self.portfolio_id = ""
+        self.sess.headers["Authorization"] = "Bearer " + auth_token 
+        self.portfolio_id = portfolio_id
 
     def make_trade(self, order: Order):
         body = {
             "operationName": "StockTrade",
             "variables": {
                 "input": {
+                    "portfolioId": self.portfolio_id, 
                     "expiry": {"expiryType": "END_OF_DAY"},
                     "limit": {"limit": None},
                     "quantity": order.quantity,
                     "symbol": order.symbol,
-                    "transactionType": order.transaction_type
+                    "transactionType": order.order_type.name
                 }
             },
             "query": "mutation StockTrade($input: TradeEntityInput!) { submitStockTrade(stockTradeEntityInput: $input) { ... on TradeInvalidEntity { errorMessages __typename } ... on TradeInvalidTransaction { errorMessages __typename } __typename } }"
         }
 
-        self.sess.post(API_URL, json=body)
+        v = self.sess.post(API_URL, json=body).json()
+        print(v)
 
     def get_holdings(self) -> List[Holding]:
         holdings = []
