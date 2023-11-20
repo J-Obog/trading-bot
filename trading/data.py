@@ -1,10 +1,13 @@
 from dataclasses import dataclass
+from enum import StrEnum
 
-@dataclass
+class OrderType(StrEnum):
+    pass 
+
 class Order:
     quantity: int
     symbol: str
-    transaction_type: str # should be an enum
+    order_type: OrderType
 
 """
 {
@@ -28,15 +31,21 @@ class Order:
     "__typename": "ExecutedStockHolding"
 }
 """
+class HoldingType(StrEnum):
+    pass 
 
-@dataclass
 class Holding:
     symbol: str
     quantity: int
-    holding_type: str # should be enum
+    holding_type: HoldingType
 
+class StockRatingType(StrEnum):
+    STRONG_BUY = "strong_buy"
+    BUY = "buy"
+    HOLD = "hold"
+    SELL = "sell" 
+    STRONG_SELL = "strong_sell"
 
-@dataclass
 class StockRating:
-    rating: str
+    rating: StockRatingType
     rating_entities: set[str]
