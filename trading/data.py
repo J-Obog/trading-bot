@@ -34,3 +34,9 @@ class Holding:
     symbol: str
     quantity: int
     holding_type: str # should be enum
+
+
+@dataclass
+class StockRating:
+    rating: str
+    rating_entities: set[str]
