@@ -2,7 +2,10 @@ from dataclasses import dataclass
 from enum import StrEnum
 
 class OrderType(StrEnum):
-    pass 
+    BUY = "buy"
+    SELL = "sell" 
+    SHORT = "short"
+    BUY_TO_COVER = "buy_to_cover" 
 
 class Order:
     quantity: int
@@ -32,12 +35,15 @@ class Order:
 }
 """
 class HoldingType(StrEnum):
-    pass 
+    LONG = "long"
+    SHORT = "short" 
+
 
 class Holding:
     symbol: str
     quantity: int
     holding_type: HoldingType
+
 
 class StockRatingType(StrEnum):
     STRONG_BUY = "strong_buy"
@@ -45,6 +51,7 @@ class StockRatingType(StrEnum):
     HOLD = "hold"
     SELL = "sell" 
     STRONG_SELL = "strong_sell"
+
 
 class StockRating:
     rating: StockRatingType
