@@ -1,10 +1,14 @@
 from typing import Optional
 from trading.data import Holding, HoldingType, Order, OrderType, StockRatingType
-from trading.investopedia import InvestopediaClient
 from trading.nasdaq import NasdaqClient
+from trading.street import WallStreetSurvivorClient
 import time
+import os
+import dotenv
 
-trading_client = InvestopediaClient()
+dotenv.load_dotenv()
+
+trading_client = WallStreetSurvivorClient(os.getenv("COOKIE"))
 nasdaq_client = NasdaqClient()
 
 top_mkt_cap_companies = nasdaq_client.get_top_companies()
@@ -43,7 +47,7 @@ while True:
         order_to_execute = get_order(stock_rating.rating, holding)
 
         if order_to_execute is not None:
-            trading_client.make_trade(Order(10, symbol, order_to_execute))
+            trading_client.place_trade(Order(10, symbol, order_to_execute))
 
         time.sleep(60 * 1)
 

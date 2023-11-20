@@ -7,7 +7,7 @@ class WallStreetSurvivorClient:
         self.sess = requests.Session()
         self.sess.headers["Cookie"] = cookie
 
-    def make_order(self, order: Order):
+    def place_trade(self, order: Order):
         data = {
             "OrderSide": 1,
             "Symbol": order.symbol,

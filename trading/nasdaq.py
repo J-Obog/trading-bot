@@ -19,7 +19,7 @@ class NasdaqClient:
         )
     
     def get_top_companies(self) -> List[TopCompany]:
-        comapnies = [] 
+        companies = [] 
 
         html_content = requests.get(URL).content
         sp = BeautifulSoup(html_content, "html.parser")
@@ -28,10 +28,10 @@ class NasdaqClient:
 
         for tr in tbody.find_all("tr"):
             tds = tr.find_all("td")        
-            comapnies.append(
+            companies.append(
                 TopCompany(
                     symbol=tds[1].text
                 )
             )
         
-        return comapnies
+        return companies
