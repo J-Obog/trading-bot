@@ -1,5 +1,8 @@
-from dataclasses import dataclass
 from enum import StrEnum
+
+class TopCompany:
+    symbol: str
+
 
 class OrderType(StrEnum):
     BUY = "buy"
