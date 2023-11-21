@@ -12,7 +12,6 @@ class OrderType(StrEnum):
     SHORT = "short"
     BUY_TO_COVER = "cover"
      
-
 @dataclass
 class Order:
     quantity: int
@@ -47,8 +46,6 @@ class StockRatingType(StrEnum):
             "Underperform": StockRatingType.SELL,
             "Hold": StockRatingType.HOLD
         }[rating_str]
-
-
 
 @dataclass
 class StockRating:

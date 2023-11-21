@@ -5,7 +5,10 @@ from bs4 import BeautifulSoup
 from trading.data import Holding, HoldingType, Order, OrderType
 import requests
 
-class WallStreetSurvivorClient:
+API_URL = "https://app.wallstreetsurvivor.com"
+PLACE_ORDER_API_URL = API_URL + "/trading/placeorder"
+
+class TradingClient:
     def __init__(self, cookie: str):
         self.sess = requests.Session()
         self.sess.headers["Cookie"] = cookie
