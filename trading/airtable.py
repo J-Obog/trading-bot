@@ -1,7 +1,7 @@
 from typing import Dict, List
 from pyairtable import Api, Table
 
-from trading.data import Holding
+from trading.data import Holding, HoldingType
 
 def delete_all(tbl: Table):
     recs = tbl.all()
@@ -24,12 +24,15 @@ class AirtableSyncer:
             ticker = holding.symbol.upper()
 
             logo_url = f"https://neutrongroup.cachefly.net/logos/{ticker}.gif"
+            pl = (holding.market_value - holding.cost_basis) if holding.holding_type == HoldingType.LONG else (holding.cost_basis - holding.market_value) 
 
             recs.append({
                 "Ticker": ticker, 
                 "Logo": [{"url": logo_url}], 
                 "Quantity": str(holding.quantity),
-                "Position": holding.holding_type.name.lower().capitalize()
+                "Cost Basis": holding.cost_basis,
+                "Market Value": holding.market_value,
+                "P/L": pl
             })
 
         create_all(self.portfolio_tbl, recs)

@@ -28,6 +28,8 @@ class Holding:
     symbol: str
     quantity: int
     holding_type: HoldingType
+    cost_basis: float
+    market_value: float
 
 
 class StockRatingType(StrEnum):

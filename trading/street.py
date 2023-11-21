@@ -73,13 +73,17 @@ class WallStreetSurvivorClient:
 
         for tr in sp.find_all("tr"):
             tds = tr.find_all("td") 
-            quantity = int(tds[1].text)
-
+            
+            quantity = int(tds[1].text) 
+            sgn = 1 if quantity >= 0 else -1
+                
             holdings.append(
                 Holding(
                     symbol=tds[0].text,
-                    quantity=abs(quantity),
-                    holding_type= (HoldingType.LONG if quantity >= 0 else HoldingType.SHORT)
+                    quantity=quantity,
+                    holding_type= (HoldingType.LONG if quantity >= 0 else HoldingType.SHORT),
+                    cost_basis=(float(tds[2].text.replace("$","").replace(",", "")) * (quantity/quantity)), 
+                    market_value=(float(tds[4].text.replace("$","").replace(",", "")))
                 )
             )
         
