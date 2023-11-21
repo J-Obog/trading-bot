@@ -29,11 +29,11 @@ class Holding:
 
 
 class StockRatingType(StrEnum):
-    STRONG_BUY = "strong_buy"
-    BUY = "buy"
-    HOLD = "hold"
-    SELL = "sell" 
-    STRONG_SELL = "strong_sell"
+    STRONG_BUY = "Strong Buy"
+    BUY = "Buy"
+    HOLD = "Hold"
+    SELL = "Sell" 
+    STRONG_SELL = "Strong Sell"
 
 @dataclass
 class StockRating:

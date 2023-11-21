@@ -9,9 +9,10 @@ URL = "https://stockanalysis.com/list/biggest-companies/"
 class NasdaqClient:
     def __init__(self):
         self.sess = requests.Session()
+        self.sess.headers["User-Agent"] = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'
 
     def get_rating(self, symbol: str) -> Optional[StockRating]:
-        data = self.sess.get(f"{ANALYST_API_URL}/{symbol}/ratings").json()["data"]
+        data = self.sess.get(ANALYST_API_URL + "/" + symbol +  "/ratings").json()["data"]
         
         return StockRating(
             rating=StockRatingType(data["meanRatingType"]),

@@ -1,5 +1,5 @@
 from typing import Optional
-from trading.data import Holding, HoldingType, Order, OrderType, StockRatingType
+from trading.data import Holding, HoldingType, Order, OrderType, StockRatingType, TopCompany
 from trading.nasdaq import NasdaqClient
 from trading.street import WallStreetSurvivorClient
 import time
@@ -11,13 +11,15 @@ dotenv.load_dotenv()
 trading_client = WallStreetSurvivorClient(os.getenv("COOKIE"))
 nasdaq_client = NasdaqClient()
 
-top_mkt_cap_companies = nasdaq_client.get_top_companies()
+#top_mkt_cap_companies = nasdaq_client.get_top_companies()[:5]
+top_mkt_cap_companies = [TopCompany("SNAP"), TopCompany("GOOGL")]
+
 
 def get_order(rating_type: StockRatingType, holding: Optional[Holding]) -> Optional[OrderType]:
     if rating_type != StockRatingType.HOLD:
-        signal = "buy" if ((rating_type == StockRatingType.BUY) or (rating_type == StockRatingType.SELL)) else "sell"
+        signal = "buy" if ((rating_type == StockRatingType.BUY) or (rating_type == StockRatingType.STRONG_BUY)) else "sell"
 
-        if holding is None:
+        if holding == None:
             return OrderType.BUY if signal == "buy" else OrderType.SHORT
         else:
             holding_type = holding.holding_type
@@ -49,6 +51,9 @@ while True:
         if order_to_execute is not None:
             trading_client.place_trade(Order(10, symbol, order_to_execute))
 
-        time.sleep(60 * 1)
+        print(symbol, stock_rating, order_to_execute)
 
-    time.sleep(60 * 15)
+    break
+        #time.sleep(60 * 1)
+
+    #time.sleep(60 * 15)
