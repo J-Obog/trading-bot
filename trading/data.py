@@ -1,3 +1,4 @@
+from __future__ import annotations
 from enum import StrEnum
 from dataclasses import dataclass
 
@@ -9,7 +10,8 @@ class OrderType(StrEnum):
     BUY = "buy"
     SELL = "sell" 
     SHORT = "short"
-    BUY_TO_COVER = "buy_to_cover" 
+    BUY_TO_COVER = "cover"
+     
 
 @dataclass
 class Order:
@@ -29,11 +31,22 @@ class Holding:
 
 
 class StockRatingType(StrEnum):
-    STRONG_BUY = "Strong Buy"
-    BUY = "Buy"
-    HOLD = "Hold"
-    SELL = "Sell" 
-    STRONG_SELL = "Strong Sell"
+    BUY = "buy"
+    HOLD = "hold"
+    SELL = "sell" 
+
+    @staticmethod
+    def from_nasdaq_type(rating_str: str) -> StockRatingType:
+        return {
+            "Strong Buy": StockRatingType.BUY,
+            "Buy": StockRatingType.BUY,
+            "Strong Sell": StockRatingType.SELL,
+            "Sell": StockRatingType.SELL,
+            "Underperform": StockRatingType.SELL,
+            "Hold": StockRatingType.HOLD
+        }[rating_str]
+
+
 
 @dataclass
 class StockRating:

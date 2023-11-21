@@ -15,7 +15,7 @@ class NasdaqClient:
         data = self.sess.get(ANALYST_API_URL + "/" + symbol +  "/ratings").json()["data"]
         
         return StockRating(
-            rating=StockRatingType(data["meanRatingType"]),
+            rating=StockRatingType.from_nasdaq_type(data["meanRatingType"]),
             rating_entities=set()
         )
     
