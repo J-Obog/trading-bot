@@ -12,4 +12,8 @@ dotenv.load_dotenv()
 
 trading_client = WallStreetSurvivorClient(os.getenv("COOKIE"))
 
-trading_client.make_order(Order(10, "GME", OrderType.BUY))
+
+print(trading_client.get_holdings())
+#r = trading_client.place_trade(Order(10, "GME", OrderType.BUY))
+#print(r)
+
