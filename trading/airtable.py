@@ -23,10 +23,12 @@ class AirtableSyncer:
         for holding in holdings:
             ticker = holding.symbol.upper()
 
+            logo_url = f"https://neutrongroup.cachefly.net/logos/{ticker}.gif"
+
             recs.append({
                 "Ticker": ticker, 
-                "Logo": [{"url": f"https://eodhd.com/img/logos/US/{ticker}.png"}], 
-                "Quantity": "10",
+                "Logo": [{"url": logo_url}], 
+                "Quantity": str(holding.quantity),
                 "Position": holding.holding_type.name.lower().capitalize()
             })
 
