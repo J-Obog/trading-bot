@@ -2,7 +2,6 @@ from typing import Dict, List
 from pyairtable import Api, Table
 
 from trading.data import Holding, HoldingType
-from trading.street import TradingClient
 
 
 BASE_ID = "appXOrXAKdltkZqtu"
@@ -30,6 +29,7 @@ class AirtableClient:
             ticker = holding.symbol.upper()
 
             logo_url = f"https://neutrongroup.cachefly.net/logos/{ticker}.gif"
+            logo_url = f"https://eodhd.com/img/logos/US/{ticker}.png"
             pl = (holding.market_value - holding.cost_basis) if holding.holding_type == HoldingType.LONG else (holding.cost_basis - holding.market_value) 
 
             recs.append({

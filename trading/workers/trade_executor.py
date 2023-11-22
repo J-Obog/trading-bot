@@ -30,7 +30,7 @@ class TradeExecutorWorker(Worker):
         self.stock_client = stock_client
 
     def run(self):
-        symbols = ["AAPL", "META", "GOOGL", "AMZN"] # this has to be updated 
+        symbols = ["AAPL", "META", "GOOGL", "AMZN", "SCCO"] # this has to be updated 
 
         holdings = self.portfolio_client.get_holdings()
         holdings_map = {holding.symbol: holding for holding in holdings}

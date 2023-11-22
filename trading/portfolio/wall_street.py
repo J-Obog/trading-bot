@@ -33,10 +33,9 @@ class WallStreetSurvivorClient:
         }   
 
         r = self.sess.post("https://app.wallstreetsurvivor.com/trading/placeorder", data=data).json()
-        err = r.get("ErrorMessage", None)
 
-        if err != None:
-            raise Exception(err)
+        if r["Success"] == False:
+            raise r["ErrorMessage"]
 
 
     def get_pending_orders(self) -> List[Order]:
