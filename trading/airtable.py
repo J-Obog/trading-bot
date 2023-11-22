@@ -2,6 +2,12 @@ from typing import Dict, List
 from pyairtable import Api, Table
 
 from trading.data import Holding, HoldingType
+from trading.street import TradingClient
+
+
+BASE_ID = "appXOrXAKdltkZqtu"
+PORTFOLIO_TABLE_ID = "tblcTLEbUaloK69TV"
+
 
 def delete_all(tbl: Table):
     recs = tbl.all()
@@ -11,15 +17,18 @@ def create_all(tbl: Table, recs: List[Dict]):
     tbl.batch_create(recs)
 
 class AirtableSyncer:
-    def __init__(self, token: str, base_id: str):
+    def __init__(self, token: str, trading_client: TradingClient):
         api = Api(token)
-        self.portfolio_tbl = api.table(base_id, 'tblcTLEbUaloK69TV')
+        self.portfolio_tbl = api.table(BASE_ID, PORTFOLIO_TABLE_ID)
+        self.trading_client = trading_client
 
-    def sync_portfolio_tbl(self, holdings: List[Holding]):
+    def sync_portfolio_tbl(self):
         delete_all(self.portfolio_tbl)
-
+        
         recs = []
-       
+        
+        holdings = self.trading_client.get_holdings()
+    
         for holding in holdings:
             ticker = holding.symbol.upper()
 

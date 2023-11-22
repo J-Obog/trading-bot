@@ -85,7 +85,7 @@ class TradingClient:
                     symbol=tds[0].text,
                     quantity=quantity,
                     holding_type= (HoldingType.LONG if quantity >= 0 else HoldingType.SHORT),
-                    cost_basis=(float(tds[2].text.replace("$","").replace(",", "")) * (quantity/quantity)), 
+                    cost_basis=((float(tds[2].text.replace("$","").replace(",", "")) * quantity) * sgn), 
                     market_value=(float(tds[4].text.replace("$","").replace(",", "")))
                 )
             )
