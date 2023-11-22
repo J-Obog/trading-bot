@@ -1,9 +1,7 @@
 from typing import List, Optional
 from trading.data import Holding, HoldingType, Order, OrderType, StockRatingType
-from trading.nasdaq import NasdaqClient
 from trading.portfolio.client import PortfolioClient
 from trading.stocks.client import StockClient
-from trading.trading import TradingClient
 from trading.workers.worker import Worker
 
 
@@ -26,16 +24,13 @@ def get_trade_action(rating: StockRatingType, current_holding: Optional[Holding]
         
      
 class TradeExecutorWorker(Worker):
-    def __init__(self, 
-                 portfolio_client: PortfolioClient, 
-                 stock_client: StockClient
-        ):
+    def __init__(self, portfolio_client: PortfolioClient, stock_client: StockClient):
 
         self.portfolio_client = portfolio_client
         self.stock_client = stock_client
 
     def run(self):
-        symbols = [] 
+        symbols = ["AAPL", "META", "GOOGL", "AMZN"] # this has to be updated 
 
         holdings = self.portfolio_client.get_holdings()
         holdings_map = {holding.symbol: holding for holding in holdings}
@@ -48,7 +43,12 @@ class TradeExecutorWorker(Worker):
             order_type = get_trade_action(rating, holding)
 
             if order_type != None:
-                order = Order(10, symbol, order_type)
+                print(f"Preparing to execute {order_type} order for {symbol}")
+
+            if order_type != None:
+                quantity = 10 if holding == None else holding.quantity
+                
+                order = Order(quantity, symbol, order_type)
                 has_already_been_placed = False
             
                 for pending_order in pending_orders:
@@ -58,6 +58,8 @@ class TradeExecutorWorker(Worker):
             
                 if not(has_already_been_placed):
                     self.portfolio_client.place_order(order)
+                else:
+                    print(f"not placing order for {symbol} since there is an existing one")
 
 
         

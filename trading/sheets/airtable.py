@@ -16,19 +16,16 @@ def delete_all(tbl: Table):
 def create_all(tbl: Table, recs: List[Dict]):
     tbl.batch_create(recs)
 
-class AirtableSyncer:
-    def __init__(self, token: str, trading_client: TradingClient):
+class AirtableClient:
+    def __init__(self, token: str):
         api = Api(token)
         self.portfolio_tbl = api.table(BASE_ID, PORTFOLIO_TABLE_ID)
-        self.trading_client = trading_client
 
-    def sync_portfolio_tbl(self):
+    def build_holdings_sheet(self, holdings: List[Holding]):
         delete_all(self.portfolio_tbl)
         
         recs = []
         
-        holdings = self.trading_client.get_holdings()
-    
         for holding in holdings:
             ticker = holding.symbol.upper()
 

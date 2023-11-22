@@ -8,14 +8,22 @@ import requests
 API_URL = "https://app.wallstreetsurvivor.com"
 PLACE_ORDER_API_URL = API_URL + "/trading/placeorder"
 
-class TradingClient:
+def order_side_from_order_type(order_type: OrderType) -> int:
+    return {
+        OrderType.BUY: 1,
+        OrderType.SELL: 2,
+        OrderType.SHORT: 3,
+        OrderType.BUY_TO_COVER: 4
+    }[order_type]
+ 
+class WallStreetSurvivorClient:
     def __init__(self, cookie: str):
         self.sess = requests.Session()
         self.sess.headers["Cookie"] = cookie
 
-    def place_trade(self, order: Order):
+    def place_order(self, order: Order):
         data = {
-            "OrderSide": 1,
+            "OrderSide": order_side_from_order_type(order.order_type),
             "Symbol": order.symbol,
             "Quantity": order.quantity,
             "OrderType": 1, 
@@ -25,7 +33,11 @@ class TradingClient:
         }   
 
         r = self.sess.post("https://app.wallstreetsurvivor.com/trading/placeorder", data=data).json()
-        return r["Success"] == True
+        err = r.get("ErrorMessage", None)
+
+        if err != None:
+            raise Exception(err)
+
 
     def get_pending_orders(self) -> List[Order]:
         orders = []
@@ -51,7 +63,7 @@ class TradingClient:
             if tds[-1].text == "Open":
                 orders.append(
                     Order(
-                        quantity=int(tds[2].text),
+                        quantity=abs(int(tds[2].text)),
                         symbol=tds[1].text,
                         order_type=OrderType(order_side)
                     )
@@ -83,8 +95,8 @@ class TradingClient:
             holdings.append(
                 Holding(
                     symbol=tds[0].text,
-                    quantity=quantity,
-                    holding_type= (HoldingType.LONG if quantity >= 0 else HoldingType.SHORT),
+                    quantity=abs(quantity),
+                    holding_type=(HoldingType.LONG if quantity >= 0 else HoldingType.SHORT),
                     cost_basis=((float(tds[2].text.replace("$","").replace(",", "")) * quantity) * sgn), 
                     market_value=(float(tds[4].text.replace("$","").replace(",", "")))
                 )

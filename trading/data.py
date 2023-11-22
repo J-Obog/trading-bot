@@ -36,16 +36,6 @@ class StockRatingType(StrEnum):
     HOLD = "hold"
     SELL = "sell" 
 
-    @staticmethod
-    def from_nasdaq_type(rating_str: str) -> StockRatingType:
-        return {
-            "Strong Buy": StockRatingType.BUY,
-            "Buy": StockRatingType.BUY,
-            "Strong Sell": StockRatingType.SELL,
-            "Sell": StockRatingType.SELL,
-            "Underperform": StockRatingType.SELL,
-            "Hold": StockRatingType.HOLD
-        }[rating_str]
 
 @dataclass
 class StockRating:
