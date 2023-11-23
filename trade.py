@@ -1,10 +1,10 @@
 import os
 from typing import Optional
 import dotenv
+from trading.airtable import AirtableClient
 from trading.data import Holding, HoldingType, Order, OrderType, StockRatingType
-from trading.portfolio.wall_street import WallStreetSurvivorClient
-from trading.sheets.airtable import AirtableClient
-from trading.stocks.nasdaq import NasdaqClient
+from trading.nasdaq import NasdaqClient
+from trading.wallstreet import WallStreetSurvivorClient
 
 def get_trade_action(rating: StockRatingType, current_holding: Optional[Holding]) -> Optional[OrderType]:
     if rating == StockRatingType.HOLD:
@@ -26,7 +26,6 @@ def get_trade_action(rating: StockRatingType, current_holding: Optional[Holding]
 dotenv.load_dotenv()
 
 portfolio_client = WallStreetSurvivorClient(os.getenv("COOKIE"))
-ssheet_client = AirtableClient(os.getenv("AIRTABLE_ACCESS_TOKEN"))
 stock_client = NasdaqClient()
 
 symbols = ["AAPL", "META", "GOOGL", "AMZN", "SCCO"] # this has to be updated 
