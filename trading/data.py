@@ -1,12 +1,12 @@
 from __future__ import annotations
-from enum import StrEnum
+from enum import Enum
 from dataclasses import dataclass
 
 @dataclass
 class TopCompany:
     symbol: str
 
-class OrderType(StrEnum):
+class OrderType(str, Enum):
     BUY = "buy"
     SELL = "sell" 
     SHORT = "short"
@@ -18,7 +18,7 @@ class Order:
     symbol: str
     order_type: OrderType
 
-class HoldingType(StrEnum):
+class HoldingType(str, Enum):
     LONG = "long"
     SHORT = "short" 
 
@@ -31,7 +31,7 @@ class Holding:
     market_value: float
 
 
-class StockRatingType(StrEnum):
+class StockRatingType(str, Enum):
     BUY = "buy"
     HOLD = "hold"
     SELL = "sell" 
