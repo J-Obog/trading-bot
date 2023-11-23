@@ -29,6 +29,7 @@ class TradeExecutorWorker(Worker):
         self.portfolio_client = portfolio_client
         self.stock_client = stock_client
 
+
     def run(self):
         symbols = ["AAPL", "META", "GOOGL", "AMZN", "SCCO"] # this has to be updated 
 
