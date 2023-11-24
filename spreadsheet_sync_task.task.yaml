@@ -1,7 +1,0 @@
-# Full reference: https://docs.airplane.dev/tasks/shell-config
-
-slug: spreadsheet_sync_task
-name: spreadsheet-sync-task
-
-shell:
-  entrypoint: spreadsheet_sync_task.sh

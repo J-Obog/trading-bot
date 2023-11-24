@@ -28,17 +28,18 @@ class AirtableClient:
         for holding in holdings:
             ticker = holding.symbol.upper()
 
-            logo_url = f"https://neutrongroup.cachefly.net/logos/{ticker}.gif"
-            logo_url = f"https://eodhd.com/img/logos/US/{ticker}.png"
+            #logo_url = f"https://neutrongroup.cachefly.net/logos/{ticker}.gif"
+            #logo_url = f"https://eodhd.com/img/logos/US/{ticker}.png"
             pl = (holding.market_value - holding.cost_basis) if holding.holding_type == HoldingType.LONG else (holding.cost_basis - holding.market_value) 
 
             recs.append({
                 "Ticker": ticker, 
-                "Logo": [{"url": logo_url}], 
+                #"Logo": [{"url": logo_url}], 
                 "Quantity": str(holding.quantity),
                 "Cost Basis": holding.cost_basis,
                 "Market Value": holding.market_value,
-                "P/L": pl
+                "P/L": pl,
+                "Position": "Long" if holding.holding_type == HoldingType.LONG else "Short"
             })
 
         create_all(self.portfolio_tbl, recs)
