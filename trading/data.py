@@ -32,6 +32,7 @@ class Holding:
 
 
 class StockRatingType(str, Enum):
+    NONE = "none"
     BUY = "buy"
     HOLD = "hold"
     SELL = "sell" 

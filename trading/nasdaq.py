@@ -23,5 +23,10 @@ class NasdaqClient:
     def get_rating(self, symbol: str) -> StockRatingType:
         data = self.sess.get(f"{ANALYST_API_URL}/{symbol}/ratings").json()["data"]
         
+        mean_rat = data["meanRatingType"]
+
+        if mean_rat == "":
+            return StockRatingType.NONE
+        
         return to_rating(data["meanRatingType"])
     

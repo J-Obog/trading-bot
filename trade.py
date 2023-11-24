@@ -7,6 +7,8 @@ from trading.data import Holding, HoldingType, Order, OrderType, StockRatingType
 from trading.nasdaq import NasdaqClient
 from trading.wallstreet import WallStreetSurvivorClient
 
+DEFAULT_QUANTITY = 5
+
 def get_top_companies() -> List[str]:
     comapnies = [] 
 
@@ -43,22 +45,31 @@ dotenv.load_dotenv()
 portfolio_client = WallStreetSurvivorClient(os.getenv("COOKIE"))
 stock_client = NasdaqClient()
 
-symbols = get_top_companies()[:100]
 
 holdings = portfolio_client.get_holdings()
 holdings_map = {holding.symbol: holding for holding in holdings}
+
+top_companies = get_top_companies()[:10]
+
+for ticker in top_companies:
+    if ticker not in holdings_map:
+        holdings_map[ticker] = None
+
 pending_orders = portfolio_client.get_pending_orders()
 
-for symbol in symbols:
+for symbol, holding in holdings_map.items():
     rating = stock_client.get_rating(symbol)
-    current_holding = holdings_map.get(symbol, None)
+
+    if rating == StockRatingType.NONE:
+        continue
+    
     order_type = None
 
     if rating != StockRatingType.HOLD:
-        if current_holding == None:
+        if holding == None:
             order_type = OrderType.BUY if rating == StockRatingType.BUY else OrderType.SHORT
         else:
-            holding_type = current_holding.holding_type
+            holding_type = holding.holding_type
 
             if (holding_type == HoldingType.LONG) and (rating == StockRatingType.SELL):
                 order_type = OrderType.SELL
@@ -70,13 +81,13 @@ for symbol in symbols:
         print(f"Preparing to execute {order_type} order for {symbol}")
 
     if order_type != None:
-        quantity = 10 if current_holding == None else current_holding.quantity
+        quantity = DEFAULT_QUANTITY if holding == None else holding.quantity
         
         order = Order(quantity, symbol, order_type)
         has_already_been_placed = False
 
         for pending_order in pending_orders:
-            if order == pending_order:
+            if (order.symbol == pending_order.symbol) and (order.order_type == pending_order.order_type):
                 has_already_been_placed = True
                 break
 
