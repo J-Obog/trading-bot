@@ -1,10 +1,25 @@
 import os
-from typing import Optional
+from typing import List, Optional
+from bs4 import BeautifulSoup
 import dotenv
-from trading.airtable import AirtableClient
+import requests
 from trading.data import Holding, HoldingType, Order, OrderType, StockRatingType
 from trading.nasdaq import NasdaqClient
 from trading.wallstreet import WallStreetSurvivorClient
+
+def get_top_companies() -> List[str]:
+    comapnies = [] 
+
+    html_content = requests.get("https://stockanalysis.com/list/biggest-companies/").content
+    sp = BeautifulSoup(html_content, "html.parser")
+    tbl = sp.find(id="main-table")
+    tbody = tbl.find("tbody")
+
+    for tr in tbody.find_all("tr"):
+        tds = tr.find_all("td")        
+        comapnies.append(tds[1].text)
+    
+    return comapnies
 
 def get_trade_action(rating: StockRatingType, current_holding: Optional[Holding]) -> Optional[OrderType]:
     if rating == StockRatingType.HOLD:
@@ -28,7 +43,7 @@ dotenv.load_dotenv()
 portfolio_client = WallStreetSurvivorClient(os.getenv("COOKIE"))
 stock_client = NasdaqClient()
 
-symbols = ["AAPL", "META", "GOOGL", "AMZN", "SCCO"] # this has to be updated 
+symbols = get_top_companies()[:100]
 
 holdings = portfolio_client.get_holdings()
 holdings_map = {holding.symbol: holding for holding in holdings}
