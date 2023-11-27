@@ -49,7 +49,7 @@ stock_client = NasdaqClient()
 holdings = portfolio_client.get_holdings()
 holdings_map = {holding.symbol: holding for holding in holdings}
 
-top_companies = get_top_companies()[:10]
+top_companies = get_top_companies()[:75]
 
 for ticker in top_companies:
     if ticker not in holdings_map:
