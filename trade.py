@@ -23,23 +23,6 @@ def get_top_companies() -> List[str]:
     
     return comapnies
 
-def get_trade_action(rating: StockRatingType, current_holding: Optional[Holding]) -> Optional[OrderType]:
-    if rating == StockRatingType.HOLD:
-        return None
-        
-    if current_holding == None:
-        return OrderType.BUY if rating == StockRatingType.BUY else OrderType.SHORT
-    else:
-        holding_type = current_holding.holding_type
-
-        if (holding_type == HoldingType.LONG) and (rating == StockRatingType.SELL):
-            return OrderType.SELL
-        
-        if (holding_type == HoldingType.SHORT) and (rating == StockRatingType.BUY):
-            return OrderType.BUY_TO_COVER
-
-        return None
-    
 dotenv.load_dotenv()
 
 portfolio_client = WallStreetSurvivorClient(os.getenv("COOKIE"))
