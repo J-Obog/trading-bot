@@ -10,4 +10,4 @@ ssheet_client = AirtableClient(os.getenv("AIRTABLE_ACCESS_TOKEN"))
 
 holdings = portfolio_client.get_holdings()
 ssheet_client.build_holdings_sheet(holdings)
-print("Updated portfolio with holdings: ", holdings)
+print("Portfolio spreadsheet has been synced")
