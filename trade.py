@@ -59,9 +59,6 @@ for symbol, holding in holdings_map.items():
             
             if (holding_type == HoldingType.SHORT) and (rating == StockRatingType.BUY):
                 order_type = OrderType.BUY_TO_COVER
-                
-    if order_type != None:
-        print(f"Preparing to execute {order_type} order for {symbol}")
 
     if order_type != None:
         quantity = DEFAULT_QUANTITY if holding == None else holding.quantity
@@ -76,5 +73,6 @@ for symbol, holding in holdings_map.items():
 
         if not(has_already_been_placed):
             portfolio_client.place_order(order)
+            print(f"placed {order.order_type.name} order for {order.symbol}, quantity {order.quantity}")
         else:
             print(f"not placing order for {symbol} since there is an existing one")
