@@ -1,4 +1,5 @@
 from enum import IntEnum
+from typing import List
 import requests
 from dataclasses import dataclass
 
@@ -15,6 +16,10 @@ class OrderRequest:
     quantity: int
     side: OrderSide
     type: OrderType
+
+@dataclass
+class Holding:
+    ticker: str
 
 
 BASE_ORDER_API_URI = "https://app.wallstreetsurvivor.com/trading/placeorder"
@@ -36,3 +41,9 @@ class PortfolioApi:
         }        
 
         self.sess.post(BASE_ORDER_API_URI, data=payload)
+    
+    def get_holdings(self) -> List[Holding]:
+        pass
+
+    def get_stock_price(self, ticker: str) -> float:
+        pass
