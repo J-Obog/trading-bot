@@ -26,7 +26,7 @@ BASE_QUERY_PARAMS = {
     "desc":True,
 }
 
-class AnalystRatingsClient:
+class YahooApi:
     def __init__(self):
         self.sess = requests.Session()
 
