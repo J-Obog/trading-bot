@@ -1,18 +1,6 @@
 from enum import IntEnum
-from typing import List, Optional
 import requests
 from dataclasses import dataclass
-
-class Sentiment(IntEnum):
-    BUY = 1
-    SELL = -1
-    NEUTRAL = 0
-
-@dataclass
-class Rating:
-    sentiment: Sentiment
-    price_target: Optional[float]
-
 
 class OrderSide(IntEnum):
     BUY = 1
@@ -32,8 +20,9 @@ class OrderRequest:
 BASE_ORDER_API_URI = "https://app.wallstreetsurvivor.com/trading/placeorder"
 
 class PortfolioApi:
-    def __init__(self):
+    def __init__(self, auth_token, portfolio_id):
         self.sess = requests.Session()
+        self.sess.headers["Cookie"] = f".WSS-Auth={auth_token};__WallStreetSurvivorProd=TournamentID={portfolio_id}" 
 
     def execute_order(self, req: OrderRequest):
         payload = {
@@ -45,3 +34,5 @@ class PortfolioApi:
             "SecurityType": "Equities",
             "Exchange": 1
         }        
+
+        self.sess.post(BASE_ORDER_API_URI, data=payload)
