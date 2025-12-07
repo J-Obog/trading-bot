@@ -1,7 +1,0 @@
-# Full reference: https://docs.airplane.dev/tasks/shell-config
-
-slug: paper_trading_task
-name: paper-trading-task
-
-shell:
-  entrypoint: paper_trading_task.sh
