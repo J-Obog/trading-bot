@@ -12,6 +12,8 @@ class Sentiment(IntEnum):
 class Rating:
     sentiment: Sentiment
     price_target: Optional[float]
+    analyst: str
+    uuid: str
 
 
 BASE_API_URI = "https://query1.finance.yahoo.com/v2/ratings/"
@@ -29,15 +31,17 @@ BASE_QUERY_PARAMS = {
     "desc":True,
 }
 
-class YahooApi:  
-    @staticmethod
-    def get_ratings(ticker: str) -> List[Rating]:
+class YahooApi:
+    def __init__(self):
+        pass
+
+    def get_ratings(self, ticker: str) -> List[Rating]:
         params = BASE_QUERY_PARAMS
         params["symbol"] = ticker.upper()
         ratings = []
 
         res = requests.get(BASE_API_URI, params=params, headers=HEADERS).json()
-        
+
         for item in res["items"]:
             ratings.append(
                 Rating(

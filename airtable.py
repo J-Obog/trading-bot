@@ -51,9 +51,9 @@ class AirtableApi:
     def __init__(self, token: str, base_id: str, tbl_id: str):
         self.api = Api(token).table(base_id, tbl_id)
 
-    def insert_records(self, predictions: List[Prediction]):
+    def create_predictions(self, predictions: List[Prediction]):
         self.api.batch_create([to_dict(prediction) for prediction in predictions])
         
-    def get_records(self) -> List[Prediction]:
+    def get_all_predictions(self) -> List[Prediction]:
         return [from_dict(row["fields"]) for row in self.api.all()]
 
