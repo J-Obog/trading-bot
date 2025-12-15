@@ -2,13 +2,22 @@ from datetime import timedelta
 from airtable import AirtableApi, Prediction
 from yahoo import Sentiment, YahooApi
 import json
+import dotenv
+import os
+
+dotenv.load_dotenv()
 
 top_tickers = []
 
 with open("top_sp500.json", "r", encoding="utf-8") as json_file:
     top_tickers = json.load(json_file)
 
-airtable = AirtableApi("", "", "")
+airtable = AirtableApi(
+    os.environ.get("AIRTABLE_TOKEN"), 
+    os.environ.get("AIRTABLE_BASE_ID"), 
+    os.environ.get("AIRTABLE_TABLE_ID")
+)
+
 yahoo = YahooApi()
 
 existing_ids = set(map(lambda x: x.id, airtable.get_all_predictions()))
