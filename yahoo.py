@@ -15,6 +15,9 @@ class Rating:
 
 
 BASE_API_URI = "https://query1.finance.yahoo.com/v2/ratings/"
+HEADERS = {
+    "User-Agent": "StockAnalysis/1.0"
+}
 
 BASE_QUERY_PARAMS = {
     "limit": 100,
@@ -26,17 +29,15 @@ BASE_QUERY_PARAMS = {
     "desc":True,
 }
 
-class StockAnalysisApi:
-    def __init__(self):
-        self.sess = requests.Session()
-
-    def get_ratings(self, ticker: str) -> List[Rating]:
+class YahooApi:  
+    @staticmethod
+    def get_ratings(ticker: str) -> List[Rating]:
         params = BASE_QUERY_PARAMS
         params["symbol"] = ticker.upper()
         ratings = []
 
-        res = self.sess.get(BASE_API_URI, params=params).json()
-
+        res = requests.get(BASE_API_URI, params=params, headers=HEADERS).json()
+        
         for item in res["items"]:
             ratings.append(
                 Rating(
