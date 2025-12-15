@@ -11,15 +11,21 @@ class Outcome(StrEnum):
     
 @dataclass
 class Prediction:
+    record_id: int = -1
     id: str
     ticker: str
     analyst: str
     announcement_date: datetime
     price_target: float
-    outcome: Outcome
+    outcome: Optional[Outcome]
     close_date: Optional[datetime]
     expiration_date: datetime
 
+@dataclass
+class OutcomeUpdate:
+    record_id: int
+    close_date: datetime
+    outcome: Outcome
 
 def from_dict(obj: dict[str, Any]) -> Prediction:
     return Prediction(
@@ -60,5 +66,26 @@ class AirtableApi:
         self.api.batch_create([to_dict(prediction) for prediction in predictions])
         
     def get_all_predictions(self) -> List[Prediction]:
-        return [from_dict(row["fields"]) for row in self.api.all()]
+        predictions = []
+
+        for row in self.api.all():
+            prediction = from_dict(row["fields"])
+            prediction.record_id = row["id"]
+            predictions.append(prediction)
+
+        return predictions
+    
+    def update_prediction_outcomes(self, updates: List[OutcomeUpdate]):
+        update_objs = []
+
+        for update in updates:
+            update_objs.append({
+                "id": update.record_id,
+                "fields": {
+                    "Outcome": update.outcome.value, 
+                    "Close Date": parse(update.close_date, ignoretz=True)
+                }
+            })
+
+        self.api.batch_update(update_objs)
 

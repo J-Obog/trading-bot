@@ -19,10 +19,27 @@ class Rating:
     analyst: str
     uuid: str
 
+@dataclass
+class Tick:
+    hi: float
+    lo: float
+    open: float
+    close: float
+    timestamp: datetime
+
 
 BASE_API_URI = "https://query1.finance.yahoo.com/v2/ratings/"
+BASE_URI = "https://query2.finance.yahoo.com/v8/finance/chart"
+
 HEADERS = {
     "User-Agent": "StockAnalysis/1.0"
+}
+
+STANDARD_QUERY_PARAMS = {
+    "includePrePost":"true",
+    "events":"div%7Csplit%7Cearn",
+    "lang":"en-US",
+    "region":"US"
 }
 
 BASE_QUERY_PARAMS = {
@@ -39,6 +56,35 @@ class YahooApi:
     def __init__(self):
         pass
 
+    def get_ticks(self, ticker: str, t1: datetime, t2: datetime) -> List[Tick]:
+        query_params = STANDARD_QUERY_PARAMS
+        query_params["period1"] = int(t1.timestamp())
+        query_params["period2"] = int(t2.timestamp())
+        query_params["interval"] = "1d"
+        
+        res = requests.get(f"{BASE_URI}/{ticker}", headers=HEADERS, params=query_params)
+        data = res.json()["chart"]["result"][0]
+        indicators = data["indicators"]["quote"][0]
+
+        timestamps = datetime.fromtimestamp( data["timestamp"])
+        closes = indicators["close"]
+        highs = indicators["high"]
+        lows = indicators["low"]
+
+        ticks: List[Tick] = []
+
+        for i in range(len(timestamps)):
+            tick = Tick(
+                    timestamp=timestamps[i],
+                    close=closes[i],
+                    low=lows[i], 
+                    high=highs[i]
+                )
+
+            ticks.append(tick)
+
+        return ticks
+    
     def get_ratings(self, ticker: str) -> List[Rating]:
         params = BASE_QUERY_PARAMS
         params["symbol"] = ticker.upper()
