@@ -27,25 +27,30 @@ def from_dict(obj: dict[str, Any]) -> Prediction:
         ticker=obj["Ticker"], 
         analyst=obj["Analyst"],    
         price_target=obj["Price Target"],
-        outcome=Outcome(obj["Outcome"]), 
+        outcome=Outcome(obj["Outcome"]) if "Outcome" in obj else None, 
         announcement_date=parse(obj["Announcement Date"], ignoretz=True), 
-        close_date=parse(obj["Close Date"], ignoretz=True),
+        close_date=parse(obj["Close Date"], ignoretz=True) if "Close Date" in obj else None,
         expiration_date=parse(obj["Expiration Date"], ignoretz=True),
     )
 
 
 def to_dict(prediction: Prediction) -> dict[str, Any]:
-    return {
+    obj = {
     "Rating ID": prediction.id,
     "Ticker": prediction.ticker, 
     "Analyst": prediction.analyst,
     "Price Target": prediction.price_target,
-    "Outcome": prediction.outcome.value, 
     "Announcement Date": prediction.announcement_date.strftime("%m/%d/%Y"),
-    "Close Date": prediction.close_date.strftime("%m/%d/%Y"),
     "Expiration Date": prediction.expiration_date.strftime("%m/%d/%Y"),
     }
 
+    if prediction.outcome is not None:
+        obj["Outcome"] = prediction.outcome.value
+
+    if prediction.close_date is not None:
+        obj["Close Date"] = prediction.close_date.strftime("%m/%d/%Y")
+
+    return obj
 
 class AirtableApi:
     def __init__(self, token: str, base_id: str, tbl_id: str):

@@ -1,3 +1,4 @@
+from datetime import datetime
 from enum import IntEnum
 from typing import List, Optional
 import requests
@@ -12,6 +13,7 @@ class Sentiment(IntEnum):
 class Rating:
     sentiment: Sentiment
     price_target: Optional[float]
+    announcement_date: datetime
     analyst: str
     uuid: str
 
@@ -46,7 +48,9 @@ class YahooApi:
             ratings.append(
                 Rating(
                     sentiment=Sentiment(item["rating_sentiment"]),
-                    price_target=item["pt_current"]
+                    price_target=item["pt_current"],
+                    uuid=item["uuid"],
+                    analyst=item["analyst"]
                 )
             )
 

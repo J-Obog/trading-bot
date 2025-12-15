@@ -1,3 +1,4 @@
+from datetime import timedelta
 from airtable import AirtableApi, Prediction
 from yahoo import Sentiment, YahooApi
 import json
@@ -18,24 +19,18 @@ for ticker in top_tickers:
     ratings = yahoo.get_ratings(ticker)
 
     for rating in ratings:
-        if rating.uuid in existing_ids:
+        if (rating.uuid in existing_ids) or (rating.price_target is None) or (rating.sentiment != Sentiment.BUY):
             continue
 
-        if rating.price_target is None:
-            continue
-
-        if rating.sentiment != Sentiment.BUY:
-            continue
-        
         p = Prediction(
             id=rating.uuid, 
             ticker=ticker, 
             analyst=rating.analyst, 
-            announcement_date=None, 
+            announcement_date=rating.announcement_date, 
             price_target=rating.price_target, 
             outcome=None, 
             close_date=None, 
-            expiration_date=None
+            expiration_date = rating.announcement_date + timedelta(days=365)
         )
 
         new_predictions.append(p)
