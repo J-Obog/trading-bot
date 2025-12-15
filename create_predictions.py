@@ -4,6 +4,7 @@ from yahoo import Sentiment, YahooApi
 import json
 import dotenv
 import os
+import time
 
 dotenv.load_dotenv()
 
@@ -25,6 +26,7 @@ existing_ids = set(map(lambda x: x.id, airtable.get_all_predictions()))
 new_predictions = []
 
 for ticker in top_tickers:
+    time.sleep(0.5)
     ratings = yahoo.get_ratings(ticker)
 
     for rating in ratings:
