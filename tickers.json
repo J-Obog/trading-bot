@@ -1,1628 +1,6506 @@
 [
-    "A",
-    "AA",
-    "AAL",
-    "AAOI",
-    "AAON",
-    "AAP",
-    "AAPL",
-    "AB",
-    "ABBV",
-    "ABCB",
-    "ABG",
-    "ABM",
-    "ABNB",
-    "ABT",
-    "ACA",
-    "ACAD",
-    "ACHR",
-    "ACI",
-    "ACIW",
-    "ACLS",
-    "ACLX",
-    "ACM",
-    "ACMR",
-    "ACT",
-    "AD",
-    "ADAMI",
-    "ADAML",
-    "ADAMM",
-    "ADAMN",
-    "ADBE",
-    "ADC",
-    "ADI",
-    "ADM",
-    "ADMA",
-    "ADP",
-    "ADPT",
-    "ADSK",
-    "ADT",
-    "ADUS",
-    "AEE",
-    "AEIS",
-    "AEO",
-    "AEP",
-    "AES",
-    "AFG",
-    "AFL",
-    "AFRM",
-    "AGCO",
-    "AGNC",
-    "AGNCL",
-    "AGNCM",
-    "AGNCN",
-    "AGNCO",
-    "AGNCP",
-    "AGNCZ",
-    "AGX",
-    "AGYS",
-    "AHR",
-    "AI",
-    "AIG",
-    "AIR",
-    "AIT",
-    "AIZ",
-    "AJG",
-    "AKAM",
-    "AKR",
-    "AL",
-    "ALAB",
-    "ALB",
-    "ALG",
-    "ALGM",
-    "ALGN",
-    "ALHC",
-    "ALK",
-    "ALKT",
-    "ALL",
-    "ALLE",
-    "ALLY",
-    "ALNY",
-    "ALRM",
-    "ALSN",
-    "AM",
-    "AMAT",
-    "AMBA",
-    "AMD",
-    "AME",
-    "AMG",
-    "AMGN",
-    "AMH",
-    "AMKR",
-    "AMP",
-    "AMR",
-    "AMRX",
-    "AMT",
-    "AMTM",
-    "AMZN",
-    "AN",
-    "ANET",
-    "ANF",
-    "AON",
-    "AORT",
-    "AOS",
-    "APA",
-    "APAM",
-    "APD",
-    "APG",
-    "APGE",
-    "APH",
-    "APLD",
-    "APLE",
-    "APLS",
-    "APO",
-    "APOS",
-    "APP",
-    "APPF",
-    "APPN",
-    "AQN",
-    "AQNB",
-    "AR",
-    "ARCC",
-    "ARE",
-    "ARES",
-    "ARLP",
-    "ARMK",
-    "AROC",
-    "ARQT",
-    "ARW",
-    "ARWR",
-    "ASAN",
-    "ASB",
-    "ASBA",
-    "ASGN",
-    "ASH",
-    "ASO",
-    "ASTS",
-    "ATEC",
-    "ATGE",
-    "ATI",
-    "ATKR",
-    "ATMU",
-    "ATO",
-    "ATR",
-    "ATRC",
-    "AUB",
-    "AUGO",
-    "AUR",
-    "AVA",
-    "AVAV",
-    "AVB",
-    "AVGO",
-    "AVNT",
-    "AVPT",
-    "AVT",
-    "AVTR",
-    "AVY",
-    "AWI",
-    "AWK",
-    "AWR",
-    "AX",
-    "AXON",
-    "AXP",
-    "AXSM",
-    "AXTA",
-    "AYI",
-    "AZO",
-    "AZZ",
-    "BA",
-    "BAC",
-    "BAH",
-    "BALL",
-    "BANC",
-    "BANF",
-    "BANR",
-    "BATRA",
-    "BATRK",
-    "BAX",
-    "BBAI",
-    "BBIO",
-    "BBT",
-    "BBWI",
-    "BBY",
-    "BC",
-    "BCC",
-    "BCO",
-    "BCPC",
-    "BDC",
-    "BDX",
-    "BE",
-    "BEAM",
-    "BELFB",
-    "BEN",
-    "BEPC",
-    "BFAM",
-    "BFH",
-    "BG",
-    "BGC",
-    "BHF",
-    "BIIB",
-    "BILL",
-    "BIO",
-    "BJ",
-    "BK",
-    "BKD",
-    "BKE",
-    "BKH",
-    "BKNG",
-    "BKR",
-    "BKU",
-    "BKV",
-    "BL",
-    "BLD",
-    "BLDR",
-    "BLK",
-    "BLKB",
-    "BLLN",
-    "BLTE",
-    "BMI",
-    "BMRN",
-    "BMY",
-    "BNL",
-    "BOH",
-    "BOKF",
-    "BOOT",
-    "BOX",
-    "BPOP",
-    "BR",
-    "BRBR",
-    "BRC",
-    "BRK/A",
-    "BRK/B",
-    "BRKR",
-    "BRKRP",
-    "BRO",
-    "BROS",
-    "BRSL",
-    "BRX",
-    "BRZE",
-    "BSM",
-    "BSX",
-    "BSY",
-    "BTSG",
-    "BTSGU",
-    "BTU",
-    "BULL",
-    "BURL",
-    "BUSE",
-    "BUSEP",
-    "BWA",
-    "BWIN",
-    "BWNB",
-    "BWXT",
-    "BX",
-    "BXMT",
-    "BXP",
-    "BYD",
-    "C",
-    "CACC",
-    "CACI",
-    "CADE",
-    "CAG",
-    "CAH",
-    "CAI",
-    "CAKE",
-    "CALM",
-    "CALX",
-    "CAR",
-    "CARG",
-    "CARR",
-    "CART",
-    "CASY",
-    "CAT",
-    "CATY",
-    "CAVA",
-    "CBC",
-    "CBRE",
-    "CBSH",
-    "CBT",
-    "CBU",
-    "CBZ",
-    "CCC",
-    "CCI",
-    "CCK",
-    "CCL",
-    "CCZ",
-    "CDE",
-    "CDNS",
-    "CDP",
-    "CDTX",
-    "CDW",
-    "CE",
-    "CECO",
-    "CEG",
-    "CELC",
-    "CELH",
-    "CENT",
-    "CENX",
-    "CF",
-    "CFG",
-    "CFLT",
-    "CFR",
-    "CG",
-    "CGABL",
-    "CGNX",
-    "CGON",
-    "CHD",
-    "CHDN",
-    "CHE",
-    "CHEF",
-    "CHH",
-    "CHRD",
-    "CHRW",
-    "CHTR",
-    "CHWY",
-    "CHYM",
-    "CI",
-    "CIEN",
-    "CIFR",
-    "CII",
-    "CIMN",
-    "CINF",
-    "CIVI",
-    "CL",
-    "CLF",
-    "CLH",
-    "CLSK",
-    "CLX",
-    "CMA",
-    "CMC",
-    "CMCSA",
-    "CME",
-    "CMG",
-    "CMI",
-    "CMPO",
-    "CMS",
-    "CMSA",
-    "CMSC",
-    "CMSD",
-    "CNA",
-    "CNC",
-    "CNK",
-    "CNM",
-    "CNO",
-    "CNP",
-    "CNR",
-    "CNS",
-    "CNX",
-    "CNXC",
-    "COCO",
-    "COF",
-    "COGT",
-    "COHR",
-    "COIN",
-    "COKE",
-    "COLB",
-    "COLD",
-    "COLM",
-    "COMM",
-    "COMP",
-    "CON",
-    "COO",
-    "COP",
-    "COR",
-    "CORT",
-    "CORZ",
-    "CORZW",
-    "CORZZ",
-    "COST",
-    "COTY",
-    "CPAY",
-    "CPB",
-    "CPK",
-    "CPNG",
-    "CPRT",
-    "CPRX",
-    "CPT",
-    "CQP",
-    "CR",
-    "CRBG",
-    "CRC",
-    "CRCL",
-    "CRDO",
-    "CRGY",
-    "CRK",
-    "CRL",
-    "CRM",
-    "CRNX",
-    "CROX",
-    "CRS",
-    "CRUS",
-    "CRVL",
-    "CRWD",
-    "CRWV",
-    "CSCO",
-    "CSGP",
-    "CSGS",
-    "CSL",
-    "CSQ",
-    "CSW",
-    "CSX",
-    "CTAS",
-    "CTRA",
-    "CTRE",
-    "CTRI",
-    "CTSH",
-    "CTVA",
-    "CUBE",
-    "CUBI",
-    "CUK",
-    "CURB",
-    "CUZ",
-    "CVBF",
-    "CVCO",
-    "CVI",
-    "CVLT",
-    "CVNA",
-    "CVS",
-    "CVX",
-    "CW",
-    "CWAN",
-    "CWEN",
-    "CWST",
-    "CWT",
-    "CXT",
-    "CYTK",
-    "CZR",
-    "D",
-    "DAL",
-    "DAN",
-    "DAR",
-    "DASH",
-    "DAVE",
-    "DAY",
-    "DBD",
-    "DBRG",
-    "DBX",
-    "DCI",
-    "DD",
-    "DDOG",
-    "DDS",
-    "DE",
-    "DECK",
-    "DELL",
-    "DG",
-    "DGX",
-    "DHCNI",
-    "DHCNL",
-    "DHI",
-    "DHR",
-    "DINO",
-    "DIOD",
-    "DIS",
-    "DJT",
-    "DK",
-    "DKL",
-    "DKNG",
-    "DKS",
-    "DLB",
-    "DLR",
-    "DLTR",
-    "DNLI",
-    "DOC",
-    "DOCN",
-    "DOCS",
-    "DOCU",
-    "DORM",
-    "DOV",
-    "DOW",
-    "DPZ",
-    "DRI",
-    "DRVN",
-    "DT",
-    "DTB",
-    "DTE",
-    "DTG",
-    "DTM",
-    "DTW",
-    "DUK",
-    "DUKB",
-    "DUOL",
-    "DVA",
-    "DVN",
-    "DX",
-    "DXC",
-    "DXCM",
-    "DY",
-    "DYN",
-    "EA",
-    "EAI",
-    "EAT",
-    "EBAY",
-    "EBC",
-    "ECCF",
-    "ECG",
-    "ECL",
-    "ED",
-    "EE",
-    "EEFT",
-    "EFSC",
-    "EFX",
-    "EHC",
-    "EIX",
-    "EL",
-    "ELAN",
-    "ELC",
-    "ELF",
-    "ELS",
-    "ELV",
-    "EME",
-    "EMN",
-    "EMP",
-    "EMR",
-    "ENJ",
-    "ENO",
-    "ENPH",
-    "ENS",
-    "ENSG",
-    "ENTG",
-    "ENVA",
-    "EOG",
-    "EOSE",
-    "EPAC",
-    "EPAM",
-    "EPD",
-    "EPR",
-    "EPRT",
-    "EQH",
-    "EQIX",
-    "EQR",
-    "EQT",
-    "ERIE",
-    "ES",
-    "ESAB",
-    "ESE",
-    "ESI",
-    "ESS",
-    "ESTC",
-    "ET",
-    "ETR",
-    "ETSY",
-    "EVCM",
-    "EVR",
-    "EVRG",
-    "EW",
-    "EWBC",
-    "EWTX",
-    "EXAS",
-    "EXC",
-    "EXE",
-    "EXEEL",
-    "EXEL",
-    "EXLS",
-    "EXP",
-    "EXPD",
-    "EXPE",
-    "EXPO",
-    "EXR",
-    "EXTR",
-    "EYE",
-    "F",
-    "FA",
-    "FAF",
-    "FANG",
-    "FAST",
-    "FBIN",
-    "FBK",
-    "FBNC",
-    "FCFS",
-    "FCN",
-    "FCNCA",
-    "FCPT",
-    "FCX",
-    "FDX",
-    "FE",
-    "FELE",
-    "FFBC",
-    "FFIN",
-    "FFIV",
-    "FG",
-    "FGN",
-    "FHB",
-    "FHI",
-    "FHN",
-    "FIBK",
-    "FICO",
-    "FIG",
-    "FIS",
-    "FISV",
-    "FITB",
-    "FITBI",
-    "FITBO",
-    "FITBP",
-    "FIVE",
-    "FIX",
-    "FIZZ",
-    "FLG",
-    "FLNC",
-    "FLO",
-    "FLR",
-    "FLS",
-    "FLY",
-    "FNB",
-    "FND",
-    "FNF",
-    "FOLD",
-    "FORM",
-    "FOUR",
-    "FOX",
-    "FOXA",
-    "FR",
-    "FRME",
-    "FRMI",
-    "FROG",
-    "FRPT",
-    "FRSH",
-    "FRT",
-    "FSK",
-    "FSLR",
-    "FSS",
-    "FTAI",
-    "FTAIM",
-    "FTAIN",
-    "FTDR",
-    "FTNT",
-    "FTS",
-    "FTV",
-    "FUBO",
-    "FUL",
-    "FULT",
-    "FULTP",
-    "FWONA",
-    "FWONK",
-    "FYBR",
-    "GAP",
-    "GATX",
-    "GBCI",
-    "GBDC",
-    "GBTG",
-    "GCMG",
-    "GD",
-    "GDDY",
-    "GDV",
-    "GE",
-    "GEF",
-    "GEHC",
-    "GEN",
-    "GENVR",
-    "GEO",
-    "GEV",
-    "GFF",
-    "GFS",
-    "GGG",
-    "GH",
-    "GHC",
-    "GILD",
-    "GIS",
-    "GJS",
-    "GKOS",
-    "GL",
-    "GLOB",
-    "GLPI",
-    "GLW",
-    "GLXY",
-    "GM",
-    "GME",
-    "GMED",
-    "GNRC",
-    "GNTX",
-    "GNW",
-    "GOLF",
-    "GOOG",
-    "GOOGL",
-    "GPC",
-    "GPCR",
-    "GPI",
-    "GPK",
-    "GPN",
-    "GPOR",
-    "GRAL",
-    "GRBK",
-    "GS",
-    "GSAT",
-    "GSHD",
-    "GT",
-    "GTLB",
-    "GTLS",
-    "GTM",
-    "GVA",
-    "GWRE",
-    "GWW",
-    "GXO",
-    "H",
-    "HAE",
-    "HAL",
-    "HALO",
-    "HAS",
-    "HASI",
-    "HAYW",
-    "HBAN",
-    "HBANL",
-    "HBANM",
-    "HBANP",
-    "HCA",
-    "HCC",
-    "HCI",
-    "HCXY",
-    "HD",
-    "HE",
-    "HEI",
-    "HESM",
-    "HGTY",
-    "HGV",
-    "HHH",
-    "HI",
-    "HIG",
-    "HII",
-    "HIMS",
-    "HIW",
-    "HL",
-    "HLI",
-    "HLNE",
-    "HLT",
-    "HNGE",
-    "HOG",
-    "HOLX",
-    "HOMB",
-    "HON",
-    "HOOD",
-    "HP",
-    "HPE",
-    "HPQ",
-    "HQY",
-    "HR",
-    "HRB",
-    "HRI",
-    "HRL",
-    "HRMY",
-    "HSIC",
-    "HST",
-    "HSY",
-    "HTFL",
-    "HTGC",
-    "HTH",
-    "HUBB",
-    "HUBG",
-    "HUBS",
-    "HUM",
-    "HURN",
-    "HUT",
-    "HWC",
-    "HWKN",
-    "HWM",
-    "HXL",
-    "IAC",
-    "IBKR",
-    "IBM",
-    "IBOC",
-    "IBP",
-    "IBRX",
-    "ICE",
-    "ICUI",
-    "IDA",
-    "IDCC",
-    "IDXX",
-    "IDYA",
-    "IEP",
-    "IESC",
-    "IEX",
-    "IFF",
-    "ILMN",
-    "IMNM",
-    "IMVT",
-    "INCY",
-    "INDB",
-    "INGM",
-    "INGR",
-    "INSM",
-    "INSP",
-    "INSW",
-    "INTA",
-    "INTC",
-    "INTU",
-    "INVH",
-    "IONQ",
-    "IONS",
-    "IOT",
-    "IP",
-    "IPAR",
-    "IPGP",
-    "IQV",
-    "IR",
-    "IRM",
-    "IRON",
-    "IRT",
-    "IRTC",
-    "ISRG",
-    "IT",
-    "ITGR",
-    "ITRI",
-    "ITT",
-    "ITW",
-    "IVT",
-    "IVZ",
-    "J",
-    "JBHT",
-    "JBL",
-    "JBTM",
-    "JEF",
-    "JKHY",
-    "JLL",
-    "JNJ",
-    "JOBY",
-    "JOE",
-    "JPM",
-    "JXN",
-    "KAI",
-    "KAR",
-    "KBH",
-    "KBR",
-    "KD",
-    "KDP",
-    "KEX",
-    "KEY",
-    "KEYS",
-    "KFY",
-    "KGS",
-    "KHC",
-    "KIM",
-    "KKR",
-    "KKRS",
-    "KLAC",
-    "KMB",
-    "KMI",
-    "KMPR",
-    "KMT",
-    "KMX",
-    "KNF",
-    "KNSA",
-    "KNSL",
-    "KNTK",
-    "KNX",
-    "KO",
-    "KR",
-    "KRC",
-    "KRG",
-    "KRMN",
-    "KRYS",
-    "KSS",
-    "KTB",
-    "KTOS",
-    "KVUE",
-    "KVYO",
-    "KWR",
-    "KYMR",
-    "L",
-    "LAD",
-    "LAMR",
-    "LAUR",
-    "LBRDA",
-    "LBRDK",
-    "LBRDP",
-    "LBRT",
-    "LC",
-    "LCID",
-    "LCII",
-    "LDOS",
-    "LEA",
-    "LECO",
-    "LEGN",
-    "LEN",
-    "LEU",
-    "LEVI",
-    "LFST",
-    "LFUS",
-    "LGN",
-    "LGND",
-    "LH",
-    "LHX",
-    "LIF",
-    "LII",
-    "LIN",
-    "LINE",
-    "LITE",
-    "LKQ",
-    "LLY",
-    "LLYVA",
-    "LLYVK",
-    "LMND",
-    "LMT",
-    "LNC",
-    "LNG",
-    "LNT",
-    "LNTH",
-    "LOAR",
-    "LOGI",
-    "LOPE",
-    "LOW",
-    "LPLA",
-    "LPX",
-    "LQDA",
-    "LRCX",
-    "LRN",
-    "LSCC",
-    "LSTR",
-    "LTH",
-    "LUMN",
-    "LUNR",
-    "LUV",
-    "LVS",
-    "LW",
-    "LXP",
-    "LYFT",
-    "LYV",
-    "M",
-    "MA",
-    "MAA",
-    "MAC",
-    "MAIN",
-    "MANH",
-    "MAR",
-    "MARA",
-    "MAS",
-    "MASI",
-    "MAT",
-    "MATX",
-    "MC",
-    "MCD",
-    "MCHB",
-    "MCHP",
-    "MCHPP",
-    "MCK",
-    "MCO",
-    "MCY",
-    "MDB",
-    "MDGL",
-    "MDLZ",
-    "MDT",
-    "MDU",
-    "MEDP",
-    "MET",
-    "META",
-    "MFAN",
-    "MFAO",
-    "MFICL",
-    "MGEE",
-    "MGM",
-    "MGNI",
-    "MGRC",
-    "MGY",
-    "MHK",
-    "MHO",
-    "MIDD",
-    "MIR",
-    "MIRM",
-    "MKC",
-    "MKL",
-    "MKSI",
-    "MKTX",
-    "MLI",
-    "MLM",
-    "MLYS",
-    "MMC",
-    "MMM",
-    "MMS",
-    "MMSI",
-    "MNST",
-    "MO",
-    "MOD",
-    "MODG",
-    "MOH",
-    "MORN",
-    "MOS",
-    "MP",
-    "MPC",
-    "MPLX",
-    "MPW",
-    "MPWR",
-    "MQ",
-    "MRCY",
-    "MRK",
-    "MRNA",
-    "MRP",
-    "MRVL",
-    "MS",
-    "MSA",
-    "MSCI",
-    "MSFT",
-    "MSGE",
-    "MSGS",
-    "MSI",
-    "MSM",
-    "MSTR",
-    "MTB",
-    "MTCH",
-    "MTDR",
-    "MTG",
-    "MTH",
-    "MTN",
-    "MTRN",
-    "MTSI",
-    "MTZ",
-    "MU",
-    "MUR",
-    "MUSA",
-    "MWA",
-    "MYRG",
-    "MZTI",
-    "NAN",
-    "NATL",
-    "NAVN",
-    "NBIX",
-    "NBTB",
-    "NCLH",
-    "NCNO",
-    "NDAQ",
-    "NDSN",
-    "NE",
-    "NEE",
-    "NEM",
-    "NET",
-    "NEU",
-    "NFG",
-    "NFLX",
-    "NGVT",
-    "NHI",
-    "NI",
-    "NIO",
-    "NJR",
-    "NKE",
-    "NLY",
-    "NMFCZ",
-    "NMIH",
-    "NMRK",
-    "NN",
-    "NNI",
-    "NNN",
-    "NOC",
-    "NOG",
-    "NOV",
-    "NOVT",
-    "NOW",
-    "NPO",
-    "NRG",
-    "NSA",
-    "NSC",
-    "NSIT",
-    "NTAP",
-    "NTNX",
-    "NTRA",
-    "NTRS",
-    "NTRSO",
-    "NTSK",
-    "NUE",
-    "NUVB",
-    "NUVL",
-    "NVDA",
-    "NVR",
-    "NVST",
-    "NWE",
-    "NWS",
-    "NWSA",
-    "NXST",
-    "NXT",
-    "NYT",
-    "O",
-    "OC",
-    "OCUL",
-    "ODFL",
-    "OGE",
-    "OGS",
-    "OHI",
-    "OI",
-    "OII",
-    "OKE",
-    "OKLO",
-    "OKTA",
-    "OLED",
-    "OLLI",
-    "OLMA",
-    "OLN",
-    "OMC",
-    "OMF",
-    "ON",
-    "ONB",
-    "ONBPO",
-    "ONBPP",
-    "ONDS",
-    "ONTO",
-    "OPCH",
-    "OPEN",
-    "ORA",
-    "ORCL",
-    "ORI",
-    "ORLY",
-    "OS",
-    "OSCR",
-    "OSIS",
-    "OSK",
-    "OTF",
-    "OTIS",
-    "OTTR",
-    "OUT",
-    "OWL",
-    "OXLC",
-    "OXLCL",
-    "OXLCN",
-    "OXLCO",
-    "OXLCP",
-    "OXLCZ",
-    "OXY",
-    "OZK",
-    "PAA",
-    "PACS",
-    "PAG",
-    "PAGP",
-    "PANW",
-    "PARR",
-    "PATH",
-    "PATK",
-    "PAY",
-    "PAYC",
-    "PAYO",
-    "PAYX",
-    "PB",
-    "PBF",
-    "PBH",
-    "PCAR",
-    "PCG",
-    "PCH",
-    "PCOR",
-    "PCTY",
-    "PCVX",
-    "PDI",
-    "PECO",
-    "PEG",
-    "PEGA",
-    "PEN",
-    "PEP",
-    "PFE",
-    "PFG",
-    "PFGC",
-    "PFH",
-    "PFS",
-    "PFSI",
-    "PG",
-    "PGNY",
-    "PGR",
-    "PH",
-    "PHIN",
-    "PHM",
-    "PI",
-    "PII",
-    "PINS",
-    "PIPR",
-    "PJT",
-    "PK",
-    "PKG",
-    "PL",
-    "PLAB",
-    "PLD",
-    "PLMR",
-    "PLNT",
-    "PLTR",
-    "PLUG",
-    "PLUS",
-    "PLXS",
-    "PM",
-    "PMTU",
-    "PNC",
-    "PNFP",
-    "PNW",
-    "PODD",
-    "POOL",
-    "POR",
-    "POST",
-    "POWI",
-    "POWL",
-    "POWWP",
-    "PPC",
-    "PPG",
-    "PPL",
-    "PR",
-    "PRAX",
-    "PRCT",
-    "PRH",
-    "PRI",
-    "PRIM",
-    "PRMB",
-    "PRS",
-    "PRU",
-    "PRVA",
-    "PSA",
-    "PSKY",
-    "PSMT",
-    "PSN",
-    "PSTG",
-    "PSX",
-    "PTC",
-    "PTCT",
-    "PTEN",
-    "PTGX",
-    "PTON",
-    "PVH",
-    "PWR",
-    "PYPL",
-    "Q",
-    "QCOM",
-    "QLYS",
-    "QRVO",
-    "QS",
-    "QTWO",
-    "QUBT",
-    "QXO",
-    "R",
-    "RAL",
-    "RARE",
-    "RBC",
-    "RBLX",
-    "RBRK",
-    "RCB",
-    "RCC",
-    "RCL",
-    "RCUS",
-    "RDDT",
-    "RDN",
-    "RDNT",
-    "REG",
-    "REGCO",
-    "REGCP",
-    "REGN",
-    "RELY",
-    "REVG",
-    "REXR",
-    "REYN",
-    "REZI",
-    "RF",
-    "RGA",
-    "RGEN",
-    "RGLD",
-    "RGTI",
-    "RGTIW",
-    "RH",
-    "RHI",
-    "RHP",
-    "RIOT",
-    "RITM",
-    "RIVN",
-    "RJF",
-    "RKLB",
-    "RKT",
-    "RL",
-    "RLI",
-    "RMBS",
-    "RMD",
-    "RNA",
-    "RNG",
-    "RNST",
-    "ROAD",
-    "ROK",
-    "ROKU",
-    "ROL",
-    "ROP",
-    "ROST",
-    "RPM",
-    "RPRX",
-    "RRC",
-    "RRR",
-    "RRX",
-    "RS",
-    "RSG",
-    "RSI",
-    "RTO",
-    "RTX",
-    "RUM",
-    "RUN",
-    "RUSHA",
-    "RUSHB",
-    "RVMD",
-    "RVTY",
-    "RWTN",
-    "RWTO",
-    "RXO",
-    "RXRX",
-    "RYAN",
-    "RYN",
-    "RYTM",
-    "S",
-    "SAH",
-    "SAIA",
-    "SAIC",
-    "SAIL",
-    "SAM",
-    "SANM",
-    "SARO",
-    "SATA",
-    "SATS",
-    "SBAC",
-    "SBCF",
-    "SBRA",
-    "SBUX",
-    "SCCO",
-    "SCHW",
-    "SCI",
-    "SE",
-    "SEE",
-    "SEI",
-    "SEIC",
-    "SEZL",
-    "SF",
-    "SFB",
-    "SFBS",
-    "SFD",
-    "SFM",
-    "SFNC",
-    "SGI",
-    "SHAK",
-    "SHC",
-    "SHOO",
-    "SHW",
-    "SIGI",
-    "SIRI",
-    "SITE",
-    "SITM",
-    "SJM",
-    "SKT",
-    "SKY",
-    "SKYW",
-    "SLAB",
-    "SLDE",
-    "SLG",
-    "SLGN",
-    "SLM",
-    "SLMBP",
-    "SLNO",
-    "SLVM",
-    "SM",
-    "SMCI",
-    "SMG",
-    "SMMT",
-    "SMR",
-    "SMTC",
-    "SN",
-    "SNA",
-    "SNAP",
-    "SNDK",
-    "SNDR",
-    "SNEX",
-    "SNOW",
-    "SNPS",
-    "SNV",
-    "SNX",
-    "SO",
-    "SOFI",
-    "SOJC",
-    "SOJD",
-    "SOJE",
-    "SOLS",
-    "SOLV",
-    "SOMN",
-    "SON",
-    "SONO",
-    "SOUN",
-    "SPG",
-    "SPGI",
-    "SPHR",
-    "SPSC",
-    "SPXC",
-    "SR",
-    "SRE",
-    "SREA",
-    "SRPT",
-    "SRRK",
-    "SSB",
-    "SSD",
-    "SSNC",
-    "STAG",
-    "STC",
-    "STE",
-    "STEP",
-    "STLD",
-    "STRC",
-    "STRD",
-    "STRF",
-    "STRK",
-    "STRL",
-    "STT",
-    "STWD",
-    "STZ",
-    "SUI",
-    "SUN",
-    "SUPN",
-    "SWK",
-    "SWKS",
-    "SWX",
-    "SXI",
-    "SXT",
-    "SYBT",
-    "SYF",
-    "SYK",
-    "SYM",
-    "SYNA",
-    "SYRE",
-    "SYY",
-    "T",
-    "TARS",
-    "TBB",
-    "TBBK",
-    "TCBI",
-    "TDC",
-    "TDG",
-    "TDS",
-    "TDW",
-    "TDY",
-    "TECH",
-    "TEM",
-    "TENB",
-    "TER",
-    "TERN",
-    "TEX",
-    "TFC",
-    "TFSL",
-    "TFX",
-    "TGNA",
-    "TGT",
-    "TGTX",
-    "THC",
-    "THG",
-    "THO",
-    "TIC",
-    "TJX",
-    "TKO",
-    "TKR",
-    "TLN",
-    "TMDX",
-    "TME",
-    "TMHC",
-    "TMO",
-    "TMUS",
-    "TNET",
-    "TNL",
-    "TOL",
-    "TOST",
-    "TOWN",
-    "TPB",
-    "TPC",
-    "TPG",
-    "TPGXL",
-    "TPH",
-    "TPL",
-    "TPR",
-    "TR",
-    "TREX",
-    "TRGP",
-    "TRI",
-    "TRMB",
-    "TRMK",
-    "TRN",
-    "TRNO",
-    "TROW",
-    "TRU",
-    "TRV",
-    "TSCO",
-    "TSLA",
-    "TSN",
-    "TTAN",
-    "TTC",
-    "TTD",
-    "TTEK",
-    "TTMI",
-    "TTWO",
-    "TVTX",
-    "TW",
-    "TWLO",
-    "TXN",
-    "TXNM",
-    "TXRH",
-    "TXT",
-    "TYL",
-    "U",
-    "UAL",
-    "UBER",
-    "UBSI",
-    "UCB",
-    "UDR",
-    "UE",
-    "UFPI",
-    "UGI",
-    "UHAL",
-    "UHS",
-    "UI",
-    "ULS",
-    "ULTA",
-    "UMBF",
-    "UMBFO",
-    "UNF",
-    "UNH",
-    "UNM",
-    "UNMA",
-    "UNP",
-    "UPS",
-    "UPST",
-    "UPWK",
-    "URBN",
-    "URI",
-    "USAC",
-    "USB",
-    "USFD",
-    "USLM",
-    "UTHR",
-    "UWMC",
-    "V",
-    "VAC",
-    "VAL",
-    "VC",
-    "VCTR",
-    "VCYT",
-    "VEEV",
-    "VERA",
-    "VERX",
-    "VFC",
-    "VG",
-    "VIAV",
-    "VICI",
-    "VICR",
-    "VIK",
-    "VIRT",
-    "VKTX",
-    "VLO",
-    "VLTO",
-    "VLY",
-    "VLYPN",
-    "VLYPO",
-    "VLYPP",
-    "VMC",
-    "VMI",
-    "VNO",
-    "VNOM",
-    "VNT",
-    "VOYA",
-    "VRDN",
-    "VRNS",
-    "VRRM",
-    "VRSK",
-    "VRSN",
-    "VRT",
-    "VRTX",
-    "VSAT",
-    "VSCO",
-    "VSEC",
-    "VSH",
-    "VST",
-    "VTR",
-    "VTRS",
-    "VVV",
-    "W",
-    "WAB",
-    "WAFD",
-    "WAL",
-    "WAT",
-    "WAY",
-    "WBD",
-    "WBS",
-    "WCC",
-    "WD",
-    "WDAY",
-    "WDC",
-    "WDFC",
-    "WEC",
-    "WELL",
-    "WES",
-    "WEX",
-    "WFC",
-    "WFRD",
-    "WGS",
-    "WH",
-    "WHD",
-    "WHR",
-    "WING",
-    "WK",
-    "WLK",
-    "WM",
-    "WMB",
-    "WMG",
-    "WMS",
-    "WMT",
-    "WOR",
-    "WPC",
-    "WRB",
-    "WRBY",
-    "WSBC",
-    "WSBCO",
-    "WSC",
-    "WSFS",
-    "WSM",
-    "WSO",
-    "WST",
-    "WTFC",
-    "WTM",
-    "WTRG",
-    "WTS",
-    "WU",
-    "WULF",
-    "WWD",
-    "WY",
-    "WYNN",
-    "XEL",
-    "XMTR",
-    "XOM",
-    "XPO",
-    "XRAY",
-    "XYL",
-    "XYZ",
-    "YETI",
-    "YOU",
-    "YUM",
-    "YUMC",
-    "Z",
-    "ZBH",
-    "ZBRA",
-    "ZETA",
-    "ZG",
-    "ZION",
-    "ZIONP",
-    "ZM",
-    "ZS",
-    "ZTS",
-    "ZWS"
+    {
+        "Symbol": "A",
+        "Market Cap": 39860160036
+    },
+    {
+        "Symbol": "AA",
+        "Market Cap": 11780273816
+    },
+    {
+        "Symbol": "AAL",
+        "Market Cap": 10119125968
+    },
+    {
+        "Symbol": "AAOI",
+        "Market Cap": 2041524668
+    },
+    {
+        "Symbol": "AAON",
+        "Market Cap": 6271944676
+    },
+    {
+        "Symbol": "AAP",
+        "Market Cap": 2728611258
+    },
+    {
+        "Symbol": "AAPL",
+        "Market Cap": 4050346120830
+    },
+    {
+        "Symbol": "AB",
+        "Market Cap": 3632450580
+    },
+    {
+        "Symbol": "ABBV",
+        "Market Cap": 401991634548
+    },
+    {
+        "Symbol": "ABCB",
+        "Market Cap": 5373669227
+    },
+    {
+        "Symbol": "ABG",
+        "Market Cap": 4712974476
+    },
+    {
+        "Symbol": "ABM",
+        "Market Cap": 2889015166
+    },
+    {
+        "Symbol": "ABNB",
+        "Market Cap": 81135613338
+    },
+    {
+        "Symbol": "ABT",
+        "Market Cap": 223392879031
+    },
+    {
+        "Symbol": "ACA",
+        "Market Cap": 5384162845
+    },
+    {
+        "Symbol": "ACAD",
+        "Market Cap": 4611896331
+    },
+    {
+        "Symbol": "ACHR",
+        "Market Cap": 5111540174
+    },
+    {
+        "Symbol": "ACI",
+        "Market Cap": 9519499495
+    },
+    {
+        "Symbol": "ACIW",
+        "Market Cap": 4811117240
+    },
+    {
+        "Symbol": "ACLS",
+        "Market Cap": 2705030419
+    },
+    {
+        "Symbol": "ACLX",
+        "Market Cap": 3951615004
+    },
+    {
+        "Symbol": "ACM",
+        "Market Cap": 12914393203
+    },
+    {
+        "Symbol": "ACMR",
+        "Market Cap": 2447788496
+    },
+    {
+        "Symbol": "ACT",
+        "Market Cap": 5814817537
+    },
+    {
+        "Symbol": "AD",
+        "Market Cap": 4234464000
+    },
+    {
+        "Symbol": "ADAMI",
+        "Market Cap": 2259051458
+    },
+    {
+        "Symbol": "ADAML",
+        "Market Cap": 2075272692
+    },
+    {
+        "Symbol": "ADAMM",
+        "Market Cap": 2266725178
+    },
+    {
+        "Symbol": "ADAMN",
+        "Market Cap": 2011605710
+    },
+    {
+        "Symbol": "ADBE",
+        "Market Cap": 146991390000
+    },
+    {
+        "Symbol": "ADC",
+        "Market Cap": 8258035922
+    },
+    {
+        "Symbol": "ADI",
+        "Market Cap": 137318594963
+    },
+    {
+        "Symbol": "ADM",
+        "Market Cap": 28930298047
+    },
+    {
+        "Symbol": "ADMA",
+        "Market Cap": 4695695903
+    },
+    {
+        "Symbol": "ADP",
+        "Market Cap": 107158694723
+    },
+    {
+        "Symbol": "ADPT",
+        "Market Cap": 2395316800
+    },
+    {
+        "Symbol": "ADSK",
+        "Market Cap": 62393720000
+    },
+    {
+        "Symbol": "ADT",
+        "Market Cap": 6713856808
+    },
+    {
+        "Symbol": "ADUS",
+        "Market Cap": 2128163823
+    },
+    {
+        "Symbol": "AEE",
+        "Market Cap": 26743832345
+    },
+    {
+        "Symbol": "AEIS",
+        "Market Cap": 8185864199
+    },
+    {
+        "Symbol": "AEO",
+        "Market Cap": 4578519282
+    },
+    {
+        "Symbol": "AEP",
+        "Market Cap": 61967698744
+    },
+    {
+        "Symbol": "AES",
+        "Market Cap": 9869996284
+    },
+    {
+        "Symbol": "AFG",
+        "Market Cap": 11463820971
+    },
+    {
+        "Symbol": "AFL",
+        "Market Cap": 58438701746
+    },
+    {
+        "Symbol": "AFRM",
+        "Market Cap": 21672635071
+    },
+    {
+        "Symbol": "AGCO",
+        "Market Cap": 8083970905
+    },
+    {
+        "Symbol": "AGNC",
+        "Market Cap": 11113421365
+    },
+    {
+        "Symbol": "AGNCL",
+        "Market Cap": 26764465547
+    },
+    {
+        "Symbol": "AGNCM",
+        "Market Cap": 26560647973
+    },
+    {
+        "Symbol": "AGNCN",
+        "Market Cap": 27405418178
+    },
+    {
+        "Symbol": "AGNCO",
+        "Market Cap": 27193555175
+    },
+    {
+        "Symbol": "AGNCP",
+        "Market Cap": 26871737954
+    },
+    {
+        "Symbol": "AGNCZ",
+        "Market Cap": 27676281006
+    },
+    {
+        "Symbol": "AGX",
+        "Market Cap": 4405917548
+    },
+    {
+        "Symbol": "AGYS",
+        "Market Cap": 3426233627
+    },
+    {
+        "Symbol": "AHR",
+        "Market Cap": 8886286510
+    },
+    {
+        "Symbol": "AI",
+        "Market Cap": 2062035567
+    },
+    {
+        "Symbol": "AIG",
+        "Market Cap": 46565413460
+    },
+    {
+        "Symbol": "AIR",
+        "Market Cap": 2986864131
+    },
+    {
+        "Symbol": "AIT",
+        "Market Cap": 9799490197
+    },
+    {
+        "Symbol": "AIZ",
+        "Market Cap": 11681919719
+    },
+    {
+        "Symbol": "AJG",
+        "Market Cap": 65789592000
+    },
+    {
+        "Symbol": "AKAM",
+        "Market Cap": 12448658958
+    },
+    {
+        "Symbol": "AKR",
+        "Market Cap": 2644278712
+    },
+    {
+        "Symbol": "AL",
+        "Market Cap": 7180903306
+    },
+    {
+        "Symbol": "ALAB",
+        "Market Cap": 24264693475
+    },
+    {
+        "Symbol": "ALB",
+        "Market Cap": 15561968739
+    },
+    {
+        "Symbol": "ALG",
+        "Market Cap": 2156909647
+    },
+    {
+        "Symbol": "ALGM",
+        "Market Cap": 4946380882
+    },
+    {
+        "Symbol": "ALGN",
+        "Market Cap": 11675876686
+    },
+    {
+        "Symbol": "ALHC",
+        "Market Cap": 4023844932
+    },
+    {
+        "Symbol": "ALK",
+        "Market Cap": 6018649129
+    },
+    {
+        "Symbol": "ALKT",
+        "Market Cap": 2286987360
+    },
+    {
+        "Symbol": "ALL",
+        "Market Cap": 55460821194
+    },
+    {
+        "Symbol": "ALLE",
+        "Market Cap": 14028370256
+    },
+    {
+        "Symbol": "ALLY",
+        "Market Cap": 13816185796
+    },
+    {
+        "Symbol": "ALNY",
+        "Market Cap": 51722559747
+    },
+    {
+        "Symbol": "ALRM",
+        "Market Cap": 2567805926
+    },
+    {
+        "Symbol": "ALSN",
+        "Market Cap": 8274598945
+    },
+    {
+        "Symbol": "AM",
+        "Market Cap": 8572950000
+    },
+    {
+        "Symbol": "AMAT",
+        "Market Cap": 207172313235
+    },
+    {
+        "Symbol": "AMBA",
+        "Market Cap": 3177125867
+    },
+    {
+        "Symbol": "AMD",
+        "Market Cap": 337948862873
+    },
+    {
+        "Symbol": "AME",
+        "Market Cap": 46775124955
+    },
+    {
+        "Symbol": "AMG",
+        "Market Cap": 7745857396
+    },
+    {
+        "Symbol": "AMGN",
+        "Market Cap": 175173147083
+    },
+    {
+        "Symbol": "AMH",
+        "Market Cap": 11656436193
+    },
+    {
+        "Symbol": "AMKR",
+        "Market Cap": 10854263819
+    },
+    {
+        "Symbol": "AMP",
+        "Market Cap": 45662228882
+    },
+    {
+        "Symbol": "AMR",
+        "Market Cap": 2462311596
+    },
+    {
+        "Symbol": "AMRX",
+        "Market Cap": 3916961983
+    },
+    {
+        "Symbol": "AMT",
+        "Market Cap": 84388110262
+    },
+    {
+        "Symbol": "AMTM",
+        "Market Cap": 7149601065
+    },
+    {
+        "Symbol": "AMZN",
+        "Market Cap": 2379000671088
+    },
+    {
+        "Symbol": "AN",
+        "Market Cap": 7571988667
+    },
+    {
+        "Symbol": "ANET",
+        "Market Cap": 158531397462
+    },
+    {
+        "Symbol": "ANF",
+        "Market Cap": 5443291897
+    },
+    {
+        "Symbol": "AON",
+        "Market Cap": 76108577337
+    },
+    {
+        "Symbol": "AORT",
+        "Market Cap": 2149400982
+    },
+    {
+        "Symbol": "AOS",
+        "Market Cap": 9582346635
+    },
+    {
+        "Symbol": "APA",
+        "Market Cap": 8962491973
+    },
+    {
+        "Symbol": "APAM",
+        "Market Cap": 3347318819
+    },
+    {
+        "Symbol": "APD",
+        "Market Cap": 54536834947
+    },
+    {
+        "Symbol": "APG",
+        "Market Cap": 16349261558
+    },
+    {
+        "Symbol": "APGE",
+        "Market Cap": 5247676789
+    },
+    {
+        "Symbol": "APH",
+        "Market Cap": 159004810489
+    },
+    {
+        "Symbol": "APLD",
+        "Market Cap": 6417475827
+    },
+    {
+        "Symbol": "APLE",
+        "Market Cap": 2907515255
+    },
+    {
+        "Symbol": "APLS",
+        "Market Cap": 3107459354
+    },
+    {
+        "Symbol": "APO",
+        "Market Cap": 85223446394
+    },
+    {
+        "Symbol": "APOS",
+        "Market Cap": 14830672417
+    },
+    {
+        "Symbol": "APP",
+        "Market Cap": 228175387575
+    },
+    {
+        "Symbol": "APPF",
+        "Market Cap": 8065065992
+    },
+    {
+        "Symbol": "APPN",
+        "Market Cap": 2724074899
+    },
+    {
+        "Symbol": "AQN",
+        "Market Cap": 4571063986
+    },
+    {
+        "Symbol": "AQNB",
+        "Market Cap": 19592317776
+    },
+    {
+        "Symbol": "AR",
+        "Market Cap": 10751015900
+    },
+    {
+        "Symbol": "ARCC",
+        "Market Cap": 14536407246
+    },
+    {
+        "Symbol": "ARE",
+        "Market Cap": 8193636047
+    },
+    {
+        "Symbol": "ARES",
+        "Market Cap": 56443758606
+    },
+    {
+        "Symbol": "ARLP",
+        "Market Cap": 3021911405
+    },
+    {
+        "Symbol": "ARMK",
+        "Market Cap": 9891580880
+    },
+    {
+        "Symbol": "AROC",
+        "Market Cap": 4591177228
+    },
+    {
+        "Symbol": "ARQT",
+        "Market Cap": 3546148958
+    },
+    {
+        "Symbol": "ARW",
+        "Market Cap": 5844478452
+    },
+    {
+        "Symbol": "ARWR",
+        "Market Cap": 9786041455
+    },
+    {
+        "Symbol": "ASAN",
+        "Market Cap": 3352594014
+    },
+    {
+        "Symbol": "ASB",
+        "Market Cap": 4469950641
+    },
+    {
+        "Symbol": "ASBA",
+        "Market Cap": 3774029383
+    },
+    {
+        "Symbol": "ASGN",
+        "Market Cap": 2047465000
+    },
+    {
+        "Symbol": "ASH",
+        "Market Cap": 2735314701
+    },
+    {
+        "Symbol": "ASO",
+        "Market Cap": 3651467988
+    },
+    {
+        "Symbol": "ASTS",
+        "Market Cap": 24887580767
+    },
+    {
+        "Symbol": "ATEC",
+        "Market Cap": 2927924146
+    },
+    {
+        "Symbol": "ATGE",
+        "Market Cap": 3551478657
+    },
+    {
+        "Symbol": "ATI",
+        "Market Cap": 14771097224
+    },
+    {
+        "Symbol": "ATKR",
+        "Market Cap": 2179606386
+    },
+    {
+        "Symbol": "ATMU",
+        "Market Cap": 4335401956
+    },
+    {
+        "Symbol": "ATO",
+        "Market Cap": 27609137122
+    },
+    {
+        "Symbol": "ATR",
+        "Market Cap": 8027191109
+    },
+    {
+        "Symbol": "ATRC",
+        "Market Cap": 2040385188
+    },
+    {
+        "Symbol": "AUB",
+        "Market Cap": 5251793901
+    },
+    {
+        "Symbol": "AUGO",
+        "Market Cap": 3907744191
+    },
+    {
+        "Symbol": "AUR",
+        "Market Cap": 8089850738
+    },
+    {
+        "Symbol": "AVA",
+        "Market Cap": 3156409872
+    },
+    {
+        "Symbol": "AVAV",
+        "Market Cap": 11748557611
+    },
+    {
+        "Symbol": "AVB",
+        "Market Cap": 25174165272
+    },
+    {
+        "Symbol": "AVGO",
+        "Market Cap": 1604706858126
+    },
+    {
+        "Symbol": "AVNT",
+        "Market Cap": 2790859381
+    },
+    {
+        "Symbol": "AVPT",
+        "Market Cap": 2891576794
+    },
+    {
+        "Symbol": "AVT",
+        "Market Cap": 4006289495
+    },
+    {
+        "Symbol": "AVTR",
+        "Market Cap": 7690871610
+    },
+    {
+        "Symbol": "AVY",
+        "Market Cap": 14198390924
+    },
+    {
+        "Symbol": "AWI",
+        "Market Cap": 7970062162
+    },
+    {
+        "Symbol": "AWK",
+        "Market Cap": 26171923773
+    },
+    {
+        "Symbol": "AWR",
+        "Market Cap": 2863706091
+    },
+    {
+        "Symbol": "AX",
+        "Market Cap": 4871950612
+    },
+    {
+        "Symbol": "AXON",
+        "Market Cap": 43542006034
+    },
+    {
+        "Symbol": "AXP",
+        "Market Cap": 263533976888
+    },
+    {
+        "Symbol": "AXSM",
+        "Market Cap": 7372344474
+    },
+    {
+        "Symbol": "AXTA",
+        "Market Cap": 6637012689
+    },
+    {
+        "Symbol": "AYI",
+        "Market Cap": 11053425078
+    },
+    {
+        "Symbol": "AZO",
+        "Market Cap": 58026537735
+    },
+    {
+        "Symbol": "AZZ",
+        "Market Cap": 3251575131
+    },
+    {
+        "Symbol": "BA",
+        "Market Cap": 156199618674
+    },
+    {
+        "Symbol": "BAC",
+        "Market Cap": 404047078782
+    },
+    {
+        "Symbol": "BAH",
+        "Market Cap": 11143941520
+    },
+    {
+        "Symbol": "BALL",
+        "Market Cap": 13822780395
+    },
+    {
+        "Symbol": "BANC",
+        "Market Cap": 2982195710
+    },
+    {
+        "Symbol": "BANF",
+        "Market Cap": 3791762065
+    },
+    {
+        "Symbol": "BANR",
+        "Market Cap": 2281030436
+    },
+    {
+        "Symbol": "BATRA",
+        "Market Cap": 2761075282
+    },
+    {
+        "Symbol": "BATRK",
+        "Market Cap": 2534551330
+    },
+    {
+        "Symbol": "BAX",
+        "Market Cap": 10039509872
+    },
+    {
+        "Symbol": "BBAI",
+        "Market Cap": 2606210831
+    },
+    {
+        "Symbol": "BBIO",
+        "Market Cap": 14358733657
+    },
+    {
+        "Symbol": "BBT",
+        "Market Cap": 2304137323
+    },
+    {
+        "Symbol": "BBWI",
+        "Market Cap": 4037110051
+    },
+    {
+        "Symbol": "BBY",
+        "Market Cap": 15273013658
+    },
+    {
+        "Symbol": "BC",
+        "Market Cap": 4849128150
+    },
+    {
+        "Symbol": "BCC",
+        "Market Cap": 2790454689
+    },
+    {
+        "Symbol": "BCO",
+        "Market Cap": 4970504338
+    },
+    {
+        "Symbol": "BCPC",
+        "Market Cap": 5140023325
+    },
+    {
+        "Symbol": "BDC",
+        "Market Cap": 4776940404
+    },
+    {
+        "Symbol": "BDX",
+        "Market Cap": 57109397870
+    },
+    {
+        "Symbol": "BE",
+        "Market Cap": 21186633433
+    },
+    {
+        "Symbol": "BEAM",
+        "Market Cap": 2722572748
+    },
+    {
+        "Symbol": "BELFB",
+        "Market Cap": 2194075568
+    },
+    {
+        "Symbol": "BEN",
+        "Market Cap": 12305325100
+    },
+    {
+        "Symbol": "BEPC",
+        "Market Cap": 14444365401
+    },
+    {
+        "Symbol": "BFAM",
+        "Market Cap": 5888962189
+    },
+    {
+        "Symbol": "BFH",
+        "Market Cap": 3394940034
+    },
+    {
+        "Symbol": "BG",
+        "Market Cap": 17903299342
+    },
+    {
+        "Symbol": "BGC",
+        "Market Cap": 4176542943
+    },
+    {
+        "Symbol": "BHF",
+        "Market Cap": 3736139031
+    },
+    {
+        "Symbol": "BIIB",
+        "Market Cap": 25781457281
+    },
+    {
+        "Symbol": "BILL",
+        "Market Cap": 5425487518
+    },
+    {
+        "Symbol": "BIO",
+        "Market Cap": 8306091193
+    },
+    {
+        "Symbol": "BJ",
+        "Market Cap": 11964715060
+    },
+    {
+        "Symbol": "BK",
+        "Market Cap": 81561953543
+    },
+    {
+        "Symbol": "BKD",
+        "Market Cap": 2447850538
+    },
+    {
+        "Symbol": "BKE",
+        "Market Cap": 2921043345
+    },
+    {
+        "Symbol": "BKH",
+        "Market Cap": 5439367217
+    },
+    {
+        "Symbol": "BKNG",
+        "Market Cap": 175922492126
+    },
+    {
+        "Symbol": "BKR",
+        "Market Cap": 46269827327
+    },
+    {
+        "Symbol": "BKU",
+        "Market Cap": 3447541157
+    },
+    {
+        "Symbol": "BKV",
+        "Market Cap": 2560481628
+    },
+    {
+        "Symbol": "BL",
+        "Market Cap": 3398473343
+    },
+    {
+        "Symbol": "BLD",
+        "Market Cap": 12031228902
+    },
+    {
+        "Symbol": "BLDR",
+        "Market Cap": 11573363607
+    },
+    {
+        "Symbol": "BLK",
+        "Market Cap": 167898107683
+    },
+    {
+        "Symbol": "BLKB",
+        "Market Cap": 2953282211
+    },
+    {
+        "Symbol": "BLLN",
+        "Market Cap": 4423092966
+    },
+    {
+        "Symbol": "BLTE",
+        "Market Cap": 5346960214
+    },
+    {
+        "Symbol": "BMI",
+        "Market Cap": 5408589641
+    },
+    {
+        "Symbol": "BMRN",
+        "Market Cap": 10012999609
+    },
+    {
+        "Symbol": "BMY",
+        "Market Cap": 110521031836
+    },
+    {
+        "Symbol": "BNL",
+        "Market Cap": 3375614100
+    },
+    {
+        "Symbol": "BOH",
+        "Market Cap": 2770235956
+    },
+    {
+        "Symbol": "BOKF",
+        "Market Cap": 7547345177
+    },
+    {
+        "Symbol": "BOOT",
+        "Market Cap": 6257375551
+    },
+    {
+        "Symbol": "BOX",
+        "Market Cap": 4255298473
+    },
+    {
+        "Symbol": "BPOP",
+        "Market Cap": 8173003726
+    },
+    {
+        "Symbol": "BR",
+        "Market Cap": 26757458350
+    },
+    {
+        "Symbol": "BRBR",
+        "Market Cap": 3922850782
+    },
+    {
+        "Symbol": "BRC",
+        "Market Cap": 3815653437
+    },
+    {
+        "Symbol": "BRK/A",
+        "Market Cap": 1116246293309
+    },
+    {
+        "Symbol": "BRK/B",
+        "Market Cap": 1117231952047
+    },
+    {
+        "Symbol": "BRKR",
+        "Market Cap": 6939152046
+    },
+    {
+        "Symbol": "BRKRP",
+        "Market Cap": 53641301478
+    },
+    {
+        "Symbol": "BRO",
+        "Market Cap": 28109173641
+    },
+    {
+        "Symbol": "BROS",
+        "Market Cap": 9968396220
+    },
+    {
+        "Symbol": "BRSL",
+        "Market Cap": 3234526476
+    },
+    {
+        "Symbol": "BRX",
+        "Market Cap": 7980027261
+    },
+    {
+        "Symbol": "BRZE",
+        "Market Cap": 3716577294
+    },
+    {
+        "Symbol": "BSM",
+        "Market Cap": 3194688197
+    },
+    {
+        "Symbol": "BSX",
+        "Market Cap": 136666331575
+    },
+    {
+        "Symbol": "BSY",
+        "Market Cap": 12218171987
+    },
+    {
+        "Symbol": "BTSG",
+        "Market Cap": 6485468600
+    },
+    {
+        "Symbol": "BTSGU",
+        "Market Cap": 22197760715
+    },
+    {
+        "Symbol": "BTU",
+        "Market Cap": 3423040000
+    },
+    {
+        "Symbol": "BULL",
+        "Market Cap": 3977709706
+    },
+    {
+        "Symbol": "BURL",
+        "Market Cap": 16954423227
+    },
+    {
+        "Symbol": "BUSE",
+        "Market Cap": 2231444245
+    },
+    {
+        "Symbol": "BUSEP",
+        "Market Cap": 2271352087
+    },
+    {
+        "Symbol": "BWA",
+        "Market Cap": 9596815059
+    },
+    {
+        "Symbol": "BWIN",
+        "Market Cap": 2808405758
+    },
+    {
+        "Symbol": "BWNB",
+        "Market Cap": 2471834902
+    },
+    {
+        "Symbol": "BWXT",
+        "Market Cap": 15942081351
+    },
+    {
+        "Symbol": "BX",
+        "Market Cap": 111018703946
+    },
+    {
+        "Symbol": "BXMT",
+        "Market Cap": 3460140591
+    },
+    {
+        "Symbol": "BXP",
+        "Market Cap": 11349527220
+    },
+    {
+        "Symbol": "BYD",
+        "Market Cap": 6649001124
+    },
+    {
+        "Symbol": "C",
+        "Market Cap": 201829222735
+    },
+    {
+        "Symbol": "CACC",
+        "Market Cap": 5119077678
+    },
+    {
+        "Symbol": "CACI",
+        "Market Cap": 12528248251
+    },
+    {
+        "Symbol": "CADE",
+        "Market Cap": 7896531824
+    },
+    {
+        "Symbol": "CAG",
+        "Market Cap": 8581628440
+    },
+    {
+        "Symbol": "CAH",
+        "Market Cap": 47509504598
+    },
+    {
+        "Symbol": "CAI",
+        "Market Cap": 7533322844
+    },
+    {
+        "Symbol": "CAKE",
+        "Market Cap": 2504794131
+    },
+    {
+        "Symbol": "CALM",
+        "Market Cap": 4268935320
+    },
+    {
+        "Symbol": "CALX",
+        "Market Cap": 3578266777
+    },
+    {
+        "Symbol": "CAR",
+        "Market Cap": 4526685141
+    },
+    {
+        "Symbol": "CARG",
+        "Market Cap": 3680675546
+    },
+    {
+        "Symbol": "CARR",
+        "Market Cap": 44283390285
+    },
+    {
+        "Symbol": "CART",
+        "Market Cap": 11918996566
+    },
+    {
+        "Symbol": "CASY",
+        "Market Cap": 20272646996
+    },
+    {
+        "Symbol": "CAT",
+        "Market Cap": 275995646537
+    },
+    {
+        "Symbol": "CATY",
+        "Market Cap": 3430406078
+    },
+    {
+        "Symbol": "CAVA",
+        "Market Cap": 6021999350
+    },
+    {
+        "Symbol": "CBC",
+        "Market Cap": 5448420265
+    },
+    {
+        "Symbol": "CBRE",
+        "Market Cap": 47278599433
+    },
+    {
+        "Symbol": "CBSH",
+        "Market Cap": 7443956066
+    },
+    {
+        "Symbol": "CBT",
+        "Market Cap": 3634145911
+    },
+    {
+        "Symbol": "CBU",
+        "Market Cap": 3169168408
+    },
+    {
+        "Symbol": "CBZ",
+        "Market Cap": 2903948013
+    },
+    {
+        "Symbol": "CCC",
+        "Market Cap": 4853668599
+    },
+    {
+        "Symbol": "CCI",
+        "Market Cap": 38971016605
+    },
+    {
+        "Symbol": "CCK",
+        "Market Cap": 11678974268
+    },
+    {
+        "Symbol": "CCL",
+        "Market Cap": 38782312483
+    },
+    {
+        "Symbol": "CCZ",
+        "Market Cap": 223625805772
+    },
+    {
+        "Symbol": "CDE",
+        "Market Cap": 10859904216
+    },
+    {
+        "Symbol": "CDNS",
+        "Market Cap": 86676964430
+    },
+    {
+        "Symbol": "CDP",
+        "Market Cap": 3331787781
+    },
+    {
+        "Symbol": "CDTX",
+        "Market Cap": 6919805557
+    },
+    {
+        "Symbol": "CDW",
+        "Market Cap": 18862457461
+    },
+    {
+        "Symbol": "CE",
+        "Market Cap": 4652862946
+    },
+    {
+        "Symbol": "CECO",
+        "Market Cap": 2181587508
+    },
+    {
+        "Symbol": "CEG",
+        "Market Cap": 111531279171
+    },
+    {
+        "Symbol": "CELC",
+        "Market Cap": 4727997245
+    },
+    {
+        "Symbol": "CELH",
+        "Market Cap": 11292284935
+    },
+    {
+        "Symbol": "CENT",
+        "Market Cap": 2104352155
+    },
+    {
+        "Symbol": "CENX",
+        "Market Cap": 2930004407
+    },
+    {
+        "Symbol": "CF",
+        "Market Cap": 12283003215
+    },
+    {
+        "Symbol": "CFG",
+        "Market Cap": 25099173002
+    },
+    {
+        "Symbol": "CFLT",
+        "Market Cap": 10519165071
+    },
+    {
+        "Symbol": "CFR",
+        "Market Cap": 8275257291
+    },
+    {
+        "Symbol": "CG",
+        "Market Cap": 20831726091
+    },
+    {
+        "Symbol": "CGABL",
+        "Market Cap": 6366006363
+    },
+    {
+        "Symbol": "CGNX",
+        "Market Cap": 5832412105
+    },
+    {
+        "Symbol": "CGON",
+        "Market Cap": 3206480615
+    },
+    {
+        "Symbol": "CHD",
+        "Market Cap": 20413457336
+    },
+    {
+        "Symbol": "CHDN",
+        "Market Cap": 8199402772
+    },
+    {
+        "Symbol": "CHE",
+        "Market Cap": 6096836096
+    },
+    {
+        "Symbol": "CHEF",
+        "Market Cap": 2574988396
+    },
+    {
+        "Symbol": "CHH",
+        "Market Cap": 4202016441
+    },
+    {
+        "Symbol": "CHRD",
+        "Market Cap": 5415282519
+    },
+    {
+        "Symbol": "CHRW",
+        "Market Cap": 18619600625
+    },
+    {
+        "Symbol": "CHTR",
+        "Market Cap": 27113850574
+    },
+    {
+        "Symbol": "CHWY",
+        "Market Cap": 13753052046
+    },
+    {
+        "Symbol": "CHYM",
+        "Market Cap": 9222110015
+    },
+    {
+        "Symbol": "CI",
+        "Market Cap": 74033919904
+    },
+    {
+        "Symbol": "CIEN",
+        "Market Cap": 30449976612
+    },
+    {
+        "Symbol": "CIFR",
+        "Market Cap": 5823656876
+    },
+    {
+        "Symbol": "CII",
+        "Market Cap": 3470628448
+    },
+    {
+        "Symbol": "CIMN",
+        "Market Cap": 2035010688
+    },
+    {
+        "Symbol": "CINF",
+        "Market Cap": 26066012967
+    },
+    {
+        "Symbol": "CIVI",
+        "Market Cap": 2384223853
+    },
+    {
+        "Symbol": "CL",
+        "Market Cap": 64025738343
+    },
+    {
+        "Symbol": "CLF",
+        "Market Cap": 6307520217
+    },
+    {
+        "Symbol": "CLH",
+        "Market Cap": 12861577003
+    },
+    {
+        "Symbol": "CLSK",
+        "Market Cap": 3045276747
+    },
+    {
+        "Symbol": "CLX",
+        "Market Cap": 12407844152
+    },
+    {
+        "Symbol": "CMA",
+        "Market Cap": 11255404275
+    },
+    {
+        "Symbol": "CMC",
+        "Market Cap": 7908695275
+    },
+    {
+        "Symbol": "CMCSA",
+        "Market Cap": 102794263986
+    },
+    {
+        "Symbol": "CME",
+        "Market Cap": 98147195380
+    },
+    {
+        "Symbol": "CMG",
+        "Market Cap": 47522671320
+    },
+    {
+        "Symbol": "CMI",
+        "Market Cap": 71399251864
+    },
+    {
+        "Symbol": "CMPO",
+        "Market Cap": 2458836988
+    },
+    {
+        "Symbol": "CMS",
+        "Market Cap": 21533666571
+    },
+    {
+        "Symbol": "CMSA",
+        "Market Cap": 6582386787
+    },
+    {
+        "Symbol": "CMSC",
+        "Market Cap": 6974516241
+    },
+    {
+        "Symbol": "CMSD",
+        "Market Cap": 6993973046
+    },
+    {
+        "Symbol": "CNA",
+        "Market Cap": 12799822757
+    },
+    {
+        "Symbol": "CNC",
+        "Market Cap": 19881903100
+    },
+    {
+        "Symbol": "CNK",
+        "Market Cap": 2799450745
+    },
+    {
+        "Symbol": "CNM",
+        "Market Cap": 10837247288
+    },
+    {
+        "Symbol": "CNO",
+        "Market Cap": 4087805059
+    },
+    {
+        "Symbol": "CNP",
+        "Market Cap": 24939568029
+    },
+    {
+        "Symbol": "CNR",
+        "Market Cap": 4353817766
+    },
+    {
+        "Symbol": "CNS",
+        "Market Cap": 3190011614
+    },
+    {
+        "Symbol": "CNX",
+        "Market Cap": 5204540599
+    },
+    {
+        "Symbol": "CNXC",
+        "Market Cap": 2414343484
+    },
+    {
+        "Symbol": "COCO",
+        "Market Cap": 3076914380
+    },
+    {
+        "Symbol": "COF",
+        "Market Cap": 152455275815
+    },
+    {
+        "Symbol": "COGT",
+        "Market Cap": 5729231527
+    },
+    {
+        "Symbol": "COHR",
+        "Market Cap": 28044061883
+    },
+    {
+        "Symbol": "COIN",
+        "Market Cap": 67524203902
+    },
+    {
+        "Symbol": "COKE",
+        "Market Cap": 14178624915
+    },
+    {
+        "Symbol": "COLB",
+        "Market Cap": 8722367660
+    },
+    {
+        "Symbol": "COLD",
+        "Market Cap": 3643288786
+    },
+    {
+        "Symbol": "COLM",
+        "Market Cap": 3073822400
+    },
+    {
+        "Symbol": "COMM",
+        "Market Cap": 4216071894
+    },
+    {
+        "Symbol": "COMP",
+        "Market Cap": 5813519444
+    },
+    {
+        "Symbol": "CON",
+        "Market Cap": 2548023616
+    },
+    {
+        "Symbol": "COO",
+        "Market Cap": 15978088460
+    },
+    {
+        "Symbol": "COP",
+        "Market Cap": 116602374070
+    },
+    {
+        "Symbol": "COR",
+        "Market Cap": 67959783302
+    },
+    {
+        "Symbol": "CORT",
+        "Market Cap": 9182931344
+    },
+    {
+        "Symbol": "CORZ",
+        "Market Cap": 4737736664
+    },
+    {
+        "Symbol": "CORZW",
+        "Market Cap": 2796752926
+    },
+    {
+        "Symbol": "CORZZ",
+        "Market Cap": 4720683293
+    },
+    {
+        "Symbol": "COST",
+        "Market Cap": 381382271699
+    },
+    {
+        "Symbol": "COTY",
+        "Market Cap": 2868745977
+    },
+    {
+        "Symbol": "CPAY",
+        "Market Cap": 21838106761
+    },
+    {
+        "Symbol": "CPB",
+        "Market Cap": 8428255106
+    },
+    {
+        "Symbol": "CPK",
+        "Market Cap": 2999616252
+    },
+    {
+        "Symbol": "CPNG",
+        "Market Cap": 44442334600
+    },
+    {
+        "Symbol": "CPRT",
+        "Market Cap": 37433243840
+    },
+    {
+        "Symbol": "CPRX",
+        "Market Cap": 2972021518
+    },
+    {
+        "Symbol": "CPT",
+        "Market Cap": 11134271285
+    },
+    {
+        "Symbol": "CQP",
+        "Market Cap": 25930699014
+    },
+    {
+        "Symbol": "CR",
+        "Market Cap": 11048810833
+    },
+    {
+        "Symbol": "CRBG",
+        "Market Cap": 16744286157
+    },
+    {
+        "Symbol": "CRC",
+        "Market Cap": 3916881251
+    },
+    {
+        "Symbol": "CRCL",
+        "Market Cap": 17768988097
+    },
+    {
+        "Symbol": "CRDO",
+        "Market Cap": 25653316732
+    },
+    {
+        "Symbol": "CRGY",
+        "Market Cap": 2271313792
+    },
+    {
+        "Symbol": "CRK",
+        "Market Cap": 6356358742
+    },
+    {
+        "Symbol": "CRL",
+        "Market Cap": 9752045579
+    },
+    {
+        "Symbol": "CRM",
+        "Market Cap": 238541460000
+    },
+    {
+        "Symbol": "CRNX",
+        "Market Cap": 4680065549
+    },
+    {
+        "Symbol": "CROX",
+        "Market Cap": 4706673464
+    },
+    {
+        "Symbol": "CRS",
+        "Market Cap": 16122367176
+    },
+    {
+        "Symbol": "CRUS",
+        "Market Cap": 6238465055
+    },
+    {
+        "Symbol": "CRVL",
+        "Market Cap": 3628796459
+    },
+    {
+        "Symbol": "CRWD",
+        "Market Cap": 122890426547
+    },
+    {
+        "Symbol": "CRWV",
+        "Market Cap": 36053271993
+    },
+    {
+        "Symbol": "CSCO",
+        "Market Cap": 309173149555
+    },
+    {
+        "Symbol": "CSGP",
+        "Market Cap": 27018702926
+    },
+    {
+        "Symbol": "CSGS",
+        "Market Cap": 2196338831
+    },
+    {
+        "Symbol": "CSL",
+        "Market Cap": 13865355529
+    },
+    {
+        "Symbol": "CSQ",
+        "Market Cap": 2999798303
+    },
+    {
+        "Symbol": "CSW",
+        "Market Cap": 5282511152
+    },
+    {
+        "Symbol": "CSX",
+        "Market Cap": 69234252024
+    },
+    {
+        "Symbol": "CTAS",
+        "Market Cap": 75731775469
+    },
+    {
+        "Symbol": "CTRA",
+        "Market Cap": 20001388291
+    },
+    {
+        "Symbol": "CTRE",
+        "Market Cap": 8170558782
+    },
+    {
+        "Symbol": "CTRI",
+        "Market Cap": 2340337666
+    },
+    {
+        "Symbol": "CTSH",
+        "Market Cap": 40566436056
+    },
+    {
+        "Symbol": "CTVA",
+        "Market Cap": 44517224160
+    },
+    {
+        "Symbol": "CUBE",
+        "Market Cap": 8334713278
+    },
+    {
+        "Symbol": "CUBI",
+        "Market Cap": 2511353660
+    },
+    {
+        "Symbol": "CUK",
+        "Market Cap": 35758376929
+    },
+    {
+        "Symbol": "CURB",
+        "Market Cap": 2434003572
+    },
+    {
+        "Symbol": "CUZ",
+        "Market Cap": 4249527125
+    },
+    {
+        "Symbol": "CVBF",
+        "Market Cap": 2762175083
+    },
+    {
+        "Symbol": "CVCO",
+        "Market Cap": 4668738982
+    },
+    {
+        "Symbol": "CVI",
+        "Market Cap": 3113432651
+    },
+    {
+        "Symbol": "CVLT",
+        "Market Cap": 5284268342
+    },
+    {
+        "Symbol": "CVNA",
+        "Market Cap": 97441710059
+    },
+    {
+        "Symbol": "CVS",
+        "Market Cap": 101161074730
+    },
+    {
+        "Symbol": "CVX",
+        "Market Cap": 301625535231
+    },
+    {
+        "Symbol": "CW",
+        "Market Cap": 20183701856
+    },
+    {
+        "Symbol": "CWAN",
+        "Market Cap": 6230741066
+    },
+    {
+        "Symbol": "CWEN",
+        "Market Cap": 6665436877
+    },
+    {
+        "Symbol": "CWST",
+        "Market Cap": 6379193553
+    },
+    {
+        "Symbol": "CWT",
+        "Market Cap": 2610696649
+    },
+    {
+        "Symbol": "CXT",
+        "Market Cap": 2854449559
+    },
+    {
+        "Symbol": "CYTK",
+        "Market Cap": 7599987987
+    },
+    {
+        "Symbol": "CZR",
+        "Market Cap": 4900631711
+    },
+    {
+        "Symbol": "D",
+        "Market Cap": 51098170496
+    },
+    {
+        "Symbol": "DAL",
+        "Market Cap": 46536656475
+    },
+    {
+        "Symbol": "DAN",
+        "Market Cap": 2635850977
+    },
+    {
+        "Symbol": "DAR",
+        "Market Cap": 5724754308
+    },
+    {
+        "Symbol": "DASH",
+        "Market Cap": 97828043843
+    },
+    {
+        "Symbol": "DAVE",
+        "Market Cap": 2579684784
+    },
+    {
+        "Symbol": "DAY",
+        "Market Cap": 11088822586
+    },
+    {
+        "Symbol": "DBD",
+        "Market Cap": 2395567349
+    },
+    {
+        "Symbol": "DBRG",
+        "Market Cap": 2562922183
+    },
+    {
+        "Symbol": "DBX",
+        "Market Cap": 7208477483
+    },
+    {
+        "Symbol": "DCI",
+        "Market Cap": 10669796914
+    },
+    {
+        "Symbol": "DD",
+        "Market Cap": 17014587908
+    },
+    {
+        "Symbol": "DDOG",
+        "Market Cap": 49812779895
+    },
+    {
+        "Symbol": "DDS",
+        "Market Cap": 10599330358
+    },
+    {
+        "Symbol": "DE",
+        "Market Cap": 131923446590
+    },
+    {
+        "Symbol": "DECK",
+        "Market Cap": 15156005184
+    },
+    {
+        "Symbol": "DELL",
+        "Market Cap": 86487620349
+    },
+    {
+        "Symbol": "DG",
+        "Market Cap": 29260401522
+    },
+    {
+        "Symbol": "DGX",
+        "Market Cap": 20480831268
+    },
+    {
+        "Symbol": "DHCNI",
+        "Market Cap": 4031619762
+    },
+    {
+        "Symbol": "DHCNL",
+        "Market Cap": 4299589698
+    },
+    {
+        "Symbol": "DHI",
+        "Market Cap": 45698712381
+    },
+    {
+        "Symbol": "DHR",
+        "Market Cap": 161422065632
+    },
+    {
+        "Symbol": "DINO",
+        "Market Cap": 9125671839
+    },
+    {
+        "Symbol": "DIOD",
+        "Market Cap": 2344314629
+    },
+    {
+        "Symbol": "DIS",
+        "Market Cap": 197256564595
+    },
+    {
+        "Symbol": "DJT",
+        "Market Cap": 2928775273
+    },
+    {
+        "Symbol": "DK",
+        "Market Cap": 2040551771
+    },
+    {
+        "Symbol": "DKL",
+        "Market Cap": 2403409221
+    },
+    {
+        "Symbol": "DKNG",
+        "Market Cap": 17715723560
+    },
+    {
+        "Symbol": "DKS",
+        "Market Cap": 19057213669
+    },
+    {
+        "Symbol": "DLB",
+        "Market Cap": 6362602458
+    },
+    {
+        "Symbol": "DLR",
+        "Market Cap": 52517952285
+    },
+    {
+        "Symbol": "DLTR",
+        "Market Cap": 26083572539
+    },
+    {
+        "Symbol": "DNLI",
+        "Market Cap": 2701027160
+    },
+    {
+        "Symbol": "DOC",
+        "Market Cap": 11577864051
+    },
+    {
+        "Symbol": "DOCN",
+        "Market Cap": 4188510261
+    },
+    {
+        "Symbol": "DOCS",
+        "Market Cap": 8406312161
+    },
+    {
+        "Symbol": "DOCU",
+        "Market Cap": 13656598141
+    },
+    {
+        "Symbol": "DORM",
+        "Market Cap": 3909573420
+    },
+    {
+        "Symbol": "DOV",
+        "Market Cap": 27608943790
+    },
+    {
+        "Symbol": "DOW",
+        "Market Cap": 16667495342
+    },
+    {
+        "Symbol": "DPZ",
+        "Market Cap": 14781470375
+    },
+    {
+        "Symbol": "DRI",
+        "Market Cap": 21684374650
+    },
+    {
+        "Symbol": "DRVN",
+        "Market Cap": 2486547776
+    },
+    {
+        "Symbol": "DT",
+        "Market Cap": 13380049467
+    },
+    {
+        "Symbol": "DTB",
+        "Market Cap": 3612272164
+    },
+    {
+        "Symbol": "DTE",
+        "Market Cap": 26751648776
+    },
+    {
+        "Symbol": "DTG",
+        "Market Cap": 3588762447
+    },
+    {
+        "Symbol": "DTM",
+        "Market Cap": 12206971436
+    },
+    {
+        "Symbol": "DTW",
+        "Market Cap": 4494260380
+    },
+    {
+        "Symbol": "DUK",
+        "Market Cap": 90776394678
+    },
+    {
+        "Symbol": "DUKB",
+        "Market Cap": 19239338682
+    },
+    {
+        "Symbol": "DUOL",
+        "Market Cap": 8596901581
+    },
+    {
+        "Symbol": "DVA",
+        "Market Cap": 8475530000
+    },
+    {
+        "Symbol": "DVN",
+        "Market Cap": 22689441000
+    },
+    {
+        "Symbol": "DX",
+        "Market Cap": 2002648602
+    },
+    {
+        "Symbol": "DXC",
+        "Market Cap": 2685145463
+    },
+    {
+        "Symbol": "DXCM",
+        "Market Cap": 25635769559
+    },
+    {
+        "Symbol": "DY",
+        "Market Cap": 10169075551
+    },
+    {
+        "Symbol": "DYN",
+        "Market Cap": 3165621092
+    },
+    {
+        "Symbol": "EA",
+        "Market Cap": 50928411560
+    },
+    {
+        "Symbol": "EAI",
+        "Market Cap": 9467854365
+    },
+    {
+        "Symbol": "EAT",
+        "Market Cap": 6424753689
+    },
+    {
+        "Symbol": "EBAY",
+        "Market Cap": 37330680000
+    },
+    {
+        "Symbol": "EBC",
+        "Market Cap": 4106343676
+    },
+    {
+        "Symbol": "ECCF",
+        "Market Cap": 27391008352
+    },
+    {
+        "Symbol": "ECG",
+        "Market Cap": 4568658923
+    },
+    {
+        "Symbol": "ECL",
+        "Market Cap": 73955661355
+    },
+    {
+        "Symbol": "ED",
+        "Market Cap": 35873390079
+    },
+    {
+        "Symbol": "EE",
+        "Market Cap": 3057170306
+    },
+    {
+        "Symbol": "EEFT",
+        "Market Cap": 3229031501
+    },
+    {
+        "Symbol": "EFSC",
+        "Market Cap": 2099998977
+    },
+    {
+        "Symbol": "EFX",
+        "Market Cap": 26561953910
+    },
+    {
+        "Symbol": "EHC",
+        "Market Cap": 10825272965
+    },
+    {
+        "Symbol": "EIX",
+        "Market Cap": 22737067139
+    },
+    {
+        "Symbol": "EL",
+        "Market Cap": 36407195047
+    },
+    {
+        "Symbol": "ELAN",
+        "Market Cap": 10781937364
+    },
+    {
+        "Symbol": "ELC",
+        "Market Cap": 4431076331
+    },
+    {
+        "Symbol": "ELF",
+        "Market Cap": 4687449965
+    },
+    {
+        "Symbol": "ELS",
+        "Market Cap": 12156922266
+    },
+    {
+        "Symbol": "ELV",
+        "Market Cap": 80154854651
+    },
+    {
+        "Symbol": "EME",
+        "Market Cap": 27937928064
+    },
+    {
+        "Symbol": "EMN",
+        "Market Cap": 7294763710
+    },
+    {
+        "Symbol": "EMP",
+        "Market Cap": 9449990489
+    },
+    {
+        "Symbol": "EMR",
+        "Market Cap": 77112668000
+    },
+    {
+        "Symbol": "ENJ",
+        "Market Cap": 9668822972
+    },
+    {
+        "Symbol": "ENO",
+        "Market Cap": 4843268662
+    },
+    {
+        "Symbol": "ENPH",
+        "Market Cap": 4105069071
+    },
+    {
+        "Symbol": "ENS",
+        "Market Cap": 5449633783
+    },
+    {
+        "Symbol": "ENSG",
+        "Market Cap": 10257899821
+    },
+    {
+        "Symbol": "ENTG",
+        "Market Cap": 13631872000
+    },
+    {
+        "Symbol": "ENVA",
+        "Market Cap": 3978917319
+    },
+    {
+        "Symbol": "EOG",
+        "Market Cap": 57477454550
+    },
+    {
+        "Symbol": "EOSE",
+        "Market Cap": 3928745711
+    },
+    {
+        "Symbol": "EPAC",
+        "Market Cap": 2118202209
+    },
+    {
+        "Symbol": "EPAM",
+        "Market Cap": 11719168983
+    },
+    {
+        "Symbol": "EPD",
+        "Market Cap": 69896903126
+    },
+    {
+        "Symbol": "EPR",
+        "Market Cap": 3824529328
+    },
+    {
+        "Symbol": "EPRT",
+        "Market Cap": 6094926420
+    },
+    {
+        "Symbol": "EQH",
+        "Market Cap": 13839497484
+    },
+    {
+        "Symbol": "EQIX",
+        "Market Cap": 74757406998
+    },
+    {
+        "Symbol": "EQR",
+        "Market Cap": 23247005453
+    },
+    {
+        "Symbol": "EQT",
+        "Market Cap": 34429776390
+    },
+    {
+        "Symbol": "ERIE",
+        "Market Cap": 13258839734
+    },
+    {
+        "Symbol": "ES",
+        "Market Cap": 25651681844
+    },
+    {
+        "Symbol": "ESAB",
+        "Market Cap": 7009081025
+    },
+    {
+        "Symbol": "ESE",
+        "Market Cap": 5334898661
+    },
+    {
+        "Symbol": "ESI",
+        "Market Cap": 6306517759
+    },
+    {
+        "Symbol": "ESS",
+        "Market Cap": 16697386744
+    },
+    {
+        "Symbol": "ESTC",
+        "Market Cap": 7768082816
+    },
+    {
+        "Symbol": "ET",
+        "Market Cap": 56650883091
+    },
+    {
+        "Symbol": "ETR",
+        "Market Cap": 41868459750
+    },
+    {
+        "Symbol": "ETSY",
+        "Market Cap": 5244250205
+    },
+    {
+        "Symbol": "EVCM",
+        "Market Cap": 2396348183
+    },
+    {
+        "Symbol": "EVR",
+        "Market Cap": 13022550700
+    },
+    {
+        "Symbol": "EVRG",
+        "Market Cap": 17063472353
+    },
+    {
+        "Symbol": "EW",
+        "Market Cap": 48385414000
+    },
+    {
+        "Symbol": "EWBC",
+        "Market Cap": 15632476326
+    },
+    {
+        "Symbol": "EWTX",
+        "Market Cap": 2534490310
+    },
+    {
+        "Symbol": "EXAS",
+        "Market Cap": 19276809859
+    },
+    {
+        "Symbol": "EXC",
+        "Market Cap": 44321436163
+    },
+    {
+        "Symbol": "EXE",
+        "Market Cap": 26327278306
+    },
+    {
+        "Symbol": "EXEEL",
+        "Market Cap": 24078956367
+    },
+    {
+        "Symbol": "EXEL",
+        "Market Cap": 11094481057
+    },
+    {
+        "Symbol": "EXLS",
+        "Market Cap": 6589260745
+    },
+    {
+        "Symbol": "EXP",
+        "Market Cap": 7148641377
+    },
+    {
+        "Symbol": "EXPD",
+        "Market Cap": 20313552512
+    },
+    {
+        "Symbol": "EXPE",
+        "Market Cap": 34731841377
+    },
+    {
+        "Symbol": "EXPO",
+        "Market Cap": 3725328602
+    },
+    {
+        "Symbol": "EXR",
+        "Market Cap": 28292602414
+    },
+    {
+        "Symbol": "EXTR",
+        "Market Cap": 2262516665
+    },
+    {
+        "Symbol": "EYE",
+        "Market Cap": 2293632417
+    },
+    {
+        "Symbol": "F",
+        "Market Cap": 54388405426
+    },
+    {
+        "Symbol": "FA",
+        "Market Cap": 2615206669
+    },
+    {
+        "Symbol": "FAF",
+        "Market Cap": 6599044000
+    },
+    {
+        "Symbol": "FANG",
+        "Market Cap": 44142136093
+    },
+    {
+        "Symbol": "FAST",
+        "Market Cap": 48883361000
+    },
+    {
+        "Symbol": "FBIN",
+        "Market Cap": 6223166944
+    },
+    {
+        "Symbol": "FBK",
+        "Market Cap": 3145197816
+    },
+    {
+        "Symbol": "FBNC",
+        "Market Cap": 2217151142
+    },
+    {
+        "Symbol": "FCFS",
+        "Market Cap": 7264481090
+    },
+    {
+        "Symbol": "FCN",
+        "Market Cap": 5267148781
+    },
+    {
+        "Symbol": "FCNCA",
+        "Market Cap": 25802029423
+    },
+    {
+        "Symbol": "FCPT",
+        "Market Cap": 2468528443
+    },
+    {
+        "Symbol": "FCX",
+        "Market Cap": 68235424963
+    },
+    {
+        "Symbol": "FDX",
+        "Market Cap": 66357754297
+    },
+    {
+        "Symbol": "FE",
+        "Market Cap": 25769660409
+    },
+    {
+        "Symbol": "FELE",
+        "Market Cap": 4351334847
+    },
+    {
+        "Symbol": "FFBC",
+        "Market Cap": 2658331144
+    },
+    {
+        "Symbol": "FFIN",
+        "Market Cap": 4492375420
+    },
+    {
+        "Symbol": "FFIV",
+        "Market Cap": 15278149378
+    },
+    {
+        "Symbol": "FG",
+        "Market Cap": 4680721301
+    },
+    {
+        "Symbol": "FGN",
+        "Market Cap": 3215512974
+    },
+    {
+        "Symbol": "FHB",
+        "Market Cap": 3224132385
+    },
+    {
+        "Symbol": "FHI",
+        "Market Cap": 4025457866
+    },
+    {
+        "Symbol": "FHN",
+        "Market Cap": 11684512135
+    },
+    {
+        "Symbol": "FIBK",
+        "Market Cap": 3667021483
+    },
+    {
+        "Symbol": "FICO",
+        "Market Cap": 42859555533
+    },
+    {
+        "Symbol": "FIG",
+        "Market Cap": 17385357467
+    },
+    {
+        "Symbol": "FIS",
+        "Market Cap": 34494039390
+    },
+    {
+        "Symbol": "FISV",
+        "Market Cap": 37095644646
+    },
+    {
+        "Symbol": "FITB",
+        "Market Cap": 31616192911
+    },
+    {
+        "Symbol": "FITBI",
+        "Market Cap": 17087154229
+    },
+    {
+        "Symbol": "FITBO",
+        "Market Cap": 12823628319
+    },
+    {
+        "Symbol": "FITBP",
+        "Market Cap": 16360041283
+    },
+    {
+        "Symbol": "FIVE",
+        "Market Cap": 10019836061
+    },
+    {
+        "Symbol": "FIX",
+        "Market Cap": 34160178136
+    },
+    {
+        "Symbol": "FIZZ",
+        "Market Cap": 3175064579
+    },
+    {
+        "Symbol": "FLG",
+        "Market Cap": 5442244430
+    },
+    {
+        "Symbol": "FLNC",
+        "Market Cap": 3935333176
+    },
+    {
+        "Symbol": "FLO",
+        "Market Cap": 2310289782
+    },
+    {
+        "Symbol": "FLR",
+        "Market Cap": 6985649853
+    },
+    {
+        "Symbol": "FLS",
+        "Market Cap": 9129435856
+    },
+    {
+        "Symbol": "FLY",
+        "Market Cap": 3242352844
+    },
+    {
+        "Symbol": "FNB",
+        "Market Cap": 6263808837
+    },
+    {
+        "Symbol": "FND",
+        "Market Cap": 6704586222
+    },
+    {
+        "Symbol": "FNF",
+        "Market Cap": 15901337909
+    },
+    {
+        "Symbol": "FOLD",
+        "Market Cap": 3356845002
+    },
+    {
+        "Symbol": "FORM",
+        "Market Cap": 4361111877
+    },
+    {
+        "Symbol": "FOUR",
+        "Market Cap": 5859503620
+    },
+    {
+        "Symbol": "FOX",
+        "Market Cap": 28061619394
+    },
+    {
+        "Symbol": "FOXA",
+        "Market Cap": 31622040017
+    },
+    {
+        "Symbol": "FR",
+        "Market Cap": 7724190426
+    },
+    {
+        "Symbol": "FRME",
+        "Market Cap": 2254597530
+    },
+    {
+        "Symbol": "FRMI",
+        "Market Cap": 5274477997
+    },
+    {
+        "Symbol": "FROG",
+        "Market Cap": 7826393969
+    },
+    {
+        "Symbol": "FRPT",
+        "Market Cap": 3102257900
+    },
+    {
+        "Symbol": "FRSH",
+        "Market Cap": 3516187760
+    },
+    {
+        "Symbol": "FRT",
+        "Market Cap": 8705508828
+    },
+    {
+        "Symbol": "FSK",
+        "Market Cap": 4245807124
+    },
+    {
+        "Symbol": "FSLR",
+        "Market Cap": 27459080200
+    },
+    {
+        "Symbol": "FSS",
+        "Market Cap": 6691983899
+    },
+    {
+        "Symbol": "FTAI",
+        "Market Cap": 17508172568
+    },
+    {
+        "Symbol": "FTAIM",
+        "Market Cap": 2757160224
+    },
+    {
+        "Symbol": "FTAIN",
+        "Market Cap": 2597802928
+    },
+    {
+        "Symbol": "FTDR",
+        "Market Cap": 4005888204
+    },
+    {
+        "Symbol": "FTNT",
+        "Market Cap": 60622193275
+    },
+    {
+        "Symbol": "FTS",
+        "Market Cap": 26083694000
+    },
+    {
+        "Symbol": "FTV",
+        "Market Cap": 17579804053
+    },
+    {
+        "Symbol": "FUBO",
+        "Market Cap": 3316930740
+    },
+    {
+        "Symbol": "FUL",
+        "Market Cap": 3273459562
+    },
+    {
+        "Symbol": "FULT",
+        "Market Cap": 3595622498
+    },
+    {
+        "Symbol": "FULTP",
+        "Market Cap": 3489072158
+    },
+    {
+        "Symbol": "FWONA",
+        "Market Cap": 21784725127
+    },
+    {
+        "Symbol": "FWONK",
+        "Market Cap": 23715143837
+    },
+    {
+        "Symbol": "FYBR",
+        "Market Cap": 9562911600
+    },
+    {
+        "Symbol": "GAP",
+        "Market Cap": 9974941067
+    },
+    {
+        "Symbol": "GATX",
+        "Market Cap": 6058290000
+    },
+    {
+        "Symbol": "GBCI",
+        "Market Cap": 5779791871
+    },
+    {
+        "Symbol": "GBDC",
+        "Market Cap": 3601601285
+    },
+    {
+        "Symbol": "GBTG",
+        "Market Cap": 4151562235
+    },
+    {
+        "Symbol": "GCMG",
+        "Market Cap": 2268214302
+    },
+    {
+        "Symbol": "GD",
+        "Market Cap": 92027333385
+    },
+    {
+        "Symbol": "GDDY",
+        "Market Cap": 16731880753
+    },
+    {
+        "Symbol": "GDV",
+        "Market Cap": 2457636380
+    },
+    {
+        "Symbol": "GE",
+        "Market Cap": 317477890933
+    },
+    {
+        "Symbol": "GEF",
+        "Market Cap": 3330300088
+    },
+    {
+        "Symbol": "GEHC",
+        "Market Cap": 38468798444
+    },
+    {
+        "Symbol": "GEN",
+        "Market Cap": 16953525781
+    },
+    {
+        "Symbol": "GENVR",
+        "Market Cap": 3268595367
+    },
+    {
+        "Symbol": "GEO",
+        "Market Cap": 2317634196
+    },
+    {
+        "Symbol": "GEV",
+        "Market Cap": 184864194740
+    },
+    {
+        "Symbol": "GFF",
+        "Market Cap": 3552396879
+    },
+    {
+        "Symbol": "GFS",
+        "Market Cap": 20590473529
+    },
+    {
+        "Symbol": "GGG",
+        "Market Cap": 14001313265
+    },
+    {
+        "Symbol": "GH",
+        "Market Cap": 12940638608
+    },
+    {
+        "Symbol": "GHC",
+        "Market Cap": 4863665403
+    },
+    {
+        "Symbol": "GILD",
+        "Market Cap": 148608605243
+    },
+    {
+        "Symbol": "GIS",
+        "Market Cap": 25102576819
+    },
+    {
+        "Symbol": "GJS",
+        "Market Cap": 7286111421
+    },
+    {
+        "Symbol": "GKOS",
+        "Market Cap": 6417183500
+    },
+    {
+        "Symbol": "GL",
+        "Market Cap": 11196555770
+    },
+    {
+        "Symbol": "GLOB",
+        "Market Cap": 2969111065
+    },
+    {
+        "Symbol": "GLPI",
+        "Market Cap": 12460857298
+    },
+    {
+        "Symbol": "GLW",
+        "Market Cap": 75542024492
+    },
+    {
+        "Symbol": "GLXY",
+        "Market Cap": 9585577498
+    },
+    {
+        "Symbol": "GM",
+        "Market Cap": 76475969620
+    },
+    {
+        "Symbol": "GME",
+        "Market Cap": 9896529413
+    },
+    {
+        "Symbol": "GMED",
+        "Market Cap": 11577087859
+    },
+    {
+        "Symbol": "GNRC",
+        "Market Cap": 9297316576
+    },
+    {
+        "Symbol": "GNTX",
+        "Market Cap": 5178000034
+    },
+    {
+        "Symbol": "GNW",
+        "Market Cap": 3590431297
+    },
+    {
+        "Symbol": "GOLF",
+        "Market Cap": 5017890083
+    },
+    {
+        "Symbol": "GOOG",
+        "Market Cap": 3732564440000
+    },
+    {
+        "Symbol": "GOOGL",
+        "Market Cap": 3719290740000
+    },
+    {
+        "Symbol": "GPC",
+        "Market Cap": 18350066055
+    },
+    {
+        "Symbol": "GPCR",
+        "Market Cap": 4480219577
+    },
+    {
+        "Symbol": "GPI",
+        "Market Cap": 5164027760
+    },
+    {
+        "Symbol": "GPK",
+        "Market Cap": 4544895925
+    },
+    {
+        "Symbol": "GPN",
+        "Market Cap": 19325389537
+    },
+    {
+        "Symbol": "GPOR",
+        "Market Cap": 3950096317
+    },
+    {
+        "Symbol": "GRAL",
+        "Market Cap": 3548941582
+    },
+    {
+        "Symbol": "GRBK",
+        "Market Cap": 2878781676
+    },
+    {
+        "Symbol": "GS",
+        "Market Cap": 266813404100
+    },
+    {
+        "Symbol": "GSAT",
+        "Market Cap": 8758192487
+    },
+    {
+        "Symbol": "GSHD",
+        "Market Cap": 2813796900
+    },
+    {
+        "Symbol": "GT",
+        "Market Cap": 2578309790
+    },
+    {
+        "Symbol": "GTLB",
+        "Market Cap": 6498556000
+    },
+    {
+        "Symbol": "GTLS",
+        "Market Cap": 9257611141
+    },
+    {
+        "Symbol": "GTM",
+        "Market Cap": 3050490908
+    },
+    {
+        "Symbol": "GVA",
+        "Market Cap": 5050719052
+    },
+    {
+        "Symbol": "GWRE",
+        "Market Cap": 16514124746
+    },
+    {
+        "Symbol": "GWW",
+        "Market Cap": 48954895402
+    },
+    {
+        "Symbol": "GXO",
+        "Market Cap": 5992377133
+    },
+    {
+        "Symbol": "H",
+        "Market Cap": 15801795610
+    },
+    {
+        "Symbol": "HAE",
+        "Market Cap": 3763497629
+    },
+    {
+        "Symbol": "HAL",
+        "Market Cap": 23910611990
+    },
+    {
+        "Symbol": "HALO",
+        "Market Cap": 7461529650
+    },
+    {
+        "Symbol": "HAS",
+        "Market Cap": 11381332565
+    },
+    {
+        "Symbol": "HASI",
+        "Market Cap": 4145048631
+    },
+    {
+        "Symbol": "HAYW",
+        "Market Cap": 3463305927
+    },
+    {
+        "Symbol": "HBAN",
+        "Market Cap": 27937007916
+    },
+    {
+        "Symbol": "HBANL",
+        "Market Cap": 40503937069
+    },
+    {
+        "Symbol": "HBANM",
+        "Market Cap": 34645669344
+    },
+    {
+        "Symbol": "HBANP",
+        "Market Cap": 27244094530
+    },
+    {
+        "Symbol": "HCA",
+        "Market Cap": 108843926422
+    },
+    {
+        "Symbol": "HCC",
+        "Market Cap": 4390133728
+    },
+    {
+        "Symbol": "HCI",
+        "Market Cap": 2422490116
+    },
+    {
+        "Symbol": "HCXY",
+        "Market Cap": 4589127753
+    },
+    {
+        "Symbol": "HD",
+        "Market Cap": 355387645030
+    },
+    {
+        "Symbol": "HE",
+        "Market Cap": 2050731255
+    },
+    {
+        "Symbol": "HEI",
+        "Market Cap": 43454695109
+    },
+    {
+        "Symbol": "HESM",
+        "Market Cap": 4489915517
+    },
+    {
+        "Symbol": "HGTY",
+        "Market Cap": 4436570716
+    },
+    {
+        "Symbol": "HGV",
+        "Market Cap": 3732245148
+    },
+    {
+        "Symbol": "HHH",
+        "Market Cap": 5035165589
+    },
+    {
+        "Symbol": "HI",
+        "Market Cap": 2252692867
+    },
+    {
+        "Symbol": "HIG",
+        "Market Cap": 38640435992
+    },
+    {
+        "Symbol": "HII",
+        "Market Cap": 12916710415
+    },
+    {
+        "Symbol": "HIMS",
+        "Market Cap": 8252258633
+    },
+    {
+        "Symbol": "HIW",
+        "Market Cap": 2840758401
+    },
+    {
+        "Symbol": "HL",
+        "Market Cap": 12624658943
+    },
+    {
+        "Symbol": "HLI",
+        "Market Cap": 12407066480
+    },
+    {
+        "Symbol": "HLNE",
+        "Market Cap": 7186963417
+    },
+    {
+        "Symbol": "HLT",
+        "Market Cap": 66441592201
+    },
+    {
+        "Symbol": "HNGE",
+        "Market Cap": 3817891579
+    },
+    {
+        "Symbol": "HOG",
+        "Market Cap": 2524691612
+    },
+    {
+        "Symbol": "HOLX",
+        "Market Cap": 16760244093
+    },
+    {
+        "Symbol": "HOMB",
+        "Market Cap": 5650593425
+    },
+    {
+        "Symbol": "HON",
+        "Market Cap": 125358479220
+    },
+    {
+        "Symbol": "HOOD",
+        "Market Cap": 103640509041
+    },
+    {
+        "Symbol": "HP",
+        "Market Cap": 2849095915
+    },
+    {
+        "Symbol": "HPE",
+        "Market Cap": 31732773991
+    },
+    {
+        "Symbol": "HPQ",
+        "Market Cap": 22481440968
+    },
+    {
+        "Symbol": "HQY",
+        "Market Cap": 8180524385
+    },
+    {
+        "Symbol": "HR",
+        "Market Cap": 6058562311
+    },
+    {
+        "Symbol": "HRB",
+        "Market Cap": 5503293527
+    },
+    {
+        "Symbol": "HRI",
+        "Market Cap": 5102576036
+    },
+    {
+        "Symbol": "HRL",
+        "Market Cap": 13202575080
+    },
+    {
+        "Symbol": "HRMY",
+        "Market Cap": 2241650253
+    },
+    {
+        "Symbol": "HSIC",
+        "Market Cap": 9110722814
+    },
+    {
+        "Symbol": "HST",
+        "Market Cap": 12818531926
+    },
+    {
+        "Symbol": "HSY",
+        "Market Cap": 38145909299
+    },
+    {
+        "Symbol": "HTFL",
+        "Market Cap": 2182617968
+    },
+    {
+        "Symbol": "HTGC",
+        "Market Cap": 3392676460
+    },
+    {
+        "Symbol": "HTH",
+        "Market Cap": 2137299514
+    },
+    {
+        "Symbol": "HUBB",
+        "Market Cap": 23640911480
+    },
+    {
+        "Symbol": "HUBG",
+        "Market Cap": 2643054702
+    },
+    {
+        "Symbol": "HUBS",
+        "Market Cap": 19112868282
+    },
+    {
+        "Symbol": "HUM",
+        "Market Cap": 33043822702
+    },
+    {
+        "Symbol": "HURN",
+        "Market Cap": 3075877891
+    },
+    {
+        "Symbol": "HUT",
+        "Market Cap": 3828818238
+    },
+    {
+        "Symbol": "HWC",
+        "Market Cap": 5536860939
+    },
+    {
+        "Symbol": "HWKN",
+        "Market Cap": 3011119049
+    },
+    {
+        "Symbol": "HWM",
+        "Market Cap": 79302760557
+    },
+    {
+        "Symbol": "HXL",
+        "Market Cap": 5866952988
+    },
+    {
+        "Symbol": "IAC",
+        "Market Cap": 2944778663
+    },
+    {
+        "Symbol": "IBKR",
+        "Market Cap": 28000042036
+    },
+    {
+        "Symbol": "IBM",
+        "Market Cap": 288515368684
+    },
+    {
+        "Symbol": "IBOC",
+        "Market Cap": 4529260807
+    },
+    {
+        "Symbol": "IBP",
+        "Market Cap": 7277190776
+    },
+    {
+        "Symbol": "IBRX",
+        "Market Cap": 2186622697
+    },
+    {
+        "Symbol": "ICE",
+        "Market Cap": 92026823619
+    },
+    {
+        "Symbol": "ICUI",
+        "Market Cap": 3654366280
+    },
+    {
+        "Symbol": "IDA",
+        "Market Cap": 6835099479
+    },
+    {
+        "Symbol": "IDCC",
+        "Market Cap": 9033505851
+    },
+    {
+        "Symbol": "IDXX",
+        "Market Cap": 55939849232
+    },
+    {
+        "Symbol": "IDYA",
+        "Market Cap": 2925428035
+    },
+    {
+        "Symbol": "IEP",
+        "Market Cap": 4651616007
+    },
+    {
+        "Symbol": "IESC",
+        "Market Cap": 9002664477
+    },
+    {
+        "Symbol": "IEX",
+        "Market Cap": 13374845719
+    },
+    {
+        "Symbol": "IFF",
+        "Market Cap": 16433704640
+    },
+    {
+        "Symbol": "ILMN",
+        "Market Cap": 20615776000
+    },
+    {
+        "Symbol": "IMNM",
+        "Market Cap": 2076320671
+    },
+    {
+        "Symbol": "IMVT",
+        "Market Cap": 5269635202
+    },
+    {
+        "Symbol": "INCY",
+        "Market Cap": 19365271424
+    },
+    {
+        "Symbol": "INDB",
+        "Market Cap": 3846204219
+    },
+    {
+        "Symbol": "INGM",
+        "Market Cap": 5084621528
+    },
+    {
+        "Symbol": "INGR",
+        "Market Cap": 7165564152
+    },
+    {
+        "Symbol": "INSM",
+        "Market Cap": 41997811515
+    },
+    {
+        "Symbol": "INSP",
+        "Market Cap": 3465270319
+    },
+    {
+        "Symbol": "INSW",
+        "Market Cap": 2411934949
+    },
+    {
+        "Symbol": "INTA",
+        "Market Cap": 3484333237
+    },
+    {
+        "Symbol": "INTC",
+        "Market Cap": 164181270000
+    },
+    {
+        "Symbol": "INTU",
+        "Market Cap": 182240640000
+    },
+    {
+        "Symbol": "INVH",
+        "Market Cap": 16490253844
+    },
+    {
+        "Symbol": "IONQ",
+        "Market Cap": 16321660757
+    },
+    {
+        "Symbol": "IONS",
+        "Market Cap": 12919077586
+    },
+    {
+        "Symbol": "IOT",
+        "Market Cap": 22889750941
+    },
+    {
+        "Symbol": "IP",
+        "Market Cap": 20382279036
+    },
+    {
+        "Symbol": "IPAR",
+        "Market Cap": 2667144075
+    },
+    {
+        "Symbol": "IPGP",
+        "Market Cap": 3276442132
+    },
+    {
+        "Symbol": "IQV",
+        "Market Cap": 38084189000
+    },
+    {
+        "Symbol": "IR",
+        "Market Cap": 32252861544
+    },
+    {
+        "Symbol": "IRM",
+        "Market Cap": 24368397638
+    },
+    {
+        "Symbol": "IRON",
+        "Market Cap": 3473014904
+    },
+    {
+        "Symbol": "IRT",
+        "Market Cap": 4062529564
+    },
+    {
+        "Symbol": "IRTC",
+        "Market Cap": 5445035167
+    },
+    {
+        "Symbol": "ISRG",
+        "Market Cap": 198347642765
+    },
+    {
+        "Symbol": "IT",
+        "Market Cap": 17756204671
+    },
+    {
+        "Symbol": "ITGR",
+        "Market Cap": 2560958556
+    },
+    {
+        "Symbol": "ITRI",
+        "Market Cap": 4361206547
+    },
+    {
+        "Symbol": "ITT",
+        "Market Cap": 14792511937
+    },
+    {
+        "Symbol": "ITW",
+        "Market Cap": 75037266000
+    },
+    {
+        "Symbol": "IVT",
+        "Market Cap": 2253290601
+    },
+    {
+        "Symbol": "IVZ",
+        "Market Cap": 11590219116
+    },
+    {
+        "Symbol": "J",
+        "Market Cap": 16092886434
+    },
+    {
+        "Symbol": "JBHT",
+        "Market Cap": 18815145170
+    },
+    {
+        "Symbol": "JBL",
+        "Market Cap": 23633487318
+    },
+    {
+        "Symbol": "JBTM",
+        "Market Cap": 8062838652
+    },
+    {
+        "Symbol": "JEF",
+        "Market Cap": 12696552219
+    },
+    {
+        "Symbol": "JKHY",
+        "Market Cap": 13581568820
+    },
+    {
+        "Symbol": "JLL",
+        "Market Cap": 15526561324
+    },
+    {
+        "Symbol": "JNJ",
+        "Market Cap": 515998731995
+    },
+    {
+        "Symbol": "JOBY",
+        "Market Cap": 12938203225
+    },
+    {
+        "Symbol": "JOE",
+        "Market Cap": 3601526336
+    },
+    {
+        "Symbol": "JPM",
+        "Market Cap": 871178379646
+    },
+    {
+        "Symbol": "JXN",
+        "Market Cap": 7217719646
+    },
+    {
+        "Symbol": "KAI",
+        "Market Cap": 3394340726
+    },
+    {
+        "Symbol": "KAR",
+        "Market Cap": 3064630313
+    },
+    {
+        "Symbol": "KBH",
+        "Market Cap": 4209704525
+    },
+    {
+        "Symbol": "KBR",
+        "Market Cap": 5470713174
+    },
+    {
+        "Symbol": "KD",
+        "Market Cap": 6068383413
+    },
+    {
+        "Symbol": "KDP",
+        "Market Cap": 39711384744
+    },
+    {
+        "Symbol": "KEX",
+        "Market Cap": 5984764000
+    },
+    {
+        "Symbol": "KEY",
+        "Market Cap": 22361134791
+    },
+    {
+        "Symbol": "KEYS",
+        "Market Cap": 35656734543
+    },
+    {
+        "Symbol": "KFY",
+        "Market Cap": 3592577996
+    },
+    {
+        "Symbol": "KGS",
+        "Market Cap": 3236775332
+    },
+    {
+        "Symbol": "KHC",
+        "Market Cap": 28999561686
+    },
+    {
+        "Symbol": "KIM",
+        "Market Cap": 13882500001
+    },
+    {
+        "Symbol": "KKR",
+        "Market Cap": 120163353202
+    },
+    {
+        "Symbol": "KKRS",
+        "Market Cap": 15518462868
+    },
+    {
+        "Symbol": "KLAC",
+        "Market Cap": 160970067207
+    },
+    {
+        "Symbol": "KMB",
+        "Market Cap": 34115045679
+    },
+    {
+        "Symbol": "KMI",
+        "Market Cap": 59445597621
+    },
+    {
+        "Symbol": "KMPR",
+        "Market Cap": 2410374226
+    },
+    {
+        "Symbol": "KMT",
+        "Market Cap": 2216593052
+    },
+    {
+        "Symbol": "KMX",
+        "Market Cap": 6008899160
+    },
+    {
+        "Symbol": "KNF",
+        "Market Cap": 4321775865
+    },
+    {
+        "Symbol": "KNSA",
+        "Market Cap": 3149313786
+    },
+    {
+        "Symbol": "KNSL",
+        "Market Cap": 9123217774
+    },
+    {
+        "Symbol": "KNTK",
+        "Market Cap": 5739500834
+    },
+    {
+        "Symbol": "KNX",
+        "Market Cap": 8636434800
+    },
+    {
+        "Symbol": "KO",
+        "Market Cap": 305285179730
+    },
+    {
+        "Symbol": "KR",
+        "Market Cap": 39654328366
+    },
+    {
+        "Symbol": "KRC",
+        "Market Cap": 4736960308
+    },
+    {
+        "Symbol": "KRG",
+        "Market Cap": 5113871082
+    },
+    {
+        "Symbol": "KRMN",
+        "Market Cap": 9005864926
+    },
+    {
+        "Symbol": "KRYS",
+        "Market Cap": 7045817167
+    },
+    {
+        "Symbol": "KSS",
+        "Market Cap": 2488356256
+    },
+    {
+        "Symbol": "KTB",
+        "Market Cap": 3669734328
+    },
+    {
+        "Symbol": "KTOS",
+        "Market Cap": 12538110976
+    },
+    {
+        "Symbol": "KVUE",
+        "Market Cap": 32970955346
+    },
+    {
+        "Symbol": "KVYO",
+        "Market Cap": 8711121328
+    },
+    {
+        "Symbol": "KWR",
+        "Market Cap": 2409571264
+    },
+    {
+        "Symbol": "KYMR",
+        "Market Cap": 6746543788
+    },
+    {
+        "Symbol": "L",
+        "Market Cap": 21783984957
+    },
+    {
+        "Symbol": "LAD",
+        "Market Cap": 8407000400
+    },
+    {
+        "Symbol": "LAMR",
+        "Market Cap": 12858976267
+    },
+    {
+        "Symbol": "LAUR",
+        "Market Cap": 4818971597
+    },
+    {
+        "Symbol": "LBRDA",
+        "Market Cap": 6943460921
+    },
+    {
+        "Symbol": "LBRDK",
+        "Market Cap": 6975028630
+    },
+    {
+        "Symbol": "LBRDP",
+        "Market Cap": 3523056685
+    },
+    {
+        "Symbol": "LBRT",
+        "Market Cap": 3098427792
+    },
+    {
+        "Symbol": "LC",
+        "Market Cap": 2198798461
+    },
+    {
+        "Symbol": "LCID",
+        "Market Cap": 3828429477
+    },
+    {
+        "Symbol": "LCII",
+        "Market Cap": 2927717230
+    },
+    {
+        "Symbol": "LDOS",
+        "Market Cap": 23774669233
+    },
+    {
+        "Symbol": "LEA",
+        "Market Cap": 6020570748
+    },
+    {
+        "Symbol": "LECO",
+        "Market Cap": 13439593226
+    },
+    {
+        "Symbol": "LEGN",
+        "Market Cap": 4042117968
+    },
+    {
+        "Symbol": "LEN",
+        "Market Cap": 30533609613
+    },
+    {
+        "Symbol": "LEU",
+        "Market Cap": 4165820200
+    },
+    {
+        "Symbol": "LEVI",
+        "Market Cap": 8574800459
+    },
+    {
+        "Symbol": "LFST",
+        "Market Cap": 2691881945
+    },
+    {
+        "Symbol": "LFUS",
+        "Market Cap": 6488134548
+    },
+    {
+        "Symbol": "LGN",
+        "Market Cap": 4301960180
+    },
+    {
+        "Symbol": "LGND",
+        "Market Cap": 3796210154
+    },
+    {
+        "Symbol": "LH",
+        "Market Cap": 21830057000
+    },
+    {
+        "Symbol": "LHX",
+        "Market Cap": 53970357945
+    },
+    {
+        "Symbol": "LIF",
+        "Market Cap": 5073297520
+    },
+    {
+        "Symbol": "LII",
+        "Market Cap": 17400659334
+    },
+    {
+        "Symbol": "LIN",
+        "Market Cap": 194713034321
+    },
+    {
+        "Symbol": "LINE",
+        "Market Cap": 8257235736
+    },
+    {
+        "Symbol": "LITE",
+        "Market Cap": 23729521000
+    },
+    {
+        "Symbol": "LKQ",
+        "Market Cap": 7812082503
+    },
+    {
+        "Symbol": "LLY",
+        "Market Cap": 1004177172848
+    },
+    {
+        "Symbol": "LLYVA",
+        "Market Cap": 7625159220
+    },
+    {
+        "Symbol": "LLYVK",
+        "Market Cap": 7822749823
+    },
+    {
+        "Symbol": "LMND",
+        "Market Cap": 5610058197
+    },
+    {
+        "Symbol": "LMT",
+        "Market Cap": 112093720338
+    },
+    {
+        "Symbol": "LNC",
+        "Market Cap": 8585245060
+    },
+    {
+        "Symbol": "LNG",
+        "Market Cap": 40642782752
+    },
+    {
+        "Symbol": "LNT",
+        "Market Cap": 16870433609
+    },
+    {
+        "Symbol": "LNTH",
+        "Market Cap": 4414375128
+    },
+    {
+        "Symbol": "LOAR",
+        "Market Cap": 6443098454
+    },
+    {
+        "Symbol": "LOGI",
+        "Market Cap": 16438512508
+    },
+    {
+        "Symbol": "LOPE",
+        "Market Cap": 4512993287
+    },
+    {
+        "Symbol": "LOW",
+        "Market Cap": 139553503472
+    },
+    {
+        "Symbol": "LPLA",
+        "Market Cap": 29888449183
+    },
+    {
+        "Symbol": "LPX",
+        "Market Cap": 5983069735
+    },
+    {
+        "Symbol": "LQDA",
+        "Market Cap": 2974375564
+    },
+    {
+        "Symbol": "LRCX",
+        "Market Cap": 206365729000
+    },
+    {
+        "Symbol": "LRN",
+        "Market Cap": 2803004852
+    },
+    {
+        "Symbol": "LSCC",
+        "Market Cap": 10402605264
+    },
+    {
+        "Symbol": "LSTR",
+        "Market Cap": 5026347138
+    },
+    {
+        "Symbol": "LTH",
+        "Market Cap": 5689215740
+    },
+    {
+        "Symbol": "LUMN",
+        "Market Cap": 8266688544
+    },
+    {
+        "Symbol": "LUNR",
+        "Market Cap": 2004035814
+    },
+    {
+        "Symbol": "LUV",
+        "Market Cap": 21575709938
+    },
+    {
+        "Symbol": "LVS",
+        "Market Cap": 45294249284
+    },
+    {
+        "Symbol": "LW",
+        "Market Cap": 8285898461
+    },
+    {
+        "Symbol": "LXP",
+        "Market Cap": 2956759073
+    },
+    {
+        "Symbol": "LYFT",
+        "Market Cap": 7635636970
+    },
+    {
+        "Symbol": "LYV",
+        "Market Cap": 33253444767
+    },
+    {
+        "Symbol": "M",
+        "Market Cap": 6338653319
+    },
+    {
+        "Symbol": "MA",
+        "Market Cap": 511076376972
+    },
+    {
+        "Symbol": "MAA",
+        "Market Cap": 15536747163
+    },
+    {
+        "Symbol": "MAC",
+        "Market Cap": 4761235182
+    },
+    {
+        "Symbol": "MAIN",
+        "Market Cap": 5444234988
+    },
+    {
+        "Symbol": "MANH",
+        "Market Cap": 10241491660
+    },
+    {
+        "Symbol": "MAR",
+        "Market Cap": 82783845240
+    },
+    {
+        "Symbol": "MARA",
+        "Market Cap": 4046572577
+    },
+    {
+        "Symbol": "MAS",
+        "Market Cap": 13483599715
+    },
+    {
+        "Symbol": "MASI",
+        "Market Cap": 7380296593
+    },
+    {
+        "Symbol": "MAT",
+        "Market Cap": 6349644000
+    },
+    {
+        "Symbol": "MATX",
+        "Market Cap": 3787127051
+    },
+    {
+        "Symbol": "MC",
+        "Market Cap": 5436243743
+    },
+    {
+        "Symbol": "MCD",
+        "Market Cap": 226984955976
+    },
+    {
+        "Symbol": "MCHB",
+        "Market Cap": 3220870744
+    },
+    {
+        "Symbol": "MCHP",
+        "Market Cap": 36307218308
+    },
+    {
+        "Symbol": "MCHPP",
+        "Market Cap": 33015897089
+    },
+    {
+        "Symbol": "MCK",
+        "Market Cap": 101581367217
+    },
+    {
+        "Symbol": "MCO",
+        "Market Cap": 86970000000
+    },
+    {
+        "Symbol": "MCY",
+        "Market Cap": 5168312785
+    },
+    {
+        "Symbol": "MDB",
+        "Market Cap": 33858972160
+    },
+    {
+        "Symbol": "MDGL",
+        "Market Cap": 12730886481
+    },
+    {
+        "Symbol": "MDLZ",
+        "Market Cap": 70014851776
+    },
+    {
+        "Symbol": "MDT",
+        "Market Cap": 126368140483
+    },
+    {
+        "Symbol": "MDU",
+        "Market Cap": 3997727979
+    },
+    {
+        "Symbol": "MEDP",
+        "Market Cap": 15749698526
+    },
+    {
+        "Symbol": "MET",
+        "Market Cap": 54431039702
+    },
+    {
+        "Symbol": "META",
+        "Market Cap": 1632066824333
+    },
+    {
+        "Symbol": "MFAN",
+        "Market Cap": 2560557428
+    },
+    {
+        "Symbol": "MFAO",
+        "Market Cap": 2590331351
+    },
+    {
+        "Symbol": "MFICL",
+        "Market Cap": 2354050383
+    },
+    {
+        "Symbol": "MGEE",
+        "Market Cap": 2988757830
+    },
+    {
+        "Symbol": "MGM",
+        "Market Cap": 10223670727
+    },
+    {
+        "Symbol": "MGNI",
+        "Market Cap": 2275382245
+    },
+    {
+        "Symbol": "MGRC",
+        "Market Cap": 2655843907
+    },
+    {
+        "Symbol": "MGY",
+        "Market Cap": 4215022264
+    },
+    {
+        "Symbol": "MHK",
+        "Market Cap": 6892463649
+    },
+    {
+        "Symbol": "MHO",
+        "Market Cap": 3528218319
+    },
+    {
+        "Symbol": "MIDD",
+        "Market Cap": 7418677700
+    },
+    {
+        "Symbol": "MIR",
+        "Market Cap": 6172444941
+    },
+    {
+        "Symbol": "MIRM",
+        "Market Cap": 3294328093
+    },
+    {
+        "Symbol": "MKC",
+        "Market Cap": 18370313859
+    },
+    {
+        "Symbol": "MKL",
+        "Market Cap": 27240914255
+    },
+    {
+        "Symbol": "MKSI",
+        "Market Cap": 10700768903
+    },
+    {
+        "Symbol": "MKTX",
+        "Market Cap": 6661134234
+    },
+    {
+        "Symbol": "MLI",
+        "Market Cap": 12724382385
+    },
+    {
+        "Symbol": "MLM",
+        "Market Cap": 38227491805
+    },
+    {
+        "Symbol": "MLYS",
+        "Market Cap": 2850621215
+    },
+    {
+        "Symbol": "MMC",
+        "Market Cap": 91760083626
+    },
+    {
+        "Symbol": "MMM",
+        "Market Cap": 88023990454
+    },
+    {
+        "Symbol": "MMS",
+        "Market Cap": 4710920356
+    },
+    {
+        "Symbol": "MMSI",
+        "Market Cap": 5123270330
+    },
+    {
+        "Symbol": "MNST",
+        "Market Cap": 73130038018
+    },
+    {
+        "Symbol": "MO",
+        "Market Cap": 99192702008
+    },
+    {
+        "Symbol": "MOD",
+        "Market Cap": 7490311769
+    },
+    {
+        "Symbol": "MODG",
+        "Market Cap": 2120178335
+    },
+    {
+        "Symbol": "MOH",
+        "Market Cap": 8558100000
+    },
+    {
+        "Symbol": "MORN",
+        "Market Cap": 8666333311
+    },
+    {
+        "Symbol": "MOS",
+        "Market Cap": 7890759822
+    },
+    {
+        "Symbol": "MP",
+        "Market Cap": 9439295525
+    },
+    {
+        "Symbol": "MPC",
+        "Market Cap": 55764765879
+    },
+    {
+        "Symbol": "MPLX",
+        "Market Cap": 55836876845
+    },
+    {
+        "Symbol": "MPW",
+        "Market Cap": 3031560000
+    },
+    {
+        "Symbol": "MPWR",
+        "Market Cap": 45482905800
+    },
+    {
+        "Symbol": "MQ",
+        "Market Cap": 2121278371
+    },
+    {
+        "Symbol": "MRCY",
+        "Market Cap": 4476859131
+    },
+    {
+        "Symbol": "MRK",
+        "Market Cap": 248847579459
+    },
+    {
+        "Symbol": "MRNA",
+        "Market Cap": 11689130999
+    },
+    {
+        "Symbol": "MRP",
+        "Market Cap": 5252350645
+    },
+    {
+        "Symbol": "MRVL",
+        "Market Cap": 71460906000
+    },
+    {
+        "Symbol": "MS",
+        "Market Cap": 282563302403
+    },
+    {
+        "Symbol": "MSA",
+        "Market Cap": 6277641461
+    },
+    {
+        "Symbol": "MSCI",
+        "Market Cap": 41590486232
+    },
+    {
+        "Symbol": "MSFT",
+        "Market Cap": 3529041558147
+    },
+    {
+        "Symbol": "MSGE",
+        "Market Cap": 2489583276
+    },
+    {
+        "Symbol": "MSGS",
+        "Market Cap": 5719161638
+    },
+    {
+        "Symbol": "MSI",
+        "Market Cap": 60765925470
+    },
+    {
+        "Symbol": "MSM",
+        "Market Cap": 4783447632
+    },
+    {
+        "Symbol": "MSTR",
+        "Market Cap": 46574293369
+    },
+    {
+        "Symbol": "MTB",
+        "Market Cap": 31462039779
+    },
+    {
+        "Symbol": "MTCH",
+        "Market Cap": 7700609565
+    },
+    {
+        "Symbol": "MTDR",
+        "Market Cap": 5369735737
+    },
+    {
+        "Symbol": "MTG",
+        "Market Cap": 6522049596
+    },
+    {
+        "Symbol": "MTH",
+        "Market Cap": 5005916868
+    },
+    {
+        "Symbol": "MTN",
+        "Market Cap": 5723734244
+    },
+    {
+        "Symbol": "MTRN",
+        "Market Cap": 2139042219
+    },
+    {
+        "Symbol": "MTSI",
+        "Market Cap": 13135001714
+    },
+    {
+        "Symbol": "MTZ",
+        "Market Cap": 17387397944
+    },
+    {
+        "Symbol": "MU",
+        "Market Cap": 266585683313
+    },
+    {
+        "Symbol": "MUR",
+        "Market Cap": 4650430397
+    },
+    {
+        "Symbol": "MUSA",
+        "Market Cap": 7591010580
+    },
+    {
+        "Symbol": "MWA",
+        "Market Cap": 3919673441
+    },
+    {
+        "Symbol": "MYRG",
+        "Market Cap": 3422940125
+    },
+    {
+        "Symbol": "MZTI",
+        "Market Cap": 4672894860
+    },
+    {
+        "Symbol": "NAN",
+        "Market Cap": 3419191698
+    },
+    {
+        "Symbol": "NATL",
+        "Market Cap": 2840874988
+    },
+    {
+        "Symbol": "NAVN",
+        "Market Cap": 3633020426
+    },
+    {
+        "Symbol": "NBIX",
+        "Market Cap": 15360659834
+    },
+    {
+        "Symbol": "NBTB",
+        "Market Cap": 2325933481
+    },
+    {
+        "Symbol": "NCLH",
+        "Market Cap": 9856324637
+    },
+    {
+        "Symbol": "NCNO",
+        "Market Cap": 2812075415
+    },
+    {
+        "Symbol": "NDAQ",
+        "Market Cap": 53062605589
+    },
+    {
+        "Symbol": "NDSN",
+        "Market Cap": 13360540990
+    },
+    {
+        "Symbol": "NE",
+        "Market Cap": 4722512956
+    },
+    {
+        "Symbol": "NEE",
+        "Market Cap": 170045080699
+    },
+    {
+        "Symbol": "NEM",
+        "Market Cap": 108788006576
+    },
+    {
+        "Symbol": "NET",
+        "Market Cap": 68900305156
+    },
+    {
+        "Symbol": "NEU",
+        "Market Cap": 6933854410
+    },
+    {
+        "Symbol": "NFG",
+        "Market Cap": 7447844551
+    },
+    {
+        "Symbol": "NFLX",
+        "Market Cap": 397333809592
+    },
+    {
+        "Symbol": "NGVT",
+        "Market Cap": 2068651121
+    },
+    {
+        "Symbol": "NHI",
+        "Market Cap": 3717232311
+    },
+    {
+        "Symbol": "NI",
+        "Market Cap": 19961088978
+    },
+    {
+        "Symbol": "NIO",
+        "Market Cap": 11207493084
+    },
+    {
+        "Symbol": "NJR",
+        "Market Cap": 4663432678
+    },
+    {
+        "Symbol": "NKE",
+        "Market Cap": 100192488384
+    },
+    {
+        "Symbol": "NLY",
+        "Market Cap": 15272577945
+    },
+    {
+        "Symbol": "NMFCZ",
+        "Market Cap": 2690932313
+    },
+    {
+        "Symbol": "NMIH",
+        "Market Cap": 3084709951
+    },
+    {
+        "Symbol": "NMRK",
+        "Market Cap": 3077835663
+    },
+    {
+        "Symbol": "NN",
+        "Market Cap": 2172096608
+    },
+    {
+        "Symbol": "NNI",
+        "Market Cap": 4812882495
+    },
+    {
+        "Symbol": "NNN",
+        "Market Cap": 7680397759
+    },
+    {
+        "Symbol": "NOC",
+        "Market Cap": 82176787378
+    },
+    {
+        "Symbol": "NOG",
+        "Market Cap": 2205827303
+    },
+    {
+        "Symbol": "NOV",
+        "Market Cap": 5923586722
+    },
+    {
+        "Symbol": "NOVT",
+        "Market Cap": 4271907437
+    },
+    {
+        "Symbol": "NOW",
+        "Market Cap": 159161600000
+    },
+    {
+        "Symbol": "NPO",
+        "Market Cap": 4592960894
+    },
+    {
+        "Symbol": "NRG",
+        "Market Cap": 30660388886
+    },
+    {
+        "Symbol": "NSA",
+        "Market Cap": 2260337727
+    },
+    {
+        "Symbol": "NSC",
+        "Market Cap": 67201547925
+    },
+    {
+        "Symbol": "NSIT",
+        "Market Cap": 2461019186
+    },
+    {
+        "Symbol": "NTAP",
+        "Market Cap": 22600666310
+    },
+    {
+        "Symbol": "NTNX",
+        "Market Cap": 12914300370
+    },
+    {
+        "Symbol": "NTRA",
+        "Market Cap": 31522503806
+    },
+    {
+        "Symbol": "NTRS",
+        "Market Cap": 26404567060
+    },
+    {
+        "Symbol": "NTRSO",
+        "Market Cap": 3648074048
+    },
+    {
+        "Symbol": "NTSK",
+        "Market Cap": 7491581302
+    },
+    {
+        "Symbol": "NUE",
+        "Market Cap": 37079679931
+    },
+    {
+        "Symbol": "NUVB",
+        "Market Cap": 2917512515
+    },
+    {
+        "Symbol": "NUVL",
+        "Market Cap": 7632023874
+    },
+    {
+        "Symbol": "NVDA",
+        "Market Cap": 4283847000000
+    },
+    {
+        "Symbol": "NVR",
+        "Market Cap": 21671538825
+    },
+    {
+        "Symbol": "NVST",
+        "Market Cap": 3627242700
+    },
+    {
+        "Symbol": "NWE",
+        "Market Cap": 4090322202
+    },
+    {
+        "Symbol": "NWS",
+        "Market Cap": 16435374986
+    },
+    {
+        "Symbol": "NWSA",
+        "Market Cap": 14627315285
+    },
+    {
+        "Symbol": "NXST",
+        "Market Cap": 6188362740
+    },
+    {
+        "Symbol": "NXT",
+        "Market Cap": 12933391745
+    },
+    {
+        "Symbol": "NYT",
+        "Market Cap": 10963428578
+    },
+    {
+        "Symbol": "O",
+        "Market Cap": 53428126831
+    },
+    {
+        "Symbol": "OC",
+        "Market Cap": 9452871902
+    },
+    {
+        "Symbol": "OCUL",
+        "Market Cap": 3018882678
+    },
+    {
+        "Symbol": "ODFL",
+        "Market Cap": 32924640205
+    },
+    {
+        "Symbol": "OGE",
+        "Market Cap": 8703069322
+    },
+    {
+        "Symbol": "OGS",
+        "Market Cap": 4658925534
+    },
+    {
+        "Symbol": "OHI",
+        "Market Cap": 13162861660
+    },
+    {
+        "Symbol": "OI",
+        "Market Cap": 2397610301
+    },
+    {
+        "Symbol": "OII",
+        "Market Cap": 2580186956
+    },
+    {
+        "Symbol": "OKE",
+        "Market Cap": 45826934296
+    },
+    {
+        "Symbol": "OKLO",
+        "Market Cap": 12863821685
+    },
+    {
+        "Symbol": "OKTA",
+        "Market Cap": 15631705492
+    },
+    {
+        "Symbol": "OLED",
+        "Market Cap": 5667511026
+    },
+    {
+        "Symbol": "OLLI",
+        "Market Cap": 6929964712
+    },
+    {
+        "Symbol": "OLMA",
+        "Market Cap": 2693399646
+    },
+    {
+        "Symbol": "OLN",
+        "Market Cap": 2455895304
+    },
+    {
+        "Symbol": "OMC",
+        "Market Cap": 15531317875
+    },
+    {
+        "Symbol": "OMF",
+        "Market Cap": 7911584352
+    },
+    {
+        "Symbol": "ON",
+        "Market Cap": 22167026717
+    },
+    {
+        "Symbol": "ONB",
+        "Market Cap": 8983871270
+    },
+    {
+        "Symbol": "ONBPO",
+        "Market Cap": 9837710275
+    },
+    {
+        "Symbol": "ONBPP",
+        "Market Cap": 9816217760
+    },
+    {
+        "Symbol": "ONDS",
+        "Market Cap": 2833454816
+    },
+    {
+        "Symbol": "ONTO",
+        "Market Cap": 7646721495
+    },
+    {
+        "Symbol": "OPCH",
+        "Market Cap": 5323894959
+    },
+    {
+        "Symbol": "OPEN",
+        "Market Cap": 6171009130
+    },
+    {
+        "Symbol": "ORA",
+        "Market Cap": 6897517756
+    },
+    {
+        "Symbol": "ORCL",
+        "Market Cap": 531299199600
+    },
+    {
+        "Symbol": "ORI",
+        "Market Cap": 11303516000
+    },
+    {
+        "Symbol": "ORLY",
+        "Market Cap": 80308063313
+    },
+    {
+        "Symbol": "OS",
+        "Market Cap": 4142362023
+    },
+    {
+        "Symbol": "OSCR",
+        "Market Cap": 4271999760
+    },
+    {
+        "Symbol": "OSIS",
+        "Market Cap": 4454654318
+    },
+    {
+        "Symbol": "OSK",
+        "Market Cap": 8224959100
+    },
+    {
+        "Symbol": "OTF",
+        "Market Cap": 6522642793
+    },
+    {
+        "Symbol": "OTIS",
+        "Market Cap": 34517132923
+    },
+    {
+        "Symbol": "OTTR",
+        "Market Cap": 3535568722
+    },
+    {
+        "Symbol": "OUT",
+        "Market Cap": 3893220440
+    },
+    {
+        "Symbol": "OWL",
+        "Market Cap": 24314651764
+    },
+    {
+        "Symbol": "OXLC",
+        "Market Cap": 2367904000
+    },
+    {
+        "Symbol": "OXLCL",
+        "Market Cap": 4166052800
+    },
+    {
+        "Symbol": "OXLCN",
+        "Market Cap": 4247992000
+    },
+    {
+        "Symbol": "OXLCO",
+        "Market Cap": 4057483360
+    },
+    {
+        "Symbol": "OXLCP",
+        "Market Cap": 4284448000
+    },
+    {
+        "Symbol": "OXLCZ",
+        "Market Cap": 4213272000
+    },
+    {
+        "Symbol": "OXY",
+        "Market Cap": 39595607342
+    },
+    {
+        "Symbol": "OZK",
+        "Market Cap": 5445242033
+    },
+    {
+        "Symbol": "PAA",
+        "Market Cap": 12607245150
+    },
+    {
+        "Symbol": "PACS",
+        "Market Cap": 5442376254
+    },
+    {
+        "Symbol": "PAG",
+        "Market Cap": 11058968052
+    },
+    {
+        "Symbol": "PAGP",
+        "Market Cap": 3767789881
+    },
+    {
+        "Symbol": "PANW",
+        "Market Cap": 129558360000
+    },
+    {
+        "Symbol": "PARR",
+        "Market Cap": 2029243585
+    },
+    {
+        "Symbol": "PATH",
+        "Market Cap": 8641554893
+    },
+    {
+        "Symbol": "PATK",
+        "Market Cap": 3799464641
+    },
+    {
+        "Symbol": "PAY",
+        "Market Cap": 3792958052
+    },
+    {
+        "Symbol": "PAYC",
+        "Market Cap": 9161156704
+    },
+    {
+        "Symbol": "PAYO",
+        "Market Cap": 2074482569
+    },
+    {
+        "Symbol": "PAYX",
+        "Market Cap": 41524586219
+    },
+    {
+        "Symbol": "PB",
+        "Market Cap": 6839411904
+    },
+    {
+        "Symbol": "PBF",
+        "Market Cap": 3467315675
+    },
+    {
+        "Symbol": "PBH",
+        "Market Cap": 2974476859
+    },
+    {
+        "Symbol": "PCAR",
+        "Market Cap": 59327084393
+    },
+    {
+        "Symbol": "PCG",
+        "Market Cap": 41098045670
+    },
+    {
+        "Symbol": "PCH",
+        "Market Cap": 3129512590
+    },
+    {
+        "Symbol": "PCOR",
+        "Market Cap": 11248244371
+    },
+    {
+        "Symbol": "PCTY",
+        "Market Cap": 8075668640
+    },
+    {
+        "Symbol": "PCVX",
+        "Market Cap": 5804383701
+    },
+    {
+        "Symbol": "PDI",
+        "Market Cap": 4302693000
+    },
+    {
+        "Symbol": "PECO",
+        "Market Cap": 4474706000
+    },
+    {
+        "Symbol": "PEG",
+        "Market Cap": 40231810466
+    },
+    {
+        "Symbol": "PEGA",
+        "Market Cap": 9908416072
+    },
+    {
+        "Symbol": "PEN",
+        "Market Cap": 12106987020
+    },
+    {
+        "Symbol": "PEP",
+        "Market Cap": 206769173249
+    },
+    {
+        "Symbol": "PFE",
+        "Market Cap": 150273250599
+    },
+    {
+        "Symbol": "PFG",
+        "Market Cap": 19910852991
+    },
+    {
+        "Symbol": "PFGC",
+        "Market Cap": 14834428255
+    },
+    {
+        "Symbol": "PFH",
+        "Market Cap": 6215370000
+    },
+    {
+        "Symbol": "PFS",
+        "Market Cap": 2749601183
+    },
+    {
+        "Symbol": "PFSI",
+        "Market Cap": 6780455048
+    },
+    {
+        "Symbol": "PG",
+        "Market Cap": 339130139966
+    },
+    {
+        "Symbol": "PGNY",
+        "Market Cap": 2270814966
+    },
+    {
+        "Symbol": "PGR",
+        "Market Cap": 138600850701
+    },
+    {
+        "Symbol": "PH",
+        "Market Cap": 111482162966
+    },
+    {
+        "Symbol": "PHIN",
+        "Market Cap": 2221217704
+    },
+    {
+        "Symbol": "PHM",
+        "Market Cap": 24658934109
+    },
+    {
+        "Symbol": "PI",
+        "Market Cap": 4615428844
+    },
+    {
+        "Symbol": "PII",
+        "Market Cap": 3832761411
+    },
+    {
+        "Symbol": "PINS",
+        "Market Cap": 17402368799
+    },
+    {
+        "Symbol": "PIPR",
+        "Market Cap": 6253626331
+    },
+    {
+        "Symbol": "PJT",
+        "Market Cap": 4132970389
+    },
+    {
+        "Symbol": "PK",
+        "Market Cap": 2200880041
+    },
+    {
+        "Symbol": "PKG",
+        "Market Cap": 18398510660
+    },
+    {
+        "Symbol": "PL",
+        "Market Cap": 5661648214
+    },
+    {
+        "Symbol": "PLAB",
+        "Market Cap": 2168419969
+    },
+    {
+        "Symbol": "PLD",
+        "Market Cap": 121365762220
+    },
+    {
+        "Symbol": "PLMR",
+        "Market Cap": 3326492380
+    },
+    {
+        "Symbol": "PLNT",
+        "Market Cap": 9152926315
+    },
+    {
+        "Symbol": "PLTR",
+        "Market Cap": 436764708939
+    },
+    {
+        "Symbol": "PLUG",
+        "Market Cap": 3092224385
+    },
+    {
+        "Symbol": "PLUS",
+        "Market Cap": 2433962925
+    },
+    {
+        "Symbol": "PLXS",
+        "Market Cap": 4276409564
+    },
+    {
+        "Symbol": "PM",
+        "Market Cap": 246587144229
+    },
+    {
+        "Symbol": "PMTU",
+        "Market Cap": 2218923402
+    },
+    {
+        "Symbol": "PNC",
+        "Market Cap": 82702295731
+    },
+    {
+        "Symbol": "PNFP",
+        "Market Cap": 7790127392
+    },
+    {
+        "Symbol": "PNW",
+        "Market Cap": 10577040560
+    },
+    {
+        "Symbol": "PODD",
+        "Market Cap": 20506824236
+    },
+    {
+        "Symbol": "POOL",
+        "Market Cap": 8878042017
+    },
+    {
+        "Symbol": "POR",
+        "Market Cap": 5543455555
+    },
+    {
+        "Symbol": "POST",
+        "Market Cap": 5153415590
+    },
+    {
+        "Symbol": "POWI",
+        "Market Cap": 2010916127
+    },
+    {
+        "Symbol": "POWL",
+        "Market Cap": 3965477699
+    },
+    {
+        "Symbol": "POWWP",
+        "Market Cap": 2827055364
+    },
+    {
+        "Symbol": "PPC",
+        "Market Cap": 9416380799
+    },
+    {
+        "Symbol": "PPG",
+        "Market Cap": 23274768000
+    },
+    {
+        "Symbol": "PPL",
+        "Market Cap": 25343464204
+    },
+    {
+        "Symbol": "PR",
+        "Market Cap": 11950178301
+    },
+    {
+        "Symbol": "PRAX",
+        "Market Cap": 6911982064
+    },
+    {
+        "Symbol": "PRCT",
+        "Market Cap": 2017217063
+    },
+    {
+        "Symbol": "PRH",
+        "Market Cap": 8697920000
+    },
+    {
+        "Symbol": "PRI",
+        "Market Cap": 8252854278
+    },
+    {
+        "Symbol": "PRIM",
+        "Market Cap": 7053923423
+    },
+    {
+        "Symbol": "PRMB",
+        "Market Cap": 6076791940
+    },
+    {
+        "Symbol": "PRS",
+        "Market Cap": 8455040000
+    },
+    {
+        "Symbol": "PRU",
+        "Market Cap": 45830584078
+    },
+    {
+        "Symbol": "PRVA",
+        "Market Cap": 2993857216
+    },
+    {
+        "Symbol": "PSA",
+        "Market Cap": 47792615753
+    },
+    {
+        "Symbol": "PSKY",
+        "Market Cap": 15433306008
+    },
+    {
+        "Symbol": "PSMT",
+        "Market Cap": 4011215802
+    },
+    {
+        "Symbol": "PSN",
+        "Market Cap": 6560761537
+    },
+    {
+        "Symbol": "PSTG",
+        "Market Cap": 22970041621
+    },
+    {
+        "Symbol": "PSX",
+        "Market Cap": 57017369814
+    },
+    {
+        "Symbol": "PTC",
+        "Market Cap": 20911807053
+    },
+    {
+        "Symbol": "PTCT",
+        "Market Cap": 6121983256
+    },
+    {
+        "Symbol": "PTEN",
+        "Market Cap": 2358885389
+    },
+    {
+        "Symbol": "PTGX",
+        "Market Cap": 5925859980
+    },
+    {
+        "Symbol": "PTON",
+        "Market Cap": 2611290450
+    },
+    {
+        "Symbol": "PVH",
+        "Market Cap": 3412300852
+    },
+    {
+        "Symbol": "PWR",
+        "Market Cap": 64995141667
+    },
+    {
+        "Symbol": "PYPL",
+        "Market Cap": 56831499625
+    },
+    {
+        "Symbol": "Q",
+        "Market Cap": 16051164556
+    },
+    {
+        "Symbol": "QCOM",
+        "Market Cap": 191987460000
+    },
+    {
+        "Symbol": "QLYS",
+        "Market Cap": 5195868829
+    },
+    {
+        "Symbol": "QRVO",
+        "Market Cap": 8103209972
+    },
+    {
+        "Symbol": "QS",
+        "Market Cap": 6512189390
+    },
+    {
+        "Symbol": "QTWO",
+        "Market Cap": 4560938565
+    },
+    {
+        "Symbol": "QUBT",
+        "Market Cap": 2445185247
+    },
+    {
+        "Symbol": "QXO",
+        "Market Cap": 14371294266
+    },
+    {
+        "Symbol": "R",
+        "Market Cap": 7697382442
+    },
+    {
+        "Symbol": "RAL",
+        "Market Cap": 5728279895
+    },
+    {
+        "Symbol": "RARE",
+        "Market Cap": 3495382325
+    },
+    {
+        "Symbol": "RBC",
+        "Market Cap": 14623136955
+    },
+    {
+        "Symbol": "RBLX",
+        "Market Cap": 61039442176
+    },
+    {
+        "Symbol": "RBRK",
+        "Market Cap": 15989308030
+    },
+    {
+        "Symbol": "RCB",
+        "Market Cap": 4052310528
+    },
+    {
+        "Symbol": "RCC",
+        "Market Cap": 4100047600
+    },
+    {
+        "Symbol": "RCL",
+        "Market Cap": 78328619818
+    },
+    {
+        "Symbol": "RCUS",
+        "Market Cap": 2365700174
+    },
+    {
+        "Symbol": "RDDT",
+        "Market Cap": 41404824653
+    },
+    {
+        "Symbol": "RDN",
+        "Market Cap": 4903349045
+    },
+    {
+        "Symbol": "RDNT",
+        "Market Cap": 5609160802
+    },
+    {
+        "Symbol": "REG",
+        "Market Cap": 12482991749
+    },
+    {
+        "Symbol": "REGCO",
+        "Market Cap": 4134476608
+    },
+    {
+        "Symbol": "REGCP",
+        "Market Cap": 4320121100
+    },
+    {
+        "Symbol": "REGN",
+        "Market Cap": 79099958596
+    },
+    {
+        "Symbol": "RELY",
+        "Market Cap": 3031166000
+    },
+    {
+        "Symbol": "REVG",
+        "Market Cap": 2889323784
+    },
+    {
+        "Symbol": "REXR",
+        "Market Cap": 9575491999
+    },
+    {
+        "Symbol": "REYN",
+        "Market Cap": 5113113014
+    },
+    {
+        "Symbol": "REZI",
+        "Market Cap": 5385246536
+    },
+    {
+        "Symbol": "RF",
+        "Market Cap": 24017647225
+    },
+    {
+        "Symbol": "RGA",
+        "Market Cap": 13404307655
+    },
+    {
+        "Symbol": "RGEN",
+        "Market Cap": 9039168474
+    },
+    {
+        "Symbol": "RGLD",
+        "Market Cap": 18229981608
+    },
+    {
+        "Symbol": "RGTI",
+        "Market Cap": 7765513615
+    },
+    {
+        "Symbol": "RGTIW",
+        "Market Cap": 4052720238
+    },
+    {
+        "Symbol": "RH",
+        "Market Cap": 3073345995
+    },
+    {
+        "Symbol": "RHI",
+        "Market Cap": 2793756256
+    },
+    {
+        "Symbol": "RHP",
+        "Market Cap": 6225432552
+    },
+    {
+        "Symbol": "RIOT",
+        "Market Cap": 5097476520
+    },
+    {
+        "Symbol": "RITM",
+        "Market Cap": 6201460737
+    },
+    {
+        "Symbol": "RIVN",
+        "Market Cap": 22924575251
+    },
+    {
+        "Symbol": "RJF",
+        "Market Cap": 32024416510
+    },
+    {
+        "Symbol": "RKLB",
+        "Market Cap": 29597602412
+    },
+    {
+        "Symbol": "RKT",
+        "Market Cap": 51249198218
+    },
+    {
+        "Symbol": "RL",
+        "Market Cap": 22540132579
+    },
+    {
+        "Symbol": "RLI",
+        "Market Cap": 5971296032
+    },
+    {
+        "Symbol": "RMBS",
+        "Market Cap": 10275205195
+    },
+    {
+        "Symbol": "RMD",
+        "Market Cap": 36939690023
+    },
+    {
+        "Symbol": "RNA",
+        "Market Cap": 10827558820
+    },
+    {
+        "Symbol": "RNG",
+        "Market Cap": 2525092737
+    },
+    {
+        "Symbol": "RNST",
+        "Market Cap": 3535745624
+    },
+    {
+        "Symbol": "ROAD",
+        "Market Cap": 6217363704
+    },
+    {
+        "Symbol": "ROK",
+        "Market Cap": 45094678186
+    },
+    {
+        "Symbol": "ROKU",
+        "Market Cap": 16108636833
+    },
+    {
+        "Symbol": "ROL",
+        "Market Cap": 29087421416
+    },
+    {
+        "Symbol": "ROP",
+        "Market Cap": 47747963948
+    },
+    {
+        "Symbol": "ROST",
+        "Market Cap": 59604431332
+    },
+    {
+        "Symbol": "RPM",
+        "Market Cap": 13678372730
+    },
+    {
+        "Symbol": "RPRX",
+        "Market Cap": 22240984263
+    },
+    {
+        "Symbol": "RRC",
+        "Market Cap": 8465716598
+    },
+    {
+        "Symbol": "RRR",
+        "Market Cap": 6573617980
+    },
+    {
+        "Symbol": "RRX",
+        "Market Cap": 9828327191
+    },
+    {
+        "Symbol": "RS",
+        "Market Cap": 15261518760
+    },
+    {
+        "Symbol": "RSG",
+        "Market Cap": 66658329773
+    },
+    {
+        "Symbol": "RSI",
+        "Market Cap": 4347372029
+    },
+    {
+        "Symbol": "RTO",
+        "Market Cap": 7243184000
+    },
+    {
+        "Symbol": "RTX",
+        "Market Cap": 244167978358
+    },
+    {
+        "Symbol": "RUM",
+        "Market Cap": 2780945195
+    },
+    {
+        "Symbol": "RUN",
+        "Market Cap": 4025925681
+    },
+    {
+        "Symbol": "RUSHA",
+        "Market Cap": 4380536530
+    },
+    {
+        "Symbol": "RUSHB",
+        "Market Cap": 4563990286
+    },
+    {
+        "Symbol": "RVMD",
+        "Market Cap": 15272264595
+    },
+    {
+        "Symbol": "RVTY",
+        "Market Cap": 11233256529
+    },
+    {
+        "Symbol": "RWTN",
+        "Market Cap": 3194404030
+    },
+    {
+        "Symbol": "RWTO",
+        "Market Cap": 3228002131
+    },
+    {
+        "Symbol": "RXO",
+        "Market Cap": 2461678080
+    },
+    {
+        "Symbol": "RXRX",
+        "Market Cap": 2183317857
+    },
+    {
+        "Symbol": "RYAN",
+        "Market Cap": 14295899665
+    },
+    {
+        "Symbol": "RYN",
+        "Market Cap": 3390413277
+    },
+    {
+        "Symbol": "RYTM",
+        "Market Cap": 7509141021
+    },
+    {
+        "Symbol": "S",
+        "Market Cap": 5043655871
+    },
+    {
+        "Symbol": "SAH",
+        "Market Cap": 2244120158
+    },
+    {
+        "Symbol": "SAIA",
+        "Market Cap": 9047041604
+    },
+    {
+        "Symbol": "SAIC",
+        "Market Cap": 4584042714
+    },
+    {
+        "Symbol": "SAIL",
+        "Market Cap": 11591955686
+    },
+    {
+        "Symbol": "SAM",
+        "Market Cap": 2117711138
+    },
+    {
+        "Symbol": "SANM",
+        "Market Cap": 8630370007
+    },
+    {
+        "Symbol": "SARO",
+        "Market Cap": 9164485234
+    },
+    {
+        "Symbol": "SATA",
+        "Market Cap": 73572931294
+    },
+    {
+        "Symbol": "SATS",
+        "Market Cap": 29918985418
+    },
+    {
+        "Symbol": "SBAC",
+        "Market Cap": 20577396424
+    },
+    {
+        "Symbol": "SBCF",
+        "Market Cap": 3198002191
+    },
+    {
+        "Symbol": "SBRA",
+        "Market Cap": 4786266973
+    },
+    {
+        "Symbol": "SBUX",
+        "Market Cap": 97108340000
+    },
+    {
+        "Symbol": "SCCO",
+        "Market Cap": 116841916664
+    },
+    {
+        "Symbol": "SCHW",
+        "Market Cap": 169306535446
+    },
+    {
+        "Symbol": "SCI",
+        "Market Cap": 10960780147
+    },
+    {
+        "Symbol": "SE",
+        "Market Cap": 71965943177
+    },
+    {
+        "Symbol": "SEE",
+        "Market Cap": 6190945013
+    },
+    {
+        "Symbol": "SEI",
+        "Market Cap": 2982011139
+    },
+    {
+        "Symbol": "SEIC",
+        "Market Cap": 10038807226
+    },
+    {
+        "Symbol": "SEZL",
+        "Market Cap": 2259910759
+    },
+    {
+        "Symbol": "SF",
+        "Market Cap": 13058465296
+    },
+    {
+        "Symbol": "SFB",
+        "Market Cap": 2162867962
+    },
+    {
+        "Symbol": "SFBS",
+        "Market Cap": 4028906476
+    },
+    {
+        "Symbol": "SFD",
+        "Market Cap": 8892209523
+    },
+    {
+        "Symbol": "SFM",
+        "Market Cap": 7827529201
+    },
+    {
+        "Symbol": "SFNC",
+        "Market Cap": 2803179931
+    },
+    {
+        "Symbol": "SGI",
+        "Market Cap": 19513016260
+    },
+    {
+        "Symbol": "SHAK",
+        "Market Cap": 3570882820
+    },
+    {
+        "Symbol": "SHC",
+        "Market Cap": 4772778007
+    },
+    {
+        "Symbol": "SHOO",
+        "Market Cap": 3207847919
+    },
+    {
+        "Symbol": "SHW",
+        "Market Cap": 81420624345
+    },
+    {
+        "Symbol": "SIGI",
+        "Market Cap": 5058659374
+    },
+    {
+        "Symbol": "SIRI",
+        "Market Cap": 7249537639
+    },
+    {
+        "Symbol": "SITE",
+        "Market Cap": 5704681822
+    },
+    {
+        "Symbol": "SITM",
+        "Market Cap": 9481053848
+    },
+    {
+        "Symbol": "SJM",
+        "Market Cap": 10848679169
+    },
+    {
+        "Symbol": "SKT",
+        "Market Cap": 3913740136
+    },
+    {
+        "Symbol": "SKY",
+        "Market Cap": 4876428281
+    },
+    {
+        "Symbol": "SKYW",
+        "Market Cap": 4148347416
+    },
+    {
+        "Symbol": "SLAB",
+        "Market Cap": 4420034817
+    },
+    {
+        "Symbol": "SLDE",
+        "Market Cap": 2171342789
+    },
+    {
+        "Symbol": "SLG",
+        "Market Cap": 3238070143
+    },
+    {
+        "Symbol": "SLGN",
+        "Market Cap": 4268987806
+    },
+    {
+        "Symbol": "SLM",
+        "Market Cap": 5378493812
+    },
+    {
+        "Symbol": "SLMBP",
+        "Market Cap": 15197442878
+    },
+    {
+        "Symbol": "SLNO",
+        "Market Cap": 2682815749
+    },
+    {
+        "Symbol": "SLVM",
+        "Market Cap": 2029098323
+    },
+    {
+        "Symbol": "SM",
+        "Market Cap": 2191421693
+    },
+    {
+        "Symbol": "SMCI",
+        "Market Cap": 18726984442
+    },
+    {
+        "Symbol": "SMG",
+        "Market Cap": 3392149133
+    },
+    {
+        "Symbol": "SMMT",
+        "Market Cap": 12938411310
+    },
+    {
+        "Symbol": "SMR",
+        "Market Cap": 5270434955
+    },
+    {
+        "Symbol": "SMTC",
+        "Market Cap": 6712855735
+    },
+    {
+        "Symbol": "SN",
+        "Market Cap": 15946275678
+    },
+    {
+        "Symbol": "SNA",
+        "Market Cap": 18304059686
+    },
+    {
+        "Symbol": "SNAP",
+        "Market Cap": 12482543516
+    },
+    {
+        "Symbol": "SNDK",
+        "Market Cap": 29584690245
+    },
+    {
+        "Symbol": "SNDR",
+        "Market Cap": 4759383950
+    },
+    {
+        "Symbol": "SNEX",
+        "Market Cap": 5027952070
+    },
+    {
+        "Symbol": "SNOW",
+        "Market Cap": 73668816000
+    },
+    {
+        "Symbol": "SNPS",
+        "Market Cap": 84454349153
+    },
+    {
+        "Symbol": "SNV",
+        "Market Cap": 7340658454
+    },
+    {
+        "Symbol": "SNX",
+        "Market Cap": 12234408957
+    },
+    {
+        "Symbol": "SO",
+        "Market Cap": 94695016498
+    },
+    {
+        "Symbol": "SOFI",
+        "Market Cap": 32510352114
+    },
+    {
+        "Symbol": "SOJC",
+        "Market Cap": 23915030628
+    },
+    {
+        "Symbol": "SOJD",
+        "Market Cap": 22385964732
+    },
+    {
+        "Symbol": "SOJE",
+        "Market Cap": 19614618007
+    },
+    {
+        "Symbol": "SOLS",
+        "Market Cap": 7741138029
+    },
+    {
+        "Symbol": "SOLV",
+        "Market Cap": 14203620443
+    },
+    {
+        "Symbol": "SOMN",
+        "Market Cap": 53943126259
+    },
+    {
+        "Symbol": "SON",
+        "Market Cap": 4235301578
+    },
+    {
+        "Symbol": "SONO",
+        "Market Cap": 2204011133
+    },
+    {
+        "Symbol": "SOUN",
+        "Market Cap": 4532834340
+    },
+    {
+        "Symbol": "SPG",
+        "Market Cap": 60125990950
+    },
+    {
+        "Symbol": "SPGI",
+        "Market Cap": 151287964000
+    },
+    {
+        "Symbol": "SPHR",
+        "Market Cap": 3173339493
+    },
+    {
+        "Symbol": "SPSC",
+        "Market Cap": 3252032267
+    },
+    {
+        "Symbol": "SPXC",
+        "Market Cap": 10870633538
+    },
+    {
+        "Symbol": "SR",
+        "Market Cap": 4953299023
+    },
+    {
+        "Symbol": "SRE",
+        "Market Cap": 57821055945
+    },
+    {
+        "Symbol": "SREA",
+        "Market Cap": 13992523838
+    },
+    {
+        "Symbol": "SRPT",
+        "Market Cap": 2258163880
+    },
+    {
+        "Symbol": "SRRK",
+        "Market Cap": 4614817355
+    },
+    {
+        "Symbol": "SSB",
+        "Market Cap": 9758031246
+    },
+    {
+        "Symbol": "SSD",
+        "Market Cap": 7001642362
+    },
+    {
+        "Symbol": "SSNC",
+        "Market Cap": 21108370360
+    },
+    {
+        "Symbol": "STAG",
+        "Market Cap": 7014332629
+    },
+    {
+        "Symbol": "STC",
+        "Market Cap": 2219737053
+    },
+    {
+        "Symbol": "STE",
+        "Market Cap": 24936210577
+    },
+    {
+        "Symbol": "STEP",
+        "Market Cap": 7501693883
+    },
+    {
+        "Symbol": "STLD",
+        "Market Cap": 24671859254
+    },
+    {
+        "Symbol": "STRC",
+        "Market Cap": 28074459910
+    },
+    {
+        "Symbol": "STRD",
+        "Market Cap": 22054399161
+    },
+    {
+        "Symbol": "STRF",
+        "Market Cap": 30588805091
+    },
+    {
+        "Symbol": "STRK",
+        "Market Cap": 23634844704
+    },
+    {
+        "Symbol": "STRL",
+        "Market Cap": 9803166312
+    },
+    {
+        "Symbol": "STT",
+        "Market Cap": 36017338622
+    },
+    {
+        "Symbol": "STWD",
+        "Market Cap": 6854832900
+    },
+    {
+        "Symbol": "STZ",
+        "Market Cap": 25109163316
+    },
+    {
+        "Symbol": "SUI",
+        "Market Cap": 15321276713
+    },
+    {
+        "Symbol": "SUN",
+        "Market Cap": 10926581395
+    },
+    {
+        "Symbol": "SUPN",
+        "Market Cap": 2711004468
+    },
+    {
+        "Symbol": "SWK",
+        "Market Cap": 11484720081
+    },
+    {
+        "Symbol": "SWKS",
+        "Market Cap": 9950869830
+    },
+    {
+        "Symbol": "SWX",
+        "Market Cap": 5899590392
+    },
+    {
+        "Symbol": "SXI",
+        "Market Cap": 2794058799
+    },
+    {
+        "Symbol": "SXT",
+        "Market Cap": 3997551495
+    },
+    {
+        "Symbol": "SYBT",
+        "Market Cap": 2036321213
+    },
+    {
+        "Symbol": "SYF",
+        "Market Cap": 29969837065
+    },
+    {
+        "Symbol": "SYK",
+        "Market Cap": 135878946371
+    },
+    {
+        "Symbol": "SYM",
+        "Market Cap": 35737387682
+    },
+    {
+        "Symbol": "SYNA",
+        "Market Cap": 2951938427
+    },
+    {
+        "Symbol": "SYRE",
+        "Market Cap": 2586921614
+    },
+    {
+        "Symbol": "SYY",
+        "Market Cap": 36120489454
+    },
+    {
+        "Symbol": "T",
+        "Market Cap": 172344517223
+    },
+    {
+        "Symbol": "TARS",
+        "Market Cap": 3416303970
+    },
+    {
+        "Symbol": "TBB",
+        "Market Cap": 158810061511
+    },
+    {
+        "Symbol": "TBBK",
+        "Market Cap": 3014066741
+    },
+    {
+        "Symbol": "TCBI",
+        "Market Cap": 4386348519
+    },
+    {
+        "Symbol": "TDC",
+        "Market Cap": 2809980000
+    },
+    {
+        "Symbol": "TDG",
+        "Market Cap": 72768116015
+    },
+    {
+        "Symbol": "TDS",
+        "Market Cap": 4362435000
+    },
+    {
+        "Symbol": "TDW",
+        "Market Cap": 2799327107
+    },
+    {
+        "Symbol": "TDY",
+        "Market Cap": 24146423104
+    },
+    {
+        "Symbol": "TECH",
+        "Market Cap": 9144647422
+    },
+    {
+        "Symbol": "TEM",
+        "Market Cap": 12216891476
+    },
+    {
+        "Symbol": "TENB",
+        "Market Cap": 2953770584
+    },
+    {
+        "Symbol": "TER",
+        "Market Cap": 30491636594
+    },
+    {
+        "Symbol": "TERN",
+        "Market Cap": 4566542295
+    },
+    {
+        "Symbol": "TEX",
+        "Market Cap": 3427600000
+    },
+    {
+        "Symbol": "TFC",
+        "Market Cap": 63629711509
+    },
+    {
+        "Symbol": "TFSL",
+        "Market Cap": 3913157117
+    },
+    {
+        "Symbol": "TFX",
+        "Market Cap": 5600315382
+    },
+    {
+        "Symbol": "TGNA",
+        "Market Cap": 3153491929
+    },
+    {
+        "Symbol": "TGT",
+        "Market Cap": 44175794140
+    },
+    {
+        "Symbol": "TGTX",
+        "Market Cap": 4986634356
+    },
+    {
+        "Symbol": "THC",
+        "Market Cap": 17341468200
+    },
+    {
+        "Symbol": "THG",
+        "Market Cap": 6626445776
+    },
+    {
+        "Symbol": "THO",
+        "Market Cap": 5361539236
+    },
+    {
+        "Symbol": "TIC",
+        "Market Cap": 2284998627
+    },
+    {
+        "Symbol": "TJX",
+        "Market Cap": 174021298457
+    },
+    {
+        "Symbol": "TKO",
+        "Market Cap": 40469548679
+    },
+    {
+        "Symbol": "TKR",
+        "Market Cap": 6060732712
+    },
+    {
+        "Symbol": "TLN",
+        "Market Cap": 16353501154
+    },
+    {
+        "Symbol": "TMDX",
+        "Market Cap": 4208568124
+    },
+    {
+        "Symbol": "TME",
+        "Market Cap": 27694412532
+    },
+    {
+        "Symbol": "TMHC",
+        "Market Cap": 6081429053
+    },
+    {
+        "Symbol": "TMO",
+        "Market Cap": 216374028259
+    },
+    {
+        "Symbol": "TMUS",
+        "Market Cap": 219406259756
+    },
+    {
+        "Symbol": "TNET",
+        "Market Cap": 2887105000
+    },
+    {
+        "Symbol": "TNL",
+        "Market Cap": 4552936807
+    },
+    {
+        "Symbol": "TOL",
+        "Market Cap": 13537956180
+    },
+    {
+        "Symbol": "TOST",
+        "Market Cap": 20456520000
+    },
+    {
+        "Symbol": "TOWN",
+        "Market Cap": 2650407562
+    },
+    {
+        "Symbol": "TPB",
+        "Market Cap": 2090345675
+    },
+    {
+        "Symbol": "TPC",
+        "Market Cap": 3576519647
+    },
+    {
+        "Symbol": "TPG",
+        "Market Cap": 25232413691
+    },
+    {
+        "Symbol": "TPGXL",
+        "Market Cap": 9029437931
+    },
+    {
+        "Symbol": "TPH",
+        "Market Cap": 2896632849
+    },
+    {
+        "Symbol": "TPL",
+        "Market Cap": 19294202018
+    },
+    {
+        "Symbol": "TPR",
+        "Market Cap": 25290616352
+    },
+    {
+        "Symbol": "TR",
+        "Market Cap": 2761084213
+    },
+    {
+        "Symbol": "TREX",
+        "Market Cap": 3738901770
+    },
+    {
+        "Symbol": "TRGP",
+        "Market Cap": 39134402803
+    },
+    {
+        "Symbol": "TRI",
+        "Market Cap": 58630239787
+    },
+    {
+        "Symbol": "TRMB",
+        "Market Cap": 19074123524
+    },
+    {
+        "Symbol": "TRMK",
+        "Market Cap": 2445097639
+    },
+    {
+        "Symbol": "TRN",
+        "Market Cap": 2270712411
+    },
+    {
+        "Symbol": "TRNO",
+        "Market Cap": 6265750393
+    },
+    {
+        "Symbol": "TROW",
+        "Market Cap": 22613717940
+    },
+    {
+        "Symbol": "TRU",
+        "Market Cap": 16240946000
+    },
+    {
+        "Symbol": "TRV",
+        "Market Cap": 64819998346
+    },
+    {
+        "Symbol": "TSCO",
+        "Market Cap": 27968402283
+    },
+    {
+        "Symbol": "TSLA",
+        "Market Cap": 1580795108267
+    },
+    {
+        "Symbol": "TSN",
+        "Market Cap": 21017309978
+    },
+    {
+        "Symbol": "TTAN",
+        "Market Cap": 9655904432
+    },
+    {
+        "Symbol": "TTC",
+        "Market Cap": 7190910268
+    },
+    {
+        "Symbol": "TTD",
+        "Market Cap": 17501298237
+    },
+    {
+        "Symbol": "TTEK",
+        "Market Cap": 8982924448
+    },
+    {
+        "Symbol": "TTMI",
+        "Market Cap": 7444978736
+    },
+    {
+        "Symbol": "TTWO",
+        "Market Cap": 45189511154
+    },
+    {
+        "Symbol": "TVTX",
+        "Market Cap": 3110058087
+    },
+    {
+        "Symbol": "TW",
+        "Market Cap": 24641047925
+    },
+    {
+        "Symbol": "TWLO",
+        "Market Cap": 20310053099
+    },
+    {
+        "Symbol": "TXN",
+        "Market Cap": 161707638869
+    },
+    {
+        "Symbol": "TXNM",
+        "Market Cap": 6413289441
+    },
+    {
+        "Symbol": "TXRH",
+        "Market Cap": 11225651067
+    },
+    {
+        "Symbol": "TXT",
+        "Market Cap": 15497144188
+    },
+    {
+        "Symbol": "TYL",
+        "Market Cap": 19233394416
+    },
+    {
+        "Symbol": "U",
+        "Market Cap": 19350218760
+    },
+    {
+        "Symbol": "UAL",
+        "Market Cap": 34866581415
+    },
+    {
+        "Symbol": "UBER",
+        "Market Cap": 170091194989
+    },
+    {
+        "Symbol": "UBSI",
+        "Market Cap": 5568922039
+    },
+    {
+        "Symbol": "UCB",
+        "Market Cap": 3923856926
+    },
+    {
+        "Symbol": "UDR",
+        "Market Cap": 11828087498
+    },
+    {
+        "Symbol": "UE",
+        "Market Cap": 2475541768
+    },
+    {
+        "Symbol": "UFPI",
+        "Market Cap": 5384132642
+    },
+    {
+        "Symbol": "UGI",
+        "Market Cap": 8192820997
+    },
+    {
+        "Symbol": "UHAL",
+        "Market Cap": 10364676737
+    },
+    {
+        "Symbol": "UHS",
+        "Market Cap": 13987954141
+    },
+    {
+        "Symbol": "UI",
+        "Market Cap": 33585173480
+    },
+    {
+        "Symbol": "ULS",
+        "Market Cap": 15564377356
+    },
+    {
+        "Symbol": "ULTA",
+        "Market Cap": 26226916086
+    },
+    {
+        "Symbol": "UMBF",
+        "Market Cap": 9046959553
+    },
+    {
+        "Symbol": "UMBFO",
+        "Market Cap": 2037103981
+    },
+    {
+        "Symbol": "UNF",
+        "Market Cap": 3217928041
+    },
+    {
+        "Symbol": "UNH",
+        "Market Cap": 308981553282
+    },
+    {
+        "Symbol": "UNM",
+        "Market Cap": 12902914153
+    },
+    {
+        "Symbol": "UNMA",
+        "Market Cap": 3941048374
+    },
+    {
+        "Symbol": "UNP",
+        "Market Cap": 142637398978
+    },
+    {
+        "Symbol": "UPS",
+        "Market Cap": 84897946892
+    },
+    {
+        "Symbol": "UPST",
+        "Market Cap": 4480042588
+    },
+    {
+        "Symbol": "UPWK",
+        "Market Cap": 2793401399
+    },
+    {
+        "Symbol": "URBN",
+        "Market Cap": 7416448255
+    },
+    {
+        "Symbol": "URI",
+        "Market Cap": 51568416335
+    },
+    {
+        "Symbol": "USAC",
+        "Market Cap": 2930955902
+    },
+    {
+        "Symbol": "USB",
+        "Market Cap": 83488653739
+    },
+    {
+        "Symbol": "USFD",
+        "Market Cap": 16988135594
+    },
+    {
+        "Symbol": "USLM",
+        "Market Cap": 3582788815
+    },
+    {
+        "Symbol": "UTHR",
+        "Market Cap": 21541216480
+    },
+    {
+        "Symbol": "UWMC",
+        "Market Cap": 8431397797
+    },
+    {
+        "Symbol": "V",
+        "Market Cap": 668014785836
+    },
+    {
+        "Symbol": "VAC",
+        "Market Cap": 2003111659
+    },
+    {
+        "Symbol": "VAL",
+        "Market Cap": 3750911057
+    },
+    {
+        "Symbol": "VC",
+        "Market Cap": 2800899893
+    },
+    {
+        "Symbol": "VCTR",
+        "Market Cap": 4174700659
+    },
+    {
+        "Symbol": "VCYT",
+        "Market Cap": 3441010501
+    },
+    {
+        "Symbol": "VEEV",
+        "Market Cap": 36180446286
+    },
+    {
+        "Symbol": "VERA",
+        "Market Cap": 3446321617
+    },
+    {
+        "Symbol": "VERX",
+        "Market Cap": 3104414179
+    },
+    {
+        "Symbol": "VFC",
+        "Market Cap": 7529266087
+    },
+    {
+        "Symbol": "VG",
+        "Market Cap": 14517295834
+    },
+    {
+        "Symbol": "VIAV",
+        "Market Cap": 3990795563
+    },
+    {
+        "Symbol": "VICI",
+        "Market Cap": 30568005211
+    },
+    {
+        "Symbol": "VICR",
+        "Market Cap": 4268345093
+    },
+    {
+        "Symbol": "VIK",
+        "Market Cap": 31418481377
+    },
+    {
+        "Symbol": "VIRT",
+        "Market Cap": 5106092803
+    },
+    {
+        "Symbol": "VKTX",
+        "Market Cap": 4086263836
+    },
+    {
+        "Symbol": "VLO",
+        "Market Cap": 51211101598
+    },
+    {
+        "Symbol": "VLTO",
+        "Market Cap": 24899257757
+    },
+    {
+        "Symbol": "VLY",
+        "Market Cap": 6641439496
+    },
+    {
+        "Symbol": "VLYPN",
+        "Market Cap": 14247588507
+    },
+    {
+        "Symbol": "VLYPO",
+        "Market Cap": 14027880097
+    },
+    {
+        "Symbol": "VLYPP",
+        "Market Cap": 13941781167
+    },
+    {
+        "Symbol": "VMC",
+        "Market Cap": 39200596895
+    },
+    {
+        "Symbol": "VMI",
+        "Market Cap": 8115660279
+    },
+    {
+        "Symbol": "VNO",
+        "Market Cap": 6681587605
+    },
+    {
+        "Symbol": "VNOM",
+        "Market Cap": 14175441723
+    },
+    {
+        "Symbol": "VNT",
+        "Market Cap": 5410779000
+    },
+    {
+        "Symbol": "VOYA",
+        "Market Cap": 7140074188
+    },
+    {
+        "Symbol": "VRDN",
+        "Market Cap": 3152449524
+    },
+    {
+        "Symbol": "VRNS",
+        "Market Cap": 3890611164
+    },
+    {
+        "Symbol": "VRRM",
+        "Market Cap": 3446592055
+    },
+    {
+        "Symbol": "VRSK",
+        "Market Cap": 30415275951
+    },
+    {
+        "Symbol": "VRSN",
+        "Market Cap": 22422276000
+    },
+    {
+        "Symbol": "VRT",
+        "Market Cap": 61839398745
+    },
+    {
+        "Symbol": "VRTX",
+        "Market Cap": 115622208475
+    },
+    {
+        "Symbol": "VSAT",
+        "Market Cap": 4782933908
+    },
+    {
+        "Symbol": "VSCO",
+        "Market Cap": 4395526278
+    },
+    {
+        "Symbol": "VSEC",
+        "Market Cap": 3503855826
+    },
+    {
+        "Symbol": "VSH",
+        "Market Cap": 2054164184
+    },
+    {
+        "Symbol": "VST",
+        "Market Cap": 57007388693
+    },
+    {
+        "Symbol": "VTR",
+        "Market Cap": 36972670577
+    },
+    {
+        "Symbol": "VTRS",
+        "Market Cap": 13429636708
+    },
+    {
+        "Symbol": "VVV",
+        "Market Cap": 3948245778
+    },
+    {
+        "Symbol": "W",
+        "Market Cap": 12848728025
+    },
+    {
+        "Symbol": "WAB",
+        "Market Cap": 36820758721
+    },
+    {
+        "Symbol": "WAFD",
+        "Market Cap": 2541871206
+    },
+    {
+        "Symbol": "WAL",
+        "Market Cap": 9484425022
+    },
+    {
+        "Symbol": "WAT",
+        "Market Cap": 22945879491
+    },
+    {
+        "Symbol": "WAY",
+        "Market Cap": 6229267942
+    },
+    {
+        "Symbol": "WBD",
+        "Market Cap": 73620622662
+    },
+    {
+        "Symbol": "WBS",
+        "Market Cap": 10343547003
+    },
+    {
+        "Symbol": "WCC",
+        "Market Cap": 12591590173
+    },
+    {
+        "Symbol": "WD",
+        "Market Cap": 2122882938
+    },
+    {
+        "Symbol": "WDAY",
+        "Market Cap": 56518700000
+    },
+    {
+        "Symbol": "WDC",
+        "Market Cap": 58820352303
+    },
+    {
+        "Symbol": "WDFC",
+        "Market Cap": 2791739309
+    },
+    {
+        "Symbol": "WEC",
+        "Market Cap": 34240472966
+    },
+    {
+        "Symbol": "WELL",
+        "Market Cap": 130724902350
+    },
+    {
+        "Symbol": "WES",
+        "Market Cap": 16123991052
+    },
+    {
+        "Symbol": "WEX",
+        "Market Cap": 5179281701
+    },
+    {
+        "Symbol": "WFC",
+        "Market Cap": 291620953952
+    },
+    {
+        "Symbol": "WFRD",
+        "Market Cap": 5665955307
+    },
+    {
+        "Symbol": "WGS",
+        "Market Cap": 4353320300
+    },
+    {
+        "Symbol": "WH",
+        "Market Cap": 5857542296
+    },
+    {
+        "Symbol": "WHD",
+        "Market Cap": 3641842833
+    },
+    {
+        "Symbol": "WHR",
+        "Market Cap": 4338044390
+    },
+    {
+        "Symbol": "WING",
+        "Market Cap": 6660508904
+    },
+    {
+        "Symbol": "WK",
+        "Market Cap": 4843850629
+    },
+    {
+        "Symbol": "WLK",
+        "Market Cap": 9444757189
+    },
+    {
+        "Symbol": "WM",
+        "Market Cap": 87953934574
+    },
+    {
+        "Symbol": "WMB",
+        "Market Cap": 72638098209
+    },
+    {
+        "Symbol": "WMG",
+        "Market Cap": 14548925193
+    },
+    {
+        "Symbol": "WMS",
+        "Market Cap": 11534806357
+    },
+    {
+        "Symbol": "WMT",
+        "Market Cap": 930835799726
+    },
+    {
+        "Symbol": "WOR",
+        "Market Cap": 2867660333
+    },
+    {
+        "Symbol": "WPC",
+        "Market Cap": 14408785328
+    },
+    {
+        "Symbol": "WRB",
+        "Market Cap": 26259463123
+    },
+    {
+        "Symbol": "WRBY",
+        "Market Cap": 3278903581
+    },
+    {
+        "Symbol": "WSBC",
+        "Market Cap": 3375993947
+    },
+    {
+        "Symbol": "WSBCO",
+        "Market Cap": 2438591360
+    },
+    {
+        "Symbol": "WSC",
+        "Market Cap": 3618899754
+    },
+    {
+        "Symbol": "WSFS",
+        "Market Cap": 3174485599
+    },
+    {
+        "Symbol": "WSM",
+        "Market Cap": 22136765241
+    },
+    {
+        "Symbol": "WSO",
+        "Market Cap": 13976025948
+    },
+    {
+        "Symbol": "WST",
+        "Market Cap": 19558535986
+    },
+    {
+        "Symbol": "WTFC",
+        "Market Cap": 9463694337
+    },
+    {
+        "Symbol": "WTM",
+        "Market Cap": 5280257236
+    },
+    {
+        "Symbol": "WTRG",
+        "Market Cap": 10874749272
+    },
+    {
+        "Symbol": "WTS",
+        "Market Cap": 9380842560
+    },
+    {
+        "Symbol": "WU",
+        "Market Cap": 3048132639
+    },
+    {
+        "Symbol": "WULF",
+        "Market Cap": 5229336694
+    },
+    {
+        "Symbol": "WWD",
+        "Market Cap": 17861310002
+    },
+    {
+        "Symbol": "WY",
+        "Market Cap": 16832104350
+    },
+    {
+        "Symbol": "WYNN",
+        "Market Cap": 13126777974
+    },
+    {
+        "Symbol": "XEL",
+        "Market Cap": 44791391612
+    },
+    {
+        "Symbol": "XMTR",
+        "Market Cap": 2979026243
+    },
+    {
+        "Symbol": "XOM",
+        "Market Cap": 496613422705
+    },
+    {
+        "Symbol": "XPO",
+        "Market Cap": 17217923697
+    },
+    {
+        "Symbol": "XRAY",
+        "Market Cap": 2274892447
+    },
+    {
+        "Symbol": "XYL",
+        "Market Cap": 33659597960
+    },
+    {
+        "Symbol": "XYZ",
+        "Market Cap": 38902713300
+    },
+    {
+        "Symbol": "YETI",
+        "Market Cap": 3373759780
+    },
+    {
+        "Symbol": "YOU",
+        "Market Cap": 5175940939
+    },
+    {
+        "Symbol": "YUM",
+        "Market Cap": 42708558157
+    },
+    {
+        "Symbol": "YUMC",
+        "Market Cap": 17355350704
+    },
+    {
+        "Symbol": "Z",
+        "Market Cap": 16551422079
+    },
+    {
+        "Symbol": "ZBH",
+        "Market Cap": 18317921129
+    },
+    {
+        "Symbol": "ZBRA",
+        "Market Cap": 13439655600
+    },
+    {
+        "Symbol": "ZETA",
+        "Market Cap": 4160611308
+    },
+    {
+        "Symbol": "ZG",
+        "Market Cap": 16136305249
+    },
+    {
+        "Symbol": "ZION",
+        "Market Cap": 8732228956
+    },
+    {
+        "Symbol": "ZIONP",
+        "Market Cap": 3019259145
+    },
+    {
+        "Symbol": "ZM",
+        "Market Cap": 25624577857
+    },
+    {
+        "Symbol": "ZS",
+        "Market Cap": 36727813914
+    },
+    {
+        "Symbol": "ZTS",
+        "Market Cap": 53315065030
+    },
+    {
+        "Symbol": "ZWS",
+        "Market Cap": 7935775790
+    }
 ]
