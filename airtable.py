@@ -11,7 +11,6 @@ class Outcome(StrEnum):
     
 @dataclass
 class Prediction:
-    record_id: int = -1
     id: str
     ticker: str
     analyst: str
@@ -20,6 +19,7 @@ class Prediction:
     outcome: Optional[Outcome]
     close_date: Optional[datetime]
     expiration_date: datetime
+    record_id: int = -1
 
 @dataclass
 class OutcomeUpdate:
@@ -83,7 +83,7 @@ class AirtableApi:
                 "id": update.record_id,
                 "fields": {
                     "Outcome": update.outcome.value, 
-                    "Close Date": parse(update.close_date, ignoretz=True)
+                    "Close Date": update.close_date.strftime("%m/%d/%Y")
                 }
             })
 

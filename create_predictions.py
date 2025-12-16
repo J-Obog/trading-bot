@@ -10,6 +10,9 @@ dotenv.load_dotenv()
 
 top_tickers = []
 
+def get_unique_key(prediction: Prediction) -> str:
+    return f'{prediction.analyst}:{prediction.announcement_date.strftime("%m/%d/%Y")}'
+
 with open("top_sp500.json", "r", encoding="utf-8") as json_file:
     top_tickers = json.load(json_file)
 
@@ -21,7 +24,7 @@ airtable = AirtableApi(
 
 yahoo = YahooApi()
 
-existing_ids = set(map(lambda x: x.id, airtable.get_all_predictions()))
+existing_ids = set(map(lambda x: get_unique_key(x), airtable.get_all_predictions()))
 
 new_predictions = []
 
@@ -41,11 +44,11 @@ for ticker in top_tickers:
             price_target=rating.price_target, 
             outcome=None, 
             close_date=None, 
-            expiration_date = rating.announcement_date + timedelta(days=365)
+            expiration_date = rating.announcement_date + timedelta(days=180)
         )
 
         new_predictions.append(p)
-        existing_ids.add(rating.uuid)
+        existing_ids.add(get_unique_key(p))
 
 airtable.create_predictions(new_predictions)
 

@@ -1,10 +1,8 @@
-from datetime import datetime, timedelta
-from airtable import AirtableApi, Outcome, OutcomeUpdate, Prediction
-from yahoo import Sentiment, YahooApi
-import json
+from datetime import datetime
+from airtable import AirtableApi, Outcome, OutcomeUpdate
+from yahoo import YahooApi
 import dotenv
 import os
-import time
 
 dotenv.load_dotenv()
 
@@ -32,7 +30,10 @@ for ticker in unique_tickers:
     for ticker_prediction in predictions_for_ticker:
         close_date = None
         for t in chart_ticks:
-            if (t.timestamp < ticker_prediction.expiration_date) and (t.hi >= ticker_prediction.price_target):
+            if (t.hi is None) or (t.timestamp is None):
+                #print(ticker)
+                continue
+            if (t.timestamp >= ticker_prediction.announcement_date) and (t.timestamp < ticker_prediction.expiration_date) and (t.hi >= ticker_prediction.price_target):
                 close_date = t.timestamp
                 break
 

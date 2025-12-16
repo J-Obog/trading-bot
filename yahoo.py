@@ -66,8 +66,9 @@ class YahooApi:
         data = res.json()["chart"]["result"][0]
         indicators = data["indicators"]["quote"][0]
 
-        timestamps = datetime.fromtimestamp( data["timestamp"])
+        timestamps = data["timestamp"]
         closes = indicators["close"]
+        opens = indicators["open"]
         highs = indicators["high"]
         lows = indicators["low"]
 
@@ -75,10 +76,11 @@ class YahooApi:
 
         for i in range(len(timestamps)):
             tick = Tick(
-                    timestamp=timestamps[i],
+                    timestamp= datetime.fromtimestamp(timestamps[i]),
                     close=closes[i],
-                    low=lows[i], 
-                    high=highs[i]
+                    open=opens[i],
+                    lo=lows[i], 
+                    hi=highs[i]
                 )
 
             ticks.append(tick)
