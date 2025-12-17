@@ -1,20 +1,22 @@
-from datetime import timedelta
+from datetime import timedelta, timezone
+from typing import List
 from airtable import AirtableApi, Prediction
 from yahoo import Sentiment, YahooApi
 import json
 import dotenv
 import os
 import time
+import concurrent.futures
 
 dotenv.load_dotenv()
 
-top_tickers = []
+data = []
 
 def get_unique_key(prediction: Prediction) -> str:
-    return f'{prediction.analyst}:{prediction.announcement_date.strftime("%m/%d/%Y")}'
+    return f'{prediction.ticker}:{prediction.analyst}:{prediction.announcement_date.strftime("%m/%d/%Y")}'
 
-with open("top_sp500.json", "r", encoding="utf-8") as json_file:
-    top_tickers = json.load(json_file)
+with open("tickers.json", "r", encoding="utf-8") as json_file:
+    data = json.load(json_file)
 
 airtable = AirtableApi(
     os.environ.get("AIRTABLE_TOKEN"), 
@@ -28,17 +30,17 @@ existing_ids = set(map(lambda x: get_unique_key(x), airtable.get_all_predictions
 
 new_predictions = []
 
-for ticker in top_tickers:
-    time.sleep(0.5)
-    ratings = yahoo.get_ratings(ticker)
+for datum in sorted(data, key=lambda x: x["Market Cap"], reverse=True)[:500]:
+    time.sleep(0.005)
+    ratings = yahoo.get_ratings(datum["Symbol"])
 
     for rating in ratings:
-        if (rating.uuid in existing_ids) or (rating.price_target is None) or (rating.sentiment != Sentiment.BUY):
+        if (rating.price_target is None) or (rating.sentiment != Sentiment.BUY):
             continue
 
         p = Prediction(
             id=rating.uuid, 
-            ticker=ticker, 
+            ticker=datum["Symbol"], 
             analyst=rating.analyst, 
             announcement_date=rating.announcement_date, 
             price_target=rating.price_target, 
@@ -47,8 +49,21 @@ for ticker in top_tickers:
             expiration_date = rating.announcement_date + timedelta(days=180)
         )
 
-        new_predictions.append(p)
-        existing_ids.add(get_unique_key(p))
+        ukey = get_unique_key(p)
 
-airtable.create_predictions(new_predictions)
+        if ukey in existing_ids:
+            continue
+
+        new_predictions.append(p)
+        existing_ids.add(ukey)
+
+
+def insert_batch(batch: List[Prediction]):
+    airtable.create_predictions(batch)
+
+with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+    batch_size = 100
+
+    for i in range(0, len(new_predictions), batch_size):
+        pool.submit(insert_batch, new_predictions[i:i + batch_size])
 

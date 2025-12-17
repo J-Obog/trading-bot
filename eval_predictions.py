@@ -44,4 +44,7 @@ for ticker in unique_tickers:
             if time_now >= ticker_prediction.expiration_date:
                 outcome_updates.append(OutcomeUpdate(ticker_prediction.record_id, ticker_prediction.expiration_date, Outcome.WRONG))
 
-airtable.update_prediction_outcomes(outcome_updates)
+batch_size = 100
+
+for i in range(0, len(outcome_updates), batch_size):
+    airtable.update_prediction_outcomes(outcome_updates[i:i+batch_size])
