@@ -1,8 +1,10 @@
 from datetime import datetime
+from typing import List
 from airtable import AirtableApi, Outcome, OutcomeUpdate
 from yahoo import YahooApi
 import dotenv
 import os
+import concurrent.futures
 
 dotenv.load_dotenv()
 
@@ -31,7 +33,6 @@ for ticker in unique_tickers:
         close_date = None
         for t in chart_ticks:
             if (t.hi is None) or (t.timestamp is None):
-                #print(ticker)
                 continue
             if (t.timestamp >= ticker_prediction.announcement_date) and (t.timestamp < ticker_prediction.expiration_date) and (t.hi >= ticker_prediction.price_target):
                 close_date = t.timestamp
@@ -44,7 +45,13 @@ for ticker in unique_tickers:
             if time_now >= ticker_prediction.expiration_date:
                 outcome_updates.append(OutcomeUpdate(ticker_prediction.record_id, ticker_prediction.expiration_date, Outcome.WRONG))
 
-batch_size = 100
 
-for i in range(0, len(outcome_updates), batch_size):
-    airtable.update_prediction_outcomes(outcome_updates[i:i+batch_size])
+def insert_batch(batch: List[OutcomeUpdate]):
+    airtable.update_prediction_outcomes(batch)
+
+with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+    batch_size = 100
+
+    for i in range(0, len(outcome_updates), batch_size):
+        pool.submit(insert_batch, outcome_updates[i:i + batch_size])
+        
