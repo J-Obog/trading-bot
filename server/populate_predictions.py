@@ -15,7 +15,7 @@ dotenv.load_dotenv()
 with open("tickers.json", "r", encoding="utf-8") as json_file:
     data = json.load(json_file)
 
-tickers = sorted(data, key=lambda x: x["Market Cap"], reverse=True)[:1000]
+tickers = sorted(data, key=lambda x: x["Market Cap"], reverse=True)[:2000]
 
 db = src.db.conn.get_db(os.environ.get("DB_CONN_URI"))
 yahoo = YahooApi()
@@ -25,21 +25,15 @@ predictions_to_insert = []
 for ticker in tickers:
     time.sleep(0.005)
     ratings = yahoo.get_ratings(ticker["Symbol"])
-
+    
     for rating in ratings:
-        if (rating.price_target is None):
-            print("Rating price target is not present")
-            continue
-
-        if(rating.sentiment == Sentiment.UKNOWN):
-            print("Skipping as sentiment is unknown")
+        if(rating.announcement_date is None) or (rating.price_target is None) or (rating.sentiment == Sentiment.UKNOWN) or (rating.sentiment == Sentiment.NEUTRAL):
             continue 
 
         analyst = db.analysts.find_one({"name": rating.analyst})
         analyst_id = analyst["_id"] if analyst is not None else None
 
         if analyst_id is None:
-            print(f"Couldn't find analyst {rating.analyst} in db, creating new analyst record")
             analyst_id = db.analysts.insert_one(Analyst(
                 name=rating.analyst
             )).inserted_id
@@ -54,7 +48,8 @@ for ticker in tickers:
             ticker=ticker["Symbol"], 
             date=rating.announcement_date, 
             price_target=rating.price_target,
-            sentiment=sentiment_map[rating.sentiment]
+            sentiment=sentiment_map[rating.sentiment],
+            outcome=None
         )
 
         predictions_to_insert.append(prediction)

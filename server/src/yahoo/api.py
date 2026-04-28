@@ -9,7 +9,9 @@ BASE_API_URI = "https://query1.finance.yahoo.com/v2/ratings/"
 BASE_URI = "https://query2.finance.yahoo.com/v8/finance/chart"
 
 HEADERS = {
-    "User-Agent": "StockAnalysis/1.0"
+    "User-Agent": "StockAnalysis/1.0",
+    "Accept": "*/*",
+    "Accept-Encoding": "gzip, deflate, br"
 }
 
 STANDARD_QUERY_PARAMS = {
@@ -19,14 +21,15 @@ STANDARD_QUERY_PARAMS = {
     "region":"US"
 }
 
+
 BASE_QUERY_PARAMS = {
     "limit": 100,
     "offset": 0,
     "order_by": "fin_score",
-    "exclude_noncurrent": True, 
-    "region":"US",
-    "lang":"en-US",
-    "desc":True,
+    "desc": "true",
+    "exclude_noncurrent": "false",
+    "lang": "en-US",
+    "region": "US"
 }
 
 class YahooApi:
@@ -65,10 +68,10 @@ class YahooApi:
         return ticks
     
     def get_ratings(self, ticker: str) -> List[Rating]:
-        params = BASE_QUERY_PARAMS
+        params = BASE_QUERY_PARAMS.copy()
         params["symbol"] = ticker.upper()
         ratings = []
-
+        
         res = requests.get(BASE_API_URI, params=params, headers=HEADERS).json()
 
         for item in res["items"]:
@@ -79,7 +82,7 @@ class YahooApi:
                     price_target=item["pt_current"],
                     uuid=item["uuid"],
                     analyst=item["analyst"],
-                    announcement_date=parse(item["announcement_date"], ignoretz=True)
+                    announcement_date=parse(item["announcement_date"], ignoretz=True) if item["announcement_date"] is not None else None
                 )
             )
 

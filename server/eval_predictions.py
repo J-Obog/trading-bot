@@ -1,18 +1,16 @@
-from datetime import datetime, timedelta
+from datetime import datetime
 from dateutil.relativedelta import relativedelta
 from typing import Dict, List
-from server.src.db.models import Prediction
+from src.db.models import Outcome, Prediction, Sentiment
 from src.yahoo.api import YahooApi
 import src.db.conn
 import dotenv
 import os
-import concurrent.futures
 
 dotenv.load_dotenv()
 
 db = src.db.conn.get_db(os.environ.get("DB_CONN_URI"))
 yahoo = YahooApi()
-
 
 ticker_to_prediction_map: Dict[str, List[Prediction]] = {}
 
@@ -22,33 +20,27 @@ for prediction in db.predictions.find({"outcome": {"$ne": None}}):
 
     ticker_to_prediction_map[prediction["ticker"]].append(prediction)
 
-for ticker in ticker_to_prediction_map:
+current_datetime = datetime.now()
+
+for ticker in ticker_to_prediction_map:    
     sorted_predictions = sorted(ticker_to_prediction_map[ticker], key=lambda p: p["date"])
     chart_ticks = yahoo.get_ticks(ticker, sorted_predictions[0]["date"], sorted_predictions[-1]["date"] + relativedelta(years=1))
 
-    for ticker_prediction in predictions_for_ticker:
-        close_date = None
-        for t in chart_ticks:
-            if (t.hi is None) or (t.timestamp is None):
-                continue
-            if (t.timestamp >= ticker_prediction.announcement_date) and (t.timestamp < ticker_prediction.expiration_date) and (t.hi >= ticker_prediction.price_target):
-                close_date = t.timestamp
-                break
+    for ticker_prediction in sorted_predictions:
+        horizon = ticker_prediction["date"] + relativedelta(years=1)
+        price_target = ticker_prediction["price_target"]
+        tick_hits_target_fn = lambda t: t.hi >= price_target if ticker_prediction["sentiment"] == Sentiment.BULLISH else t.lo <= price_target
+          
+        filtered_ticks = filter(lambda t: None not in [t.hi, t.lo, t.timestamp], chart_ticks)
+        filtered_ticks = filter(lambda t: ticker_prediction["date"] < t.timestamp <= horizon, filtered_ticks)
+        is_correct = any(tick_hits_target_fn, filtered_ticks)
 
-        if close_date is not None:
-            outcome_updates.append(OutcomeUpdate(ticker_prediction.record_id, close_date, Outcome.RIGHT))
+        update_query = {"_id": ticker_prediction["_id"]}
+
+        if is_correct:
+            db.predictions.update_one(update_query, {"outcome": Outcome.CORRECT})
         else:
-            time_now = datetime.now()
-            if time_now >= ticker_prediction.expiration_date:
-                outcome_updates.append(OutcomeUpdate(ticker_prediction.record_id, ticker_prediction.expiration_date, Outcome.WRONG))
+            if current_datetime > horizon:
+                db.predictions.update_one(update_query, {"outcome": Outcome.WRONG})
 
-
-def insert_batch(batch: List[OutcomeUpdate]):
-    airtable.update_prediction_outcomes(batch)
-
-with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
-    batch_size = 100
-
-    for i in range(0, len(outcome_updates), batch_size):
-        pool.submit(insert_batch, outcome_updates[i:i + batch_size])
-        
+db.close()

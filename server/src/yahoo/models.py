@@ -13,7 +13,7 @@ class Sentiment(IntEnum):
 class Rating:
     sentiment: Sentiment
     price_target: Optional[float]
-    announcement_date: datetime
+    announcement_date: Optional[datetime]
     analyst: str
     uuid: str
 
