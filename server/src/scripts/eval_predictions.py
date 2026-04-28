@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import List
 from server.airtable import AirtableApi, Outcome, OutcomeUpdate
-from server.yahoo import YahooApi
+from server.src.yahoo.api import YahooApi
 import dotenv
 import os
 import concurrent.futures

@@ -1,12 +1,12 @@
 from typing import List
-from server.db.models import Prediction
-from server.yahoo.api import YahooApi
+from src.db.models import Prediction
+from src.yahoo.api import YahooApi
 import json
 import dotenv
 import os
 import time
 import concurrent.futures
-import db.conn
+import src.db.conn
 
 dotenv.load_dotenv()
 
@@ -15,7 +15,7 @@ with open("tickers.json", "r", encoding="utf-8") as json_file:
 
 tickers = sorted(data, key=lambda x: x["Market Cap"], reverse=True)[:1]
 
-db = db.conn.get_db(os.environ.get("DB_CONN_URI"))
+db = src.db.conn.get_db(os.environ.get("DB_CONN_URI"))
 yahoo = YahooApi()
 
 predictions_to_insert = []
@@ -48,4 +48,3 @@ with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
 
     for i in range(0, len(predictions_to_insert), batch_size):
         pool.submit(insert_batch, predictions_to_insert[i:i + batch_size])
-

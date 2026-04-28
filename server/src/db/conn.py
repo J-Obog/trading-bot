@@ -2,7 +2,7 @@ from dataclasses import dataclass
 from pymongo import MongoClient
 from pymongo.collection import Collection
 
-from server.db.models import Analyst, Prediction
+from src.db.models import Analyst, Prediction
 
 @dataclass
 class Db:

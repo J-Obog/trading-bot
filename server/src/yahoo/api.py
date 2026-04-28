@@ -3,7 +3,7 @@ from typing import List
 import requests
 from dateutil.parser import parse
 
-from server.yahoo.models import Rating, Sentiment, Tick
+from src.yahoo.models import Rating, Sentiment, Tick
 
 BASE_API_URI = "https://query1.finance.yahoo.com/v2/ratings/"
 BASE_URI = "https://query2.finance.yahoo.com/v8/finance/chart"
