@@ -1,32 +1,9 @@
 from datetime import datetime
-from enum import IntEnum
-from typing import List, Optional
+from typing import List
 import requests
-from dataclasses import dataclass
 from dateutil.parser import parse
 
-class Sentiment(IntEnum):
-    BUY = 1
-    SENLL = -1
-    NEUTRAL = 0
-    UKNOWN = -999
-
-@dataclass
-class Rating:
-    sentiment: Sentiment
-    price_target: Optional[float]
-    announcement_date: datetime
-    analyst: str
-    uuid: str
-
-@dataclass
-class Tick:
-    hi: float
-    lo: float
-    open: float
-    close: float
-    timestamp: datetime
-
+from server.yahoo.models import Rating, Sentiment, Tick
 
 BASE_API_URI = "https://query1.finance.yahoo.com/v2/ratings/"
 BASE_URI = "https://query2.finance.yahoo.com/v8/finance/chart"
