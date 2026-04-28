@@ -1,6 +1,4 @@
 from typing import TypedDict, NotRequired
-from pymongo import MongoClient
-from pymongo.database import Database
 from bson import ObjectId
 from datetime import datetime
 from enum import IntEnum
