@@ -1,5 +1,5 @@
 from typing import List
-from src.db.models import Prediction
+from src.db.models import Analyst, Prediction
 from src.yahoo.api import YahooApi
 import json
 import dotenv
@@ -29,7 +29,15 @@ for ticker in tickers:
             print("Rating is not present")
             continue
 
-        analyst_id = db.analysts.find_one({"name": rating.analyst})._id
+
+        analyst = db.analysts.find_one({"name": rating.analyst})
+        analyst_id = analyst["_id"] if analyst is not None else None
+
+        if analyst_id is None:
+            print(f"Couldn't find analyst {rating.analyst} in db, creating new analyst record")
+            analyst_id = db.analysts.insert_one(Analyst(
+                name=rating.analyst
+            )).inserted_id
 
         prediction = Prediction(
             analyst_id=analyst_id,
@@ -43,7 +51,7 @@ for ticker in tickers:
 def insert_batch(batch: List[Prediction]):
     db.predictions.insert_many(batch)
 
-with concurrent.futures.ThreadPoolExecutor(max_workers=8) as pool:
+with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
     batch_size = 100
 
     for i in range(0, len(predictions_to_insert), batch_size):
