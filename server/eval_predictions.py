@@ -1,33 +1,30 @@
-from datetime import datetime
-from typing import List
-from server.airtable import AirtableApi, Outcome, OutcomeUpdate
-from server.src.yahoo.api import YahooApi
+from datetime import datetime, timedelta
+from dateutil.relativedelta import relativedelta
+from typing import Dict, List
+from server.src.db.models import Prediction
+from src.yahoo.api import YahooApi
+import src.db.conn
 import dotenv
 import os
 import concurrent.futures
 
 dotenv.load_dotenv()
 
-airtable = AirtableApi(
-    os.environ.get("AIRTABLE_TOKEN"), 
-    os.environ.get("AIRTABLE_BASE_ID"), 
-    os.environ.get("AIRTABLE_TABLE_ID")
-)
-
+db = src.db.conn.get_db(os.environ.get("DB_CONN_URI"))
 yahoo = YahooApi()
 
-predictions = sorted(airtable.get_all_predictions(),key=lambda x: x.announcement_date,)
 
-unique_tickers = set(map(lambda x: x.ticker, predictions))
+ticker_to_prediction_map: Dict[str, List[Prediction]] = {}
 
-outcome_updates = []
+for prediction in db.predictions.find({"outcome": {"$ne": None}}):
+    if prediction["ticker"] not in ticker_to_prediction_map:
+        ticker_to_prediction_map[prediction["ticker"]] = []
 
-for ticker in unique_tickers:
-    predictions_for_ticker = list(filter(lambda x: (x.ticker == ticker) and (x.outcome is None), predictions))
-    if len(predictions_for_ticker) == 0:
-        continue
-    
-    chart_ticks = yahoo.get_ticks(ticker, predictions_for_ticker[0].announcement_date, predictions_for_ticker[-1].expiration_date)
+    ticker_to_prediction_map[prediction["ticker"]].append(prediction)
+
+for ticker in ticker_to_prediction_map:
+    sorted_predictions = sorted(ticker_to_prediction_map[ticker], key=lambda p: p["date"])
+    chart_ticks = yahoo.get_ticks(ticker, sorted_predictions[0]["date"], sorted_predictions[-1]["date"] + relativedelta(years=1))
 
     for ticker_prediction in predictions_for_ticker:
         close_date = None

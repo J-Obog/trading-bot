@@ -5,7 +5,7 @@ from dataclasses import dataclass
 
 class Sentiment(IntEnum):
     BUY = 1
-    SENLL = -1
+    SELL = -1
     NEUTRAL = 0
     UKNOWN = -999
 

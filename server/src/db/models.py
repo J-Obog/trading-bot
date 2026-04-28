@@ -1,4 +1,4 @@
-from typing import TypedDict, NotRequired
+from typing import Optional, TypedDict, NotRequired
 from bson import ObjectId
 from datetime import datetime
 from enum import IntEnum
@@ -6,7 +6,10 @@ from enum import IntEnum
 class Sentiment(IntEnum):
     BULLISH = 1
     BEARISH = 2
-    NEUTRAL = 3
+
+class Outcome(IntEnum):
+    CORRECT = 1
+    WRONG = 2
 
 class Analyst(TypedDict):
     _id: NotRequired[ObjectId]
@@ -19,3 +22,4 @@ class Prediction(TypedDict):
     date: datetime
     ticker: str
     sentiment: Sentiment
+    outcome: Optional[Outcome]
