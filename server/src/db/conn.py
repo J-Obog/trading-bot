@@ -4,16 +4,16 @@ from pymongo.collection import Collection
 
 from src.db.models import Analyst, Prediction
 
-@dataclass
 class Db:
-    analysts: Collection[Analyst]
-    predictions: Collection[Prediction]
+    def __init__(self, conn: MongoClient):
+        self._conn = conn
+        database = conn["analysis"]
+        self.analysts: Collection[Analyst] = database["analysts"]
+        self.predictions: Collection[Prediction] = database["predictions"]
 
+    def close(self):
+        self._conn.close()
 
 def get_db(connection_str: str) -> Db:
     client = MongoClient(connection_str)
-    database = client["analysis"]
-    return Db(
-        analysts=database["analysts"],
-        predictions=database["predictions"]
-    )
+    return Db(client)
