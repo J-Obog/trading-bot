@@ -2,7 +2,8 @@ from datetime import datetime
 from typing import List
 import requests
 from dateutil.parser import parse
-
+from bs4 import BeautifulSoup
+import json
 from src.yahoo.models import Rating, Sentiment, Tick
 
 BASE_API_URI = "https://query1.finance.yahoo.com/v2/ratings/"
@@ -67,6 +68,104 @@ class YahooApi:
 
         return ticks
     
+
+
+    def get_ratings_v2(self, ticker: str) -> List[Rating]:
+        headers = {"accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7", "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36"}
+        res = requests.get(f"https://finance.yahoo.com/quote/{ticker.capitalize()}/analyst-insights/", headers=headers)
+        
+        if res.status_code != 200:
+            raise Exception(res.content)
+        
+        html_text = res.content
+        soup = BeautifulSoup(html_text, "html.parser")
+
+        target_script = None
+
+        for script in soup.find_all("script", attrs={"type": "application/json"}):
+            data_url = script.get("data-url", "")
+            
+            if "query1.finance.yahoo.com/v10/finance/quoteSummary" in data_url:
+                target_script = script
+                break
+
+        if not target_script:
+            #raise Exception(f"Target script tag not found for {ticker}")
+            print(f"Target script tag not found for {ticker}")
+            return []
+
+        outer_json = json.loads(target_script.string.strip())
+        inner_json = json.loads(outer_json["body"])
+        history = inner_json["quoteSummary"]["result"][0].get("upgradeDowngradeHistory", {}).get("history", [])
+
+        ratings = [] 
+
+        rating_map = {
+            "Outperform": Sentiment.BUY,
+            "Buy": Sentiment.BUY,
+            "Neutral": Sentiment.NEUTRAL,
+            "Sector Outperform": Sentiment.BUY,
+            "Overweight": Sentiment.BUY,
+            "Strong Buy": Sentiment.BUY,
+            "Equal-Weight": Sentiment.NEUTRAL,
+            "Equal-weight": Sentiment.NEUTRAL,
+            "Positive": Sentiment.BUY,
+            "Market Outperform": Sentiment.BUY,
+            "Hold": Sentiment.NEUTRAL,
+            "Market Perform": Sentiment.NEUTRAL,
+            "Perform": Sentiment.NEUTRAL,
+            "": Sentiment.UKNOWN,
+            "Sell": Sentiment.SELL,
+            "Long-Term Buy": Sentiment.BUY,
+            "Accumulate": Sentiment.BUY,
+            "Reduce": Sentiment.SELL,
+            "Underperform": Sentiment.SELL,
+            "Sector Weight": Sentiment.NEUTRAL,
+            "Underweight": Sentiment.SELL,
+            "Peer Perform": Sentiment.NEUTRAL,
+            "Sector Perform": Sentiment.NEUTRAL,
+            "In-Line": Sentiment.NEUTRAL,
+            "Top Pick": Sentiment.BUY,
+            "Conviction Buy": Sentiment.BUY,
+            "In-line": Sentiment.NEUTRAL,
+            "Outperformer": Sentiment.BUY,
+            "Mixed": Sentiment.NEUTRAL,
+            "Market Underperform": Sentiment.SELL,
+            "Sector Underperform": Sentiment.SELL,
+            "Fair Value": Sentiment.NEUTRAL,
+            "Hold Neutral": Sentiment.NEUTRAL,
+            "Negative": Sentiment.SELL,
+            "Average": Sentiment.NEUTRAL,
+            "Market Weight": Sentiment.NEUTRAL,
+            "Cautious": Sentiment.NEUTRAL,
+            "Strong Sell": Sentiment.SELL,
+            "Peer perform": Sentiment.NEUTRAL,
+            "Action List Buy": Sentiment.BUY,
+            "Add": Sentiment.BUY,
+            "Sector Performer": Sentiment.NEUTRAL,
+            "Performer": Sentiment.BUY,
+            "Underperformer": Sentiment.SELL,
+            "Gradually Accumulate": Sentiment.BUY,
+            "buy": Sentiment.BUY,
+            "Above Average": Sentiment.BUY
+        }
+
+        for data in history:
+            if data["toGrade"] not in rating_map:
+                print(data["toGrade"])
+
+            ratings.append(
+                Rating(
+                    sentiment= rating_map.get(data["toGrade"], Sentiment.UKNOWN),
+                    price_target=data["currentPriceTarget"],
+                    uuid="",
+                    analyst=data["firm"],
+                    announcement_date=datetime.fromtimestamp(data["epochGradeDate"]))
+            )
+
+        return ratings
+
+
     def get_ratings(self, ticker: str) -> List[Rating]:
         params = BASE_QUERY_PARAMS.copy()
         params["symbol"] = ticker.upper()

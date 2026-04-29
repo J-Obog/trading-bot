@@ -14,7 +14,7 @@ yahoo = YahooApi()
 
 ticker_to_prediction_map: Dict[str, List[Prediction]] = {}
 
-for prediction in db.predictions.find({"outcome": {"$ne": None}}):
+for prediction in db.predictions.find({"outcome": {"$eq": None}}):
     if prediction["ticker"] not in ticker_to_prediction_map:
         ticker_to_prediction_map[prediction["ticker"]] = []
 
