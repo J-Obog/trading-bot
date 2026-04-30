@@ -58,9 +58,14 @@ class YahooApi:
 
         api_url = f"{SPLIT_API_URI}/{ticker}"
 
-        res = requests.get(api_url, headers=HEADERS, params=params).json()
+        res = requests.get(api_url, headers=HEADERS, params=params)
+        
+        if res.status_code != 200:
+            raise Exception(res.status_code, res.content)
+        
+        res = res.json()
 
-        split_map = res["chart"]["result"][0]["events"].get("splits", [])
+        split_map = res["chart"]["result"][0].get("events", {}).get("splits", [])
         splits = [] 
 
         for split_date in split_map:

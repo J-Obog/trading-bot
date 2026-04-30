@@ -10,6 +10,7 @@ from src.db.models import Outcome, Prediction, Sentiment
 from src.yahoo.api import YahooApi
 import src.db.conn
 import dotenv
+import random
 import os
 
 dotenv.load_dotenv()
@@ -62,9 +63,6 @@ def adjust_for_splits(splits: List[Split], ticks: List[Tick]) -> List[Tick]:
             )
         )
 
-    print(adj_ticks[0])
-    exit()
-
     return adj_ticks
 
 def process_ticker(ticker: str):
@@ -73,13 +71,20 @@ def process_ticker(ticker: str):
         key=lambda p: p["date"]
     )
 
+    time.sleep(random.uniform(0.25, 2))
     splits = yahoo.get_splits(ticker)
 
+    time.sleep(random.uniform(0.25, 2))
     chart_ticks = yahoo.get_ticks(
         ticker,
         sorted_predictions[0]["date"],
         sorted_predictions[-1]["date"] + relativedelta(years=1)
     )
+
+    chart_ticks = list(filter(
+            lambda t: None not in [t.hi, t.lo, t.timestamp],
+            chart_ticks
+    ))
 
     if len(splits) > 0:
         chart_ticks = adjust_for_splits(splits, chart_ticks)
@@ -98,12 +103,8 @@ def process_ticker(ticker: str):
         )
 
         filtered_ticks = filter(
-            lambda t: None not in [t.hi, t.lo, t.timestamp],
-            chart_ticks
-        )
-        filtered_ticks = filter(
             lambda t: ticker_prediction["date"] < t.timestamp <= horizon,
-            filtered_ticks
+            chart_ticks
         )
         filtered_ticks = filter(
             tick_hits_target_fn,
@@ -138,11 +139,10 @@ with ThreadPoolExecutor(max_workers=MAX_POOL_SIZE) as executor:
     futures = []
 
     for i, ticker in enumerate(ticker_to_prediction_map):
-        if ticker == "TSLA":
-            futures.append(executor.submit(process_ticker, ticker))
+        futures.append(executor.submit(process_ticker, ticker))
 
-            if i % MAX_POOL_SIZE == 0:
-                time.sleep(0.25)
+        if i % MAX_POOL_SIZE == 0:
+            time.sleep(3)
 
     for future in as_completed(futures):
         ticker, updated_count = future.result()
