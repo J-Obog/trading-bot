@@ -45,11 +45,10 @@ def adjust_for_splits(splits: List[Split], ticks: List[Tick]) -> List[Tick]:
     split_ranges.append({"lb": split_ranges[-1]["ub"], "ub": datetime(2099, 1, 1), "cm": 1})
 
     for tick in ticks:
-        tick_date = datetime.fromtimestamp(tick.timestamp)
-        found_split_ranges = list(filter(lambda sr: sr["lb"] <= tick_date < sr["ub"], split_ranges))
+        found_split_ranges = list(filter(lambda sr: sr["lb"] <= tick.timestamp < sr["ub"], split_ranges))
         
-        if found_split_ranges != 1:
-            raise "Found ranges size is not exactly one" 
+        if len(found_split_ranges) != 1:
+            raise Exception(f"Found ranges size is not exactly one. Real size is {len(found_split_ranges)}") 
 
         cum_mult = found_split_ranges[0]["cm"]
         
@@ -62,6 +61,9 @@ def adjust_for_splits(splits: List[Split], ticks: List[Tick]) -> List[Tick]:
                 timestamp=tick.timestamp
             )
         )
+
+    print(adj_ticks[0])
+    exit()
 
     return adj_ticks
 
