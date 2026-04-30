@@ -24,3 +24,10 @@ class Tick:
     open: float
     close: float
     timestamp: datetime
+
+@dataclass
+class Split:
+    date: datetime
+    effective_date: datetime
+    factor: float
+    

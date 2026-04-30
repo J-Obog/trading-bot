@@ -4,10 +4,23 @@ import requests
 from dateutil.parser import parse
 from bs4 import BeautifulSoup
 import json
-from src.yahoo.models import Rating, Sentiment, Tick
+from src.yahoo.models import Rating, Sentiment, Split, Tick
 
 BASE_API_URI = "https://query1.finance.yahoo.com/v2/ratings/"
 BASE_URI = "https://query2.finance.yahoo.com/v8/finance/chart"
+SPLIT_API_URI = "https://query1.finance.yahoo.com/v8/finance/chart"
+
+SPLIT_API_PARAMS = {
+    "events": "capitalGain%7Cdiv%7Csplit",
+    "formatted": "true",
+    "includeAdjustedClose": "true",
+    "interval": "1wk",
+    "period1": "0",
+    "userYfid": "true",
+    "lang": "en-US",
+    "region": "US"
+}
+
 
 HEADERS = {
     "User-Agent": "StockAnalysis/1.0",
@@ -36,6 +49,32 @@ BASE_QUERY_PARAMS = {
 class YahooApi:
     def __init__(self):
         pass
+
+    def get_splits(self, ticker: str) -> List[Split]:
+        params = SPLIT_API_PARAMS.copy() | {
+            "symbol": ticker,
+            "period2": int(datetime.now().timestamp())
+        }
+
+        api_url = f"{SPLIT_API_URI}/{ticker}"
+
+        res = requests.get(api_url, headers=HEADERS, params=params).json()
+
+        split_map = res["chart"]["result"][0]["events"].get("splits", [])
+        splits = [] 
+
+        for split_date in split_map:
+            split = split_map[split_date]
+
+            splits.append(
+                Split(
+                    date=datetime.fromtimestamp(int(split_date)),
+                    effective_date=datetime.fromtimestamp(split["date"]),
+                    factor=split["numerator"]/split["denominator"]
+                )
+            )
+
+        return splits
 
     def get_ticks(self, ticker: str, t1: datetime, t2: datetime) -> List[Tick]:
         query_params = STANDARD_QUERY_PARAMS
