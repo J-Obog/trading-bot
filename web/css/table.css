@@ -1,0 +1,19 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th {
+  text-align: left;
+  font-size: 12px;
+  color: #888;
+}
+
+.table td {
+  padding: 8px 4px;
+  border-bottom: 1px solid #222;
+}
+
+.status.hit { color: #22c55e; }
+.status.miss { color: #ef4444; }
+.status.pending { color: #eab308; }
